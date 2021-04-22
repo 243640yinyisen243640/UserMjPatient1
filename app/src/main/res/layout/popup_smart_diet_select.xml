@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="275dp"
+        android:layout_height="375dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="查看我的饮食方案" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/smart_diet_popup" />
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_smart"
+            style="@style/text_white_16_f_w"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_18"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="智能推荐"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="3dp">
+
+        </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+        <TextView
+            android:id="@+id/tv_my_select"
+            style="@style/text_gray_14_w_w"
+            android:layout_marginTop="18dp"
+            android:gravity="center_horizontal"
+            android:text="我自己选" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

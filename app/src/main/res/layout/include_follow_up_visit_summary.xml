@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_summary"
+    style="@style/ll_follow_up_visit_include_item">
+
+    <!--总结-->
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12">
+
+
+        <com.wei.android.lib.colorview.view.ColorView
+            style="@style/tv_follow_up_visit_indicate_lump"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="1dp">
+
+        </com.wei.android.lib.colorview.view.ColorView>
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:text="症状"
+            android:textColor="@color/main_home" />
+
+
+    </LinearLayout>
+
+    <!--患者目前存在的主要问题-->
+
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_12"
+        android:text="当前问题及改进措施" />
+
+    <com.wei.android.lib.colorview.view.ColorEditText
+        android:id="@+id/et_summary_main_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16"
+        android:enabled="false"
+        android:gravity="left"
+        android:hint="请输入"
+        android:lineSpacingMultiplier="1.2"
+        android:minLines="4"
+        android:padding="@dimen/dp_4"
+        android:textColor="@color/black_text"
+        android:textColorHint="@color/gray_text"
+        android:textSize="14sp"
+        app:backgroundColorNormal="@color/color_eb"
+        app:cornerRadiusNormal="7dp" />
+
+    <!--    &lt;!&ndash;主要改进措施&ndash;&gt;-->
+
+    <!--    <TextView-->
+    <!--        style="@style/text_black_14_w_w"-->
+    <!--        android:layout_marginLeft="@dimen/dp_12"-->
+    <!--        android:layout_marginTop="@dimen/dp_10"-->
+    <!--        android:layout_marginRight="@dimen/dp_12"-->
+    <!--        -->
+    <!--        android:text="主要改进措施" />-->
+
+    <!--    <com.wei.android.lib.colorview.view.ColorEditText-->
+    <!--        android:id="@+id/et_summary_improve_measure"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="@dimen/dp_16"-->
+    <!--        android:layout_marginTop="@dimen/dp_10"-->
+    <!--        android:layout_marginRight="@dimen/dp_16"-->
+    <!--        android:enabled="false"-->
+    <!--        android:gravity="left"-->
+    <!--        android:hint="请输入"-->
+    <!--        android:lineSpacingMultiplier="1.2"-->
+    <!--        android:minLines="4"-->
+    <!--        android:padding="@dimen/dp_4"-->
+    <!--        android:textColor="@color/black_text"-->
+    <!--        android:textColorHint="@color/gray_text"-->
+    <!--        android:textSize="14sp"-->
+    <!--        app:backgroundColorNormal="@color/color_eb"-->
+    <!--        app:cornerRadiusNormal="7dp" />-->
+
+    <!--预期达到目的-->
+
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_12"
+        android:text="预期达到目的" />
+
+    <com.wei.android.lib.colorview.view.ColorEditText
+        android:id="@+id/et_summary_main_purpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_16"
+        android:enabled="false"
+        android:gravity="left"
+        android:hint="请输入"
+        android:lineSpacingMultiplier="1.2"
+        android:minLines="4"
+        android:padding="@dimen/dp_4"
+        android:textColor="@color/black_text"
+        android:textColorHint="@color/gray_text"
+        android:textSize="14sp"
+        app:backgroundColorNormal="@color/color_eb"
+        app:cornerRadiusNormal="7dp" />
+
+
+</LinearLayout>

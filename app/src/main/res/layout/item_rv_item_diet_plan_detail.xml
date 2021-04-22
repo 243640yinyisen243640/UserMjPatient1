@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/hh_fi_wr"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:padding="@dimen/dp_10">
+
+
+        <ImageView
+            android:id="@+id/img_list"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:scaleType="centerCrop"
+            android:src="@drawable/diet_plan_detail_lunch" />
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_food_name"
+                style="@style/text_black_14_f_w"
+                android:text="窝头" />
+
+
+            <TextView
+                android:id="@+id/tv_food_side_dish"
+                style="@style/text_gray_12_f_w"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="玉米面75克；黄豆粉25克" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/diet_plan_detail_right_arrow" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+
+</LinearLayout>

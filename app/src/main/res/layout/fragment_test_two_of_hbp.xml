@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_next_question">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_top_indicator_of_hbp_one" />
+
+            <TextView
+                android:id="@+id/tv_top_desc"
+                style="@style/text_black_14_f_w"
+                android:text="2.您平时血压最高是多少：" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                style="@style/line"
+                android:layout_marginTop="@dimen/dp_18"
+                android:layout_marginBottom="@dimen/dp_18" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.wei.android.lib.colorview.view.ColorButton
+        android:id="@+id/bt_next_question"
+        style="@style/text_white_16_f_w"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="下一题"
+        android:textColor="@color/gray_text"
+        app:backgroundColorNormal="@color/color_e5"
+        app:cornerRadiusNormal="4dp" />
+
+</RelativeLayout>

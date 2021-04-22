@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10">
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_10"
+        app:backgroundColorNormal="@color/white"
+        app:cornerRadiusNormal="@dimen/dp_5">
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_black_14_w_w"
+            android:text="预约时间：2019-10-13"
+            android:textColor="@color/color_666" />
+
+
+        <TextView
+            android:id="@+id/tv_hospital_name"
+            style="@style/text_black_14_w_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="预约医院：北京大和康复中心"
+            android:textColor="@color/color_666" />
+
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            style="@style/text_black_14_w_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="就诊医生：高医生"
+            android:textColor="@color/color_666" />
+
+        <View
+            style="@style/line"
+            android:layout_marginTop="@dimen/dp_10" />
+
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:drawableLeft="@drawable/report_doctor_advice"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="医生就诊建议：" />
+
+
+        <TextView
+            android:id="@+id/tv_advice"
+            style="@style/text_black_14_w_w"
+            android:layout_marginTop="@dimen/dp_5"
+            android:lineSpacingMultiplier="1.2"
+            android:text="多喝热水，多喝热水，多喝热水，多喝热水，多喝热水，多喝热水，多喝热水，多喝热水，多喝热水，多喝热水，多喝热水，多喝热水。" />
+
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+</LinearLayout>

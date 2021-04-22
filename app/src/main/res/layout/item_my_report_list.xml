@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_12">
+
+        <ImageView
+            android:id="@+id/img_my_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/my_report_01" />
+
+        <TextView
+            android:id="@+id/tv_my_report"
+            style="@style/text_black_14_f_w"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/my_report_right_arrow"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="血压分析报告" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

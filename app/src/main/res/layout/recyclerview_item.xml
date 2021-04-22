@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/hh_fi_fi"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        style="@style/hh_wr_wr"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_knowledge" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/text_black_14_w_w"
+        android:layout_below="@id/iv_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        tools:text="二维码" />
+
+</RelativeLayout>
+

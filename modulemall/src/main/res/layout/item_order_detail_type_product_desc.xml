@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dp"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10"
+    app:backgroundColorNormal="@color/white">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_product_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="2"
+        tools:listitem="@layout/item_order_detail_product_list">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginBottom="@dimen/dp_25"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/text_black_12_f_w"
+                android:layout_weight="0.8"
+                android:text="商品总价" />
+
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/text_gray_12_w_w"
+                android:text="220.00" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginBottom="@dimen/dp_25"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/text_black_12_f_w"
+                android:layout_weight="0.8"
+                android:text="运费" />
+
+
+            <TextView
+                android:id="@+id/tv_freight_charge"
+                style="@style/text_gray_12_w_w"
+                android:text="220.00" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginBottom="@dimen/dp_25"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/text_black_12_f_w"
+                android:layout_weight="0.8"
+                android:text="平台优惠" />
+
+
+            <TextView
+                android:id="@+id/tv_discount"
+                style="@style/text_gray_12_w_w"
+                android:text="220.00" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginBottom="@dimen/dp_25"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/text_black_12_f_w"
+                android:layout_weight="0.8"
+                android:text="实付款" />
+
+
+            <TextView
+                android:id="@+id/tv_pay_money"
+                style="@style/text_gray_12_w_w"
+                android:text="220.00"
+                android:textColor="#FF3700" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.wei.android.lib.colorview.view.ColorLinearLayout>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <ScrollView
+        style="@style/scrollView"
+        android:layout_above="@+id/bt_next_question">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--指示器-->
+            <include layout="@layout/include_top_indicator_of_hbp_two" />
+
+            <!--第一部分-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <!--身高-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="*"
+                            android:textColor="@color/main_red" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="1.身高:" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true">
+
+                        <EditText
+                            android:id="@+id/et_height"
+                            style="@style/et_non_drug_input"
+                            android:hint="请输入" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="cm" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+                <!--体重 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="*"
+                            android:textColor="@color/main_red" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="2.体重:" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true">
+
+                        <EditText
+                            android:id="@+id/et_weight"
+                            style="@style/et_non_drug_input"
+                            android:hint="请输入" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="kg" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+                <!--年龄-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="*"
+                            android:textColor="@color/main_red" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="3.年龄:" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true">
+
+                        <EditText
+                            android:id="@+id/et_age"
+                            style="@style/et_non_drug_input"
+                            android:hint="请输入" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="岁" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginStart="@dimen/dp_10" />
+
+            </LinearLayout>
+
+            <!--第二部分-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!--收缩压(高压)-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="4.收缩压(高压):" />
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true">
+
+                        <EditText
+                            android:id="@+id/et_high_pressure"
+                            style="@style/et_non_drug_input"
+                            android:hint="请输入" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmHg" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+                <!--舒张压(低压)-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="5.舒张压(低压):" />
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true">
+
+                        <EditText
+                            android:id="@+id/et_low_pressure"
+                            style="@style/et_non_drug_input"
+                            android:hint="请输入" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmHg" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+                <!--胆固醇(TC)-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="6.总胆固醇 (TC):" />
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true">
+
+                        <EditText
+                            android:id="@+id/et_tc"
+                            style="@style/et_non_drug_input"
+                            android:hint="请输入" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+                <!--甘油三酯(TG)-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="7.甘油三酯(TG):" />
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true">
+
+                        <EditText
+                            android:id="@+id/et_tg"
+                            style="@style/et_non_drug_input"
+                            android:hint="请输入" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+                <!--低密度脂蛋白(LDL)-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="8.低密度脂蛋白(LDL):" />
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true">
+
+                        <EditText
+                            android:id="@+id/et_ldl"
+                            style="@style/et_non_drug_input"
+                            android:hint="请输入" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+                <!--高密度脂蛋白(HDL)-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="9.高密度脂蛋白(HDL):" />
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true">
+
+                        <EditText
+                            android:id="@+id/et_hdl"
+                            style="@style/et_non_drug_input"
+                            android:hint="请输入" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginStart="@dimen/dp_10" />
+            </LinearLayout>
+
+            <!--第三部分-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <!--第三部分-->
+                <!--劳动强度-->
+                <RelativeLayout
+                    android:id="@+id/rl_labour_intensity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="*"
+                            android:textColor="@color/main_red" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="10.劳动强度:" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_labour_intensity"
+                            style="@style/text_black_14_w_w"
+                            android:layout_marginRight="22dp"
+                            android:hint="请选择"
+                            android:textColorHint="@color/gray_text" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text=">"
+                            android:textColor="@color/main_home"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+
+                <!--14.是否抽烟：-->
+                <RelativeLayout
+                    android:id="@+id/rl_smoke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="*"
+                            android:textColor="@color/main_red"
+                            android:visibility="gone" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="11.是否抽烟：" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_smoke"
+                            style="@style/text_black_14_w_w"
+                            android:layout_marginRight="22dp"
+                            android:hint="请选择"
+                            android:textColorHint="@color/gray_text" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text=">"
+                            android:textColor="@color/main_home"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+
+                <!--15.是否饮酒：-->
+                <RelativeLayout
+                    android:id="@+id/rl_drink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="*"
+                            android:textColor="@color/main_red"
+                            android:visibility="gone" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="12.是否饮酒：" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_drink"
+                            style="@style/text_black_14_w_w"
+                            android:layout_marginRight="22dp"
+                            android:hint="请选择"
+                            android:textColorHint="@color/gray_text" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text=">"
+                            android:textColor="@color/main_home"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+
+                <!--16.是否为少数民族：-->
+                <RelativeLayout
+                    android:id="@+id/rl_nation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_12">
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="*"
+                            android:textColor="@color/main_red"
+                            android:visibility="gone" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="13.民族：" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_nation"
+                            style="@style/text_black_14_w_w"
+                            android:layout_marginRight="22dp"
+                            android:hint="请选择"
+                            android:textColorHint="@color/gray_text" />
+
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text=">"
+                            android:textColor="@color/main_home"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <!--14.肾病-->
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <!--糖尿病肾病-->
+                    <RelativeLayout
+                        android:id="@+id/rl_dn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_12">
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/text_black_14_w_w"
+                                android:text="*"
+                                android:textColor="@color/main_red" />
+
+                            <TextView
+                                style="@style/text_black_14_w_w"
+                                android:text="14.是否患有肾病" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_dn"
+                                style="@style/text_black_14_w_w"
+                                android:layout_marginRight="22dp"
+                                android:hint="请选择"
+                                android:textColorHint="@color/gray_text" />
+
+
+                            <TextView
+                                style="@style/text_black_14_w_w"
+                                android:text=">"
+                                android:textColor="@color/main_home"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_dn_period_time"
+                        style="@style/hh_fi_wr"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            style="@style/line"
+                            android:layout_marginLeft="@dimen/dp_10" />
+
+                        <!--糖尿病肾病 分期-->
+                        <RelativeLayout
+                            android:id="@+id/rl_dn_period"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp_12">
+
+
+                            <TextView
+                                style="@style/text_black_14_w_w"
+                                android:text="15.慢性肾脏病分期" />
+
+
+                            <LinearLayout
+                                style="@style/hh_wr_wr"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_dn_period"
+                                    style="@style/text_black_14_w_w"
+                                    android:layout_marginRight="22dp"
+                                    android:hint="请选择"
+                                    android:textColorHint="@color/gray_text" />
+
+
+                                <TextView
+                                    style="@style/text_black_14_w_w"
+                                    android:text=">"
+                                    android:textColor="@color/main_home"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <com.wei.android.lib.colorview.view.ColorButton
+        android:id="@+id/bt_next_question"
+        style="@style/text_white_16_f_w"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="4dp" />
+
+</RelativeLayout>
+

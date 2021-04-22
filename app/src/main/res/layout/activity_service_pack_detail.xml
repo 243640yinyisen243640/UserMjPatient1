@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.homesign.ServicePackDetailActivity">
+
+    <com.lihang.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="17dp"
+        app:hl_cornerRadius="@dimen/dp_5"
+        app:hl_shadowColor="@color/color_ffececf6"
+        app:hl_shadowOffsetX="0dp"
+        app:hl_shadowOffsetY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.wei.android.lib.colorview.view.ColorLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:backgroundColorNormal="#ff00c27f"
+                app:cornerRadiusTopLeftNormal="@dimen/dp_5"
+                app:cornerRadiusTopRightNormal="@dimen/dp_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_18"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:text="糖尿病私人定制服务"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="13dp"
+                    android:text="安全 高效 保障"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+            </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="19.5dp"
+                android:text="服务包介绍"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20.5dp"
+                android:layout_marginTop="17dp"
+                android:text="服务包名称：家庭医生青年包"
+                android:textColor="@color/color_f333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20.5dp"
+                android:layout_marginTop="14.5dp"
+                android:text="服务包时间：三个月"
+                android:textColor="@color/color_f333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20.5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="22dp"
+                android:text="服务包价格：￥199"
+                android:textColor="@color/color_f333"
+                android:textSize="14sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                style="@style/listView"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                tools:listitem="@layout/item_service_detail" />
+
+        </LinearLayout>
+
+    </com.lihang.ShadowLayout>
+
+</LinearLayout>

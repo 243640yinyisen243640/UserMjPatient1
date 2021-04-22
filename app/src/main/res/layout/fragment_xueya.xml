@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/white_fragment_back"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+        <!--血压 测量记录-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout style="@style/hh_wr_wr">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hamnatodynamometer" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:text="血压" />
+
+                <TextView
+                    style="@style/text_gray_12_w_w"
+                    android:text="mmHg"
+                    android:textColor="@color/gray_text" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_test_record"
+                style="@style/text_white_12_w_w"
+                android:layout_alignParentRight="true"
+                android:text="测量记录 >"
+                android:textColor="@color/main_home" />
+
+
+        </RelativeLayout>
+
+        <!--图表-->
+        <com.vice.bloodpressure.view.LineChartInViewPager
+            android:id="@+id/lc_new"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <!--没有数据-->
+        <LinearLayout
+            android:id="@+id/ll_no_data"
+            style="@style/hh_fi_wr"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/home_bmi_no_data_bg_small"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/text_black_12_w_w"
+                android:gravity="center"
+                android:text="暂时没有记录数据，快来记录吧~"
+                android:textColor="@color/main_home" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/grey_fragment_back"
+        android:padding="@dimen/dp_10">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_blood_pressure"
+                style="@style/text_black_14_w_w"
+                android:text="暂无"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/tv_target"
+                style="@style/text_black_12_w_w"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="您的BMI应该控制在18-28" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_black_12_w_w"
+            android:layout_above="@+id/tv_add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:text="暂无" />
+
+
+        <!--记录BMI-->
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_add"
+            style="@style/text_white_12_w_w"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="12dp"
+            android:paddingTop="6dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="6dp"
+            android:text="记录血压"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="90dp" />
+    </RelativeLayout>
+
+</LinearLayout>

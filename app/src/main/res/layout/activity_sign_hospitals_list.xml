@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.homesign.SignHospitalsListActivity">
+
+    <View
+        style="@style/line"
+        android:layout_height="@dimen/dp_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="32.5dp"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_search"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="18.5dp"
+                android:layout_height="18.5dp"
+                android:layout_marginStart="17.5dp"
+                android:src="@drawable/search_icon" />
+
+            <EditText
+                android:id="@+id/et_key"
+                style="@style/et_base_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10.5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="搜索医院名称"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/size_15" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="32.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@drawable/bg_search_button"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_15" />
+
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_hos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_hos"
+            style="@style/listView"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="33dp"
+            tools:listitem="@layout/item_contracted_community_hospitals" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_lv_title"
+        style="@style/text_black_14_f_w"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10"
+        android:text="早餐后" />
+
+    <ListView
+        android:id="@+id/lv_sugar_list"
+        style="@style/listView">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/hh_fi_wr"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_20">
+
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_pic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home_user_my_report" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            style="@style/text_black_14_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="我的报告" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

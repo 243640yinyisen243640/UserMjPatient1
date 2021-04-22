@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_weight="0.8"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_5"
+        app:borderColorNormal="@color/color_dc"
+        app:borderWidthNormal="1dp"
+        app:cornerRadiusNormal="180dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mall_home_search" />
+
+        <TextView
+            style="@style/text_gray_14_f_w"
+            android:text="请输入关键字搜索" />
+
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_shoping_chat"
+        style="@style/hh_wr_wr"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingRight="7dp"
+        android:paddingBottom="@dimen/dp_14">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mall_home_chat" />
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_red_point"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            app:backgroundColorNormal="@color/main_red"
+            app:cornerRadiusNormal="@dimen/dp_10" />
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/img_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:paddingBottom="@dimen/dp_14"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mall_home_cart" />
+
+</LinearLayout>

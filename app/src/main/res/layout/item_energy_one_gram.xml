@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_material_name"
+        style="@style/tv_diet_plan_big"
+        android:text="面粉"
+        android:textSize="@dimen/size_16" />
+
+    <TextView
+        android:id="@+id/tv_material_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="3.62g"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/sp_14" />
+
+</RelativeLayout>

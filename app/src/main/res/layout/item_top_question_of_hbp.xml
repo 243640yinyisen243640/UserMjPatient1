@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:layout_marginRight="@dimen/dp_20"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_10">
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        style="@style/text_white_16_w_w"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="3dp"
+        app:backgroundColorNormal="@color/main_red"
+        app:cornerRadiusNormal="180dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+    <TextView
+        android:id="@+id/tv_question_top_desc"
+        style="@style/text_black_14_w_w"
+        android:text="这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述"
+        android:textColor="@color/color_69" />
+</LinearLayout>

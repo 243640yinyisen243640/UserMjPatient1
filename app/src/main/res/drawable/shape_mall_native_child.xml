@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="-2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
+        <shape>
+            <!--描边-->
+            <stroke
+                android:width="2dp"
+                android:color="@color/main_home" />
+            <!--圆角-->
+            <corners
+                android:topLeftRadius="@dimen/dp_4"
+                android:topRightRadius="@dimen/dp_4" />
+        </shape>
+    </item>
+</layer-list>

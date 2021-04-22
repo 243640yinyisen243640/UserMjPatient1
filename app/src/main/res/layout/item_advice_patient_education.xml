@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_text"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/text_black_16_f_w"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_12"
+        android:text="今天你的血糖值偏高今天你的血糖值偏高今天你的血糖值偏高今天你的血糖值偏高" />
+
+
+    <RelativeLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_gray_14_w_w"
+            android:text="时间" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/text_gray_14_w_w"
+            android:layout_alignParentRight="true"
+            android:text="168/85Mg" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/line"></View>
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <Button
+            android:id="@+id/bt_back_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_btn_back"
+            android:drawableLeft="@drawable/back_green"
+            android:drawablePadding="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_tab"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:tabIndicatorHeight="0dp"
+            app:tabTextAppearance="@style/TabTextTitleSize"
+            app:tabTextColor="@color/main_home" />
+
+
+        <TextView
+            android:id="@+id/tv_more_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/more_bac"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp_10">
+
+
+        <TextView
+            android:id="@+id/tv_bmi_control_target_tips"
+            style="@style/text_black_14_w_w"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="您的血压应该控制在:"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_target"
+            style="@style/text_black_14_w_w"
+            android:textColor="@color/main_home"
+            android:textSize="@dimen/sp_16"
+            tools:text="xxx" />
+
+    </LinearLayout>
+
+
+    <com.vice.bloodpressure.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.vice.bloodpressure.view.NoScrollViewPager>
+
+
+</LinearLayout>

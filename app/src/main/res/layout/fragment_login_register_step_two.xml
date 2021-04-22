@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingTop="@dimen/dp_18"
+    android:paddingRight="@dimen/dp_18"
+    android:paddingBottom="@dimen/dp_18">
+
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_green" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="60dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="输入验证码"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_register_phone_number"
+            style="@style/text_gray_12_w_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="短信验证码已发送至 ＋86 177****7254" />
+
+
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_40">
+
+
+            <EditText
+                android:id="@+id/et_input_register_code"
+                style="@style/et_base_style_no_bg"
+                android:hint="输入验证码"
+                android:inputType="number"
+                android:maxLength="4"
+                android:visibility="visible" />
+
+            <com.wei.android.lib.colorview.view.ColorTextView
+                android:id="@+id/tv_register_time"
+                style="@style/text_gray_12_w_w"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/dp_14"
+                android:paddingTop="5dp"
+                android:paddingRight="@dimen/dp_14"
+                android:paddingBottom="5dp"
+                android:text="60s"
+                android:textSize="10sp"
+                app:backgroundColorNormal="@color/white"
+                app:borderColorNormal="@color/gray_text"
+                app:borderWidthNormal="1dp"
+                app:cornerRadiusNormal="2dp">
+
+
+            </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/line"
+            android:layout_marginTop="@dimen/dp_10">
+
+        </View>
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_register"
+            style="@style/text_gray_14_f_w"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="确定"
+            app:backgroundColorNormal="@color/color_eb"
+            app:cornerRadiusNormal="@dimen/dp_2">
+
+
+        </com.wei.android.lib.colorview.view.ColorTextView>
+
+        <TextView
+            style="@style/text_gray_12_f_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:text="没收到验证码 ?倒计时结束后可重新获取" />
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/cb_register_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_register_agreement"
+                style="@style/text_black_14_w_w"
+                android:text="我已阅读并同意《用户协议》" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+

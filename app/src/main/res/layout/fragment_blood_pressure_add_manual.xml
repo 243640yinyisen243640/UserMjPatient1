@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lsp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:id="@+id/tv_first_left"
+                style="@style/text_black_14_w_w"
+                android:text="收缩压"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/tv_high"
+                style="@style/text_black_14_w_w"
+                android:layout_centerInParent="true"
+                android:text="140"
+                android:textColor="@color/main_home"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:id="@+id/tv_first_right"
+                style="@style/text_black_14_w_w"
+                android:layout_alignParentRight="true"
+                android:text="mmHg"
+                android:textSize="@dimen/sp_16" />
+
+        </RelativeLayout>
+
+
+        <com.lsp.RulerView
+            android:id="@+id/ruler_view_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            lsp:bgColor="@color/background"
+            lsp:firstScale="140"
+            lsp:isBgRoundRect="true"
+            lsp:largeScaleColor="@color/main_home"
+            lsp:largeScaleStroke="5dp"
+            lsp:maxScale="250"
+            lsp:midScaleColor="@color/gray_text"
+            lsp:midScaleStroke="3dp"
+            lsp:minScale="0"
+            lsp:resultNumColor="@color/main_home"
+            lsp:resultNumTextSize="20sp"
+            lsp:rulerHeight="60dp"
+            lsp:rulerToResultgap="8dp"
+            lsp:scaleCount="10"
+            lsp:scaleGap="10dp"
+            lsp:scaleLimit="10"
+            lsp:scaleNumColor="@color/color_666"
+            lsp:scaleNumTextSize="16sp"
+            lsp:showScaleResult="false"
+            lsp:smallScaleColor="@color/color_aaa"
+            lsp:smallScaleStroke="2dp"
+            lsp:unit="cm"
+            lsp:unitColor="@color/main_home"
+            lsp:unitTextSize="10sp" />
+
+    </LinearLayout>
+
+    <!-- <View style="@style/line"></View>-->
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                android:id="@+id/tv_second_left"
+                style="@style/text_black_14_w_w"
+                android:text="舒张压"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/tv_low"
+                style="@style/text_black_14_w_w"
+                android:layout_centerInParent="true"
+                android:text="90"
+                android:textColor="@color/main_home"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:id="@+id/tv_second_right"
+                style="@style/text_black_14_w_w"
+                android:layout_alignParentRight="true"
+                android:text="mmHg"
+                android:textSize="@dimen/sp_16" />
+
+        </RelativeLayout>
+
+
+        <com.lsp.RulerView
+            android:id="@+id/ruler_view_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            lsp:bgColor="@color/background"
+            lsp:firstScale="90"
+            lsp:isBgRoundRect="true"
+            lsp:largeScaleColor="@color/main_home"
+            lsp:largeScaleStroke="5dp"
+            lsp:maxScale="220"
+            lsp:midScaleColor="@color/gray_text"
+            lsp:midScaleStroke="3dp"
+            lsp:minScale="0"
+            lsp:resultNumColor="@color/main_home"
+            lsp:resultNumTextSize="20sp"
+            lsp:rulerHeight="60dp"
+            lsp:rulerToResultgap="8dp"
+            lsp:scaleCount="10"
+            lsp:scaleGap="10dp"
+            lsp:scaleLimit="10"
+            lsp:scaleNumColor="@color/color_666"
+            lsp:scaleNumTextSize="16sp"
+            lsp:showScaleResult="false"
+            lsp:smallScaleColor="@color/color_aaa"
+            lsp:smallScaleStroke="2dp"
+            lsp:unit="cm"
+            lsp:unitColor="@color/main_home"
+            lsp:unitTextSize="10sp" />
+
+    </LinearLayout>
+
+    <!--    <View style="@style/line"></View>-->
+
+    <LinearLayout
+        android:id="@+id/ll_select_time"
+        style="@style/hh_fi_wr"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_black_14_f_w"
+            android:layout_weight="0.8"
+            android:text="检测时间"
+            android:textSize="@dimen/sp_16" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_black_14_w_w"
+            android:layout_marginRight="10dp"
+            android:hint="请选择检测时间"
+            android:textColorHint="@color/gray_text"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/greensanjiao" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bmi_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_bmi_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifty"
+            android:layout_marginRight="@dimen/fifty"
+            android:background="@drawable/save_button"
+            android:text="了解什么是BMI"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

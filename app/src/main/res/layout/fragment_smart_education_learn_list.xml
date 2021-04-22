@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:id="@+id/ll_learn_total_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:padding="@dimen/dp_15"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="@dimen/dp_5">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center_horizontal"
+                android:text="已学时间"
+                android:textColor="@color/white_text" />
+
+            <TextView
+                android:id="@+id/tv_learn_total_time"
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0分钟"
+                android:textColor="@color/white_text"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_learn_course"
+            style="@style/hh_fi_wr"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center_horizontal"
+                android:text="已学课程"
+                android:textColor="@color/white_text" />
+
+            <TextView
+                android:id="@+id/tv_learn_course"
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0课程"
+                android:textColor="@color/white_text"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+
+    <!--有数据-->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_learn_list"
+        style="@style/hh_fi_fi">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_learn_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <!--空页面-->
+    <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home_sport_list_empty" />
+
+        <TextView
+            style="@style/text_gray_12_w_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="暂时没有内容，先看看其他的吧！"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

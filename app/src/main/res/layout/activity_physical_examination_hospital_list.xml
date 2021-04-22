@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10">
+
+
+        <com.wei.android.lib.colorview.view.ColorLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            app:backgroundColorNormal="@color/white"
+            app:borderColorNormal="#BFBFBF"
+            app:borderWidthNormal="1dp"
+            app:cornerRadiusNormal="@dimen/dp_5">
+
+            <EditText
+                android:id="@+id/et_search_hospital_name"
+                style="@style/et_base_style_no_bg"
+                android:drawableLeft="@drawable/physical_examination_search"
+                android:drawablePadding="@dimen/dp_10"
+                android:hint="搜索医院名称"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="@dimen/dp_18"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textColor="@color/black" />
+
+
+        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_search"
+            style="@style/text_white_14_w_w"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="5dp"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="7dp"
+            android:text="搜索"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="@dimen/dp_5" />
+
+    </LinearLayout>
+
+    <!--列表-->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_list"
+        style="@style/hh_fi_fi">
+
+        <ListView
+            android:id="@+id/lv_list"
+            style="@style/listView">
+
+        </ListView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <!--为空-->
+    <include layout="@layout/include_default_no_data" />
+
+
+</LinearLayout>

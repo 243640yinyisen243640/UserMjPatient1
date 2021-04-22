@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/hh_fi_wr"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--上分隔线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sugar_divider" />
+
+    <!--中间内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <View style="@style/seven_vertical_line_for_seven_blood_sugar" />
+        <!--天数-->
+        <TextView
+            style="@style/three_vertical_tv_for_seven_blood_sugar"
+            android:text="天数" />
+
+        <View style="@style/seven_vertical_line_for_seven_blood_sugar" />
+        <!--凌晨-->
+        <TextView
+            style="@style/three_vertical_tv_for_seven_blood_sugar"
+            android:text="凌晨" />
+
+        <View style="@style/seven_vertical_line_for_seven_blood_sugar" />
+
+        <!--早餐 前后 -->
+        <LinearLayout style="@style/three_ll_vertical_for_seven_blood_sugar">
+
+            <TextView
+                style="@style/three_top_tv_for_seven_blood_sugar"
+                android:text="早餐" />
+
+            <View
+                style="@style/line"
+                android:background="@color/sugar_divider" />
+
+            <LinearLayout style="@style/three_bottom_ll__for_seven_blood_sugar">
+
+                <TextView
+                    style="@style/six_bottom_tv_for_seven_blood_sugar"
+                    android:text="空腹" />
+
+                <View
+                    style="@style/line"
+                    android:layout_width="1dp"
+                    android:layout_height="25.5dp"
+                    android:background="@color/sugar_divider" />
+
+                <TextView
+                    style="@style/six_bottom_tv_for_seven_blood_sugar"
+                    android:text="后" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View style="@style/seven_vertical_line_for_seven_blood_sugar" />
+
+        <!--午餐 前 后-->
+        <LinearLayout style="@style/three_ll_vertical_for_seven_blood_sugar">
+
+            <TextView
+                style="@style/three_top_tv_for_seven_blood_sugar"
+                android:text="午餐" />
+
+            <View
+                style="@style/line"
+                android:background="@color/sugar_divider" />
+
+            <LinearLayout style="@style/three_bottom_ll__for_seven_blood_sugar">
+
+                <TextView
+                    style="@style/six_bottom_tv_for_seven_blood_sugar"
+                    android:text="前" />
+
+                <View
+                    style="@style/line"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/sugar_divider" />
+
+                <TextView
+                    style="@style/six_bottom_tv_for_seven_blood_sugar"
+                    android:text="后" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View style="@style/seven_vertical_line_for_seven_blood_sugar" />
+
+        <!--晚餐 前 后-->
+        <LinearLayout style="@style/three_ll_vertical_for_seven_blood_sugar">
+
+            <TextView
+                style="@style/three_top_tv_for_seven_blood_sugar"
+                android:text="晚餐" />
+
+            <View
+                style="@style/line"
+                android:background="@color/sugar_divider" />
+
+            <LinearLayout style="@style/three_bottom_ll__for_seven_blood_sugar">
+
+                <TextView
+                    style="@style/six_bottom_tv_for_seven_blood_sugar"
+                    android:text="前" />
+
+                <View
+                    style="@style/line"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/sugar_divider" />
+
+                <TextView
+                    style="@style/six_bottom_tv_for_seven_blood_sugar"
+                    android:text="后" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View style="@style/seven_vertical_line_for_seven_blood_sugar" />
+
+        <!--睡前-->
+        <TextView
+            style="@style/three_vertical_tv_for_seven_blood_sugar"
+            android:text="睡前" />
+
+        <View style="@style/seven_vertical_line_for_seven_blood_sugar" />
+    </LinearLayout>
+
+    <!--下分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sugar_divider" />
+
+</LinearLayout>

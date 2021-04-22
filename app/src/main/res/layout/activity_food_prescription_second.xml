@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <!--头部-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:text="日常饮食"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingTop="@dimen/dp_5"
+                android:text="(请估算一下每天摄入的饮食量， 1两=50克) 根据您的饮食状况为您提供合理控糖饮食方案" />
+
+        </LinearLayout>
+
+
+        <!--谷署类-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="谷薯类"
+                android:textStyle="bold" />
+
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_rice"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_rice_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="添加新组" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/food_prescription_add" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--蔬菜类-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="蔬菜类"
+                android:textStyle="bold" />
+
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_vegetables"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_vegetables_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="添加新组" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/food_prescription_add" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--水果类-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="水果类"
+                android:textStyle="bold" />
+
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_fruit"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_fruit_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="添加新组" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/food_prescription_add" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--豆制品-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="豆制品"
+                android:textStyle="bold" />
+
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_beans"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_beans_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="添加新组" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/food_prescription_add" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--肉蛋-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="肉蛋"
+                android:textStyle="bold" />
+
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_meat_egg"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_meat_egg_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="添加新组" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/food_prescription_add" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--奶制品-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="奶制品"
+                android:textStyle="bold" />
+
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_milk"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_milk_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="添加新组" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/food_prescription_add" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--油脂-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="油脂"
+                android:textStyle="bold" />
+
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_oil"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+        </LinearLayout>
+        <!--坚果-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="坚果类"
+                android:textStyle="bold" />
+
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_nut"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_nut_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="添加新组" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/food_prescription_add" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--酒类-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="酒类"
+                android:textStyle="bold" />
+
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_wine"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+        </LinearLayout>
+
+
+        <!--下一步-->
+        <com.wei.android.lib.colorview.view.ColorButton
+            android:id="@+id/bt_next"
+            style="@style/text_white_16_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="下一步"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="90dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

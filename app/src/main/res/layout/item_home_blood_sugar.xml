@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="32.5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_height="32dp">
+
+        <View style="@style/line_home_blood_sugar" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_black_14_w_w"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="05-06"
+            android:textSize="13sp" />
+
+        <View style="@style/line_home_blood_sugar" />
+
+        <!--凌晨-->
+
+        <FrameLayout
+            android:id="@+id/fl_before_dawn"
+            style="@style/rl_seven_and_thirty_home"
+            android:background="@color/home_blood_sugar_item_bg">
+
+            <TextView
+                android:id="@+id/tv_before_dawn"
+                style="@style/tv_seven_and_thirty"
+                android:text="123" />
+
+
+            <ImageView
+                android:id="@+id/img_before_dawn_more"
+                style="@style/img_seven_and_thirty_home"
+                android:src="@drawable/right_angled_triangle" />
+
+        </FrameLayout>
+
+
+        <View style="@style/line_home_blood_sugar" />
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/hh_fi_wr">
+
+                <!--早餐前-->
+                <FrameLayout
+                    android:id="@+id/fl_before_breakfast"
+                    style="@style/rl_seven_and_thirty_home">
+
+                    <TextView
+                        android:id="@+id/tv_before_breakfast"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="123" />
+
+
+                    <ImageView
+                        android:id="@+id/img_before_breakfast_more"
+                        style="@style/img_seven_and_thirty_home"
+                        android:src="@drawable/right_angled_triangle" />
+
+                </FrameLayout>
+
+
+                <View style="@style/line_home_blood_sugar" />
+                <!--早餐后-->
+
+
+                <FrameLayout
+                    android:id="@+id/fl_after_breakfast"
+                    style="@style/rl_seven_and_thirty_home">
+
+                    <TextView
+                        android:id="@+id/tv_after_breakfast"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="123" />
+
+
+                    <ImageView
+                        android:id="@+id/img_after_breakfast_more"
+                        style="@style/img_seven_and_thirty_home"
+                        android:src="@drawable/right_angled_triangle" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View style="@style/line_home_blood_sugar" />
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/hh_fi_wr">
+
+                <!--午餐前-->
+                <FrameLayout
+                    android:id="@+id/fl_before_lunch"
+                    style="@style/rl_seven_and_thirty_home"
+                    android:background="@color/home_blood_sugar_item_bg">
+
+                    <TextView
+                        android:id="@+id/tv_before_lunch"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="123" />
+
+
+                    <ImageView
+                        android:id="@+id/img_before_lunch_more"
+                        style="@style/img_seven_and_thirty_home"
+                        android:src="@drawable/right_angled_triangle" />
+
+                </FrameLayout>
+
+
+                <View style="@style/line_home_blood_sugar" />
+                <!--午餐后-->
+                <FrameLayout
+                    android:id="@+id/fl_after_launch"
+                    style="@style/rl_seven_and_thirty_home"
+                    android:background="@color/home_blood_sugar_item_bg">
+
+                    <TextView
+                        android:id="@+id/tv_after_launch"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="123" />
+
+
+                    <ImageView
+                        android:id="@+id/img_after_launch_more"
+                        style="@style/img_seven_and_thirty_home"
+                        android:src="@drawable/right_angled_triangle" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View style="@style/line_home_blood_sugar" />
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/hh_fi_wr">
+
+                <!--晚餐前-->
+                <FrameLayout
+                    android:id="@+id/fl_before_dinner"
+                    style="@style/rl_seven_and_thirty_home">
+
+                    <TextView
+                        android:id="@+id/tv_before_dinner"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="123" />
+
+
+                    <ImageView
+                        android:id="@+id/img_before_dinner_more"
+                        style="@style/img_seven_and_thirty_home"
+                        android:src="@drawable/right_angled_triangle" />
+
+                </FrameLayout>
+
+
+                <View style="@style/line_home_blood_sugar" />
+                <!--晚餐后-->
+
+                <FrameLayout
+                    android:id="@+id/fl_after_dinner"
+                    style="@style/rl_seven_and_thirty_home">
+
+                    <TextView
+                        android:id="@+id/tv_after_dinner"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="123" />
+
+
+                    <ImageView
+                        android:id="@+id/img_after_dinner_more"
+                        style="@style/img_seven_and_thirty_home"
+                        android:src="@drawable/right_angled_triangle" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View style="@style/line_home_blood_sugar" />
+        <!--睡前-->
+        <FrameLayout
+            android:id="@+id/fl_after_sleep"
+            style="@style/rl_seven_and_thirty_home"
+            android:background="@color/home_blood_sugar_item_bg">
+
+            <TextView
+                android:id="@+id/tv_after_sleep"
+                style="@style/tv_seven_and_thirty"
+                android:text="123" />
+
+
+            <ImageView
+                android:id="@+id/img_after_sleep_more"
+                style="@style/img_seven_and_thirty_home"
+                android:src="@drawable/right_angled_triangle" />
+
+        </FrameLayout>
+
+
+        <View style="@style/line_home_blood_sugar" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/sugar_divider_home" />
+</LinearLayout>
+
+

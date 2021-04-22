@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/img_top_back"
+            style="@style/hh_wr_wr"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_12"
+            android:src="@drawable/back_green" />
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            style="@style/text_white_16_w_w"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/main_home"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:text="标题" />
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_reset"
+                style="@style/text_white_16_w_w"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_12"
+                android:text="重输"
+                android:textColor="@color/main_home"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                style="@style/text_white_16_w_w"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_12"
+                android:text="保存"
+                android:textColor="@color/main_home" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/hh_fi_fi"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/bg_home_sign">
+
+        <com.f1reking.signatureview.SignatureView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

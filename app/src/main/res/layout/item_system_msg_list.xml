@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <ImageView
+                android:id="@+id/img_pic"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/system_msg_icon_doctor" />
+
+
+            <com.wei.android.lib.colorview.view.ColorTextView
+                android:id="@+id/tv_red_point"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_gravity="right"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="-5dp"
+                app:backgroundColorNormal="@color/main_red"
+                app:cornerRadiusNormal="@dimen/dp_10" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/text_black_14_f_w"
+                    android:layout_weight="0.8"
+                    android:text="血糖方案" />
+
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/text_gray_12_w_w"
+                    android:drawableRight="@drawable/system_msg_right_arrow"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="2020/10/27" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="您的血糖方案已完成，请查看。您的血糖方案已完成，请查看。您的血糖方案已完成，请查看。您的血糖方案已完成，请查看。"
+                android:textSize="@dimen/size_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10" />
+
+
+</LinearLayout>

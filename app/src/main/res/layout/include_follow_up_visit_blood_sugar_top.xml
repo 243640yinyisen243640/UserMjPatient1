@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/follow_up_visit_top" />
+
+    <!--随访问卷头部时间-->
+    <include layout="@layout/include_follow_up_visit_top">
+
+    </include>
+
+
+    <!--随访问卷 图片-->
+    <include layout="@layout/include_follow_up_visit_question_naire">
+
+    </include>
+
+</FrameLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:lsp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_diet_plan_question_title_and_desc" />
+
+
+    <!--身高-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_25"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+
+            <TextView
+                android:id="@+id/tv_height"
+                style="@style/text_black_14_w_w"
+                android:layout_centerInParent="true"
+                android:text="170"
+                android:textColor="@color/main_home"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_alignParentRight="true"
+                android:text="cm"
+                android:textSize="@dimen/sp_16" />
+
+        </RelativeLayout>
+
+
+        <com.lsp.RulerView
+            android:id="@+id/ruler_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            lsp:bgColor="@color/background"
+            lsp:firstScale="170"
+            lsp:isBgRoundRect="true"
+            lsp:largeScaleColor="@color/main_home"
+            lsp:largeScaleStroke="5dp"
+            lsp:maxScale="270"
+            lsp:midScaleColor="@color/gray_text"
+            lsp:midScaleStroke="3dp"
+            lsp:minScale="0"
+            lsp:resultNumColor="@color/main_home"
+            lsp:resultNumTextSize="20sp"
+            lsp:rulerHeight="60dp"
+            lsp:rulerToResultgap="8dp"
+            lsp:scaleCount="10"
+            lsp:scaleGap="10dp"
+            lsp:scaleLimit="10"
+            lsp:scaleNumColor="@color/color_666"
+            lsp:scaleNumTextSize="16sp"
+            lsp:showScaleResult="false"
+            lsp:smallScaleColor="@color/color_aaa"
+            lsp:smallScaleStroke="2dp"
+            lsp:unit="cm"
+            lsp:unitColor="@color/main_home"
+            lsp:unitTextSize="10sp" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="您的体重是？" />
+    <!--体重-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+
+            <TextView
+                android:id="@+id/tv_weight"
+                style="@style/text_black_14_w_w"
+                android:layout_centerInParent="true"
+                android:text="60"
+                android:textColor="@color/main_home"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_alignParentRight="true"
+                android:text="kg"
+                android:textSize="@dimen/sp_16" />
+
+        </RelativeLayout>
+
+
+        <com.lsp.RulerView
+            android:id="@+id/ruler_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            lsp:bgColor="@color/background"
+            lsp:firstScale="60"
+            lsp:isBgRoundRect="true"
+            lsp:largeScaleColor="@color/main_home"
+            lsp:largeScaleStroke="5dp"
+            lsp:maxScale="300"
+            lsp:midScaleColor="@color/gray_text"
+            lsp:midScaleStroke="3dp"
+            lsp:minScale="0"
+            lsp:resultNumColor="@color/main_home"
+            lsp:resultNumTextSize="20sp"
+            lsp:rulerHeight="60dp"
+            lsp:rulerToResultgap="8dp"
+            lsp:scaleCount="10"
+            lsp:scaleGap="10dp"
+            lsp:scaleLimit="10"
+            lsp:scaleNumColor="@color/color_666"
+            lsp:scaleNumTextSize="16sp"
+            lsp:showScaleResult="false"
+            lsp:smallScaleColor="@color/color_aaa"
+            lsp:smallScaleStroke="2dp"
+            lsp:unit="cm"
+            lsp:unitColor="@color/main_home"
+            lsp:unitTextSize="10sp" />
+
+    </LinearLayout>
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_next"
+        style="@style/diet_plan_question_tv_next"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="下一步"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="3dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+</LinearLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+
+        <!--药品名称-->
+        <RelativeLayout
+            android:id="@+id/rl_medicine_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/thirteen">
+
+            <TextView
+                android:id="@+id/tv_pharmacy_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/pharmacy_name"
+                android:textSize="@dimen/fifteen" />
+
+            <com.vice.bloodpressure.view.SearchEditText
+                android:id="@+id/et_pharmacy_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/tv_pharmacy_name"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入药品名"
+                android:textSize="@dimen/fifteen" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+        <!--服用次数-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/thirteen">
+
+            <TextView
+                android:id="@+id/tv_pharmacy_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="服用次数(日)"
+                android:textSize="@dimen/fifteen" />
+
+            <EditText
+                android:id="@+id/et_pharmacy_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_pharmacy_unit"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入服药次数"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/fifteen" />
+
+            <TextView
+                android:id="@+id/tv_pharmacy_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:text="次"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+        <!--用药剂量-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/thirteen">
+
+            <TextView
+                android:id="@+id/tv_pharmacy_dosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="用药剂量(次)"
+                android:textSize="@dimen/fifteen" />
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_toRightOf="@+id/tv_pharmacy_dosage"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/et_pharmacy_dosage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.8"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请输入服药剂量"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/fifteen" />
+
+                <LinearLayout
+                    android:id="@+id/ll_spinner"
+                    style="@style/hh_wr_wr"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_home" />
+
+                    <Spinner
+                        android:id="@+id/spinner_pharmacy_dosage"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/et_pharmacy_dosage"
+                        android:background="@drawable/fanhui"
+                        android:overlapAnchor="false"
+                        android:paddingRight="10dp"
+                        android:spinnerMode="dropdown">
+
+                    </Spinner>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_start_end_time"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical">
+            <!--开始时间-->
+            <LinearLayout
+                android:id="@+id/rl_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/thirteen">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:text="开始用药时间"
+                    android:textSize="@dimen/fifteen" />
+
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="请选择开始用药时间"
+                        android:textSize="@dimen/fifteen" />
+
+                    <ImageView
+                        android:id="@+id/img_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:src="@drawable/greensanjiao"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--结束时间-->
+            <LinearLayout
+                android:id="@+id/rl_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/thirteen">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:text="结束用药时间"
+                    android:textSize="@dimen/fifteen" />
+
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:hint="请选择结束用药时间"
+                        android:textSize="@dimen/fifteen" />
+
+                    <ImageView
+                        android:id="@+id/img_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:src="@drawable/greensanjiao"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--用药时间-->
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/thirteen">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:text="用药时间"
+                android:textSize="@dimen/fifteen" />
+
+
+            <LinearLayout
+                style="@style/hh_wr_wr"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请选择用药时间"
+                    android:textSize="@dimen/fifteen" />
+
+                <ImageView
+                    android:id="@+id/img_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:src="@drawable/greensanjiao" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

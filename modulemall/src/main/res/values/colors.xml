@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_text_03">#ffb1b7be</color>
+    <color name="color_dc">#DCDCDC</color>
+    <color name="color_96">#969696</color>
+    <color name="color_f3">#F3F3F3</color>
+    <color name="color_red">#FE403F</color>
+    <color name="color_gray">#EEEEEE</color>
+    <color name="color_green_light">#04E496</color>
+    <color name="color_green">#00C27F</color>
+    <color name="color_background">#F5F5F5</color>
+
+    <color name="appColorPrimary">#FFD022</color>
+    <color name="appColorPrimaryDark">#FFD022</color>
+    <color name="appColorAccent">#FFD022</color>
+</resources>

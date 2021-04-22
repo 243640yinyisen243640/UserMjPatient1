@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/include_diet_plan_question_title_and_desc" />
+
+
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_marginTop="44dp">
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_marginRight="@dimen/dp_30"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dit_plan_man_un_check" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:text="男" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dit_plan_woman_uncheck" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:text="女" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_next"
+        style="@style/diet_plan_question_tv_next"
+        android:layout_marginTop="130dp"
+        android:text="下一步"
+        android:textColor="@color/color_666"
+        app:backgroundColorNormal="@color/color_eb"
+        app:cornerRadiusNormal="3dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+</LinearLayout>

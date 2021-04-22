@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingTop="18dp"
+    android:paddingRight="@dimen/dp_18"
+    android:paddingBottom="@dimen/dp_18">
+
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_green" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="60dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:text="绑定身份证"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/et_input_id_card"
+        style="@style/et_base_style_no_bg"
+        android:layout_marginTop="@dimen/dp_20"
+        android:hint="请输入身份证号"
+        android:maxLength="18" />
+
+    <TextView
+        style="@style/text_gray_12_w_w"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="完成身份证号绑定后，后期检测都可通过身份证来完成" />
+
+    <View
+        style="@style/line"
+        android:layout_marginTop="@dimen/dp_10" />
+
+
+    <TextView
+        android:id="@+id/tv_jump"
+        style="@style/text_gray_12_w_w"
+        android:layout_gravity="right"
+        android:padding="@dimen/dp_10"
+        android:text="跳过"
+        android:textColor="@color/main_home" />
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_bind"
+        style="@style/text_gray_14_f_w"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="绑定"
+        app:backgroundColorNormal="@color/color_eb"
+        app:cornerRadiusNormal="@dimen/dp_2">
+
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--搜索-->
+    <include layout="@layout/include_healthy_diet_search" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/text_gray_14_f_w"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/diet_plan_select_food_attention"
+        android:drawablePadding="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        android:text="为了您的健康，建议您每餐每类食物最多选择一种喜好食物" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tbl_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/main_home"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/dp_2"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/main_home"
+        app:tabTextAppearance="@style/TabTextTitleSizeDietList"
+        app:tabTextColor="@color/black_text"
+        app:tabUnboundedRipple="false">
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" /><!-- 填充颜色 -->
+    <stroke
+        android:width="0.1mm"
+        android:color="@color/login_background" /><!-- 描边，边框宽度、颜色 -->
+</shape>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vice.bloodpressure.view.SwipeListLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/size_13">
+
+        <TextView
+            android:id="@+id/tv_food_name"
+            style="@style/text_black_14_w_w"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="大米"
+            android:textSize="@dimen/size_15" />
+
+        <TextView
+            android:id="@+id/tv_food_kcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/tv_food_Kcal_name"
+            android:text="0"
+            android:textColor="@color/food_add"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_food_Kcal_name"
+            style="@style/text_black_14_w_w"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_toLeftOf="@+id/ll_et_food_count"
+            android:text="大卡" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_et_food_count"
+            style="@style/hh_wr_wr"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/et_food_count"
+                style="@style/et_base_style_no_bg"
+                android:layout_width="wrap_content"
+                android:hint="请输入"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingRight="@dimen/dp_5"
+                android:textColor="@color/food_add"
+                android:textSize="@dimen/size_15" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="g"
+                android:textSize="@dimen/size_15" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</com.vice.bloodpressure.view.SwipeListLayout>

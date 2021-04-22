@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/iv_top_back"
+            style="@style/hh_wr_wr"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_12"
+            android:src="@drawable/back_green" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_toRightOf="@+id/iv_top_back"
+            android:background="@drawable/search_med"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="@dimen/dp_10"
+            android:hint="请输入药品关键字"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_6"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+    <!--历史删除是否显示-->
+    <LinearLayout
+        android:id="@+id/ll_history"
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_black_16_w_w"
+                android:layout_centerVertical="true"
+                android:text="您最近的搜索:" />
+
+            <TextView
+                android:id="@+id/tv_clear"
+                style="@style/text_black_14_w_w"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_10"
+                android:text="清空历史"
+                android:textColor="@color/main_home" />
+
+
+        </RelativeLayout>
+
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/tfl_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="8dp"
+            zhy:max_select="0">
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

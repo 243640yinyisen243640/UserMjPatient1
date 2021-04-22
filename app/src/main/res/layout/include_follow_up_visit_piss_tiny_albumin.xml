@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_piss_tiny_albumin"
+    style="@style/ll_follow_up_visit_include_item">
+
+    <!--血脂-->
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_marginLeft="@dimen/dp_12">
+
+        <com.wei.android.lib.colorview.view.ColorView
+            android:layout_width="2dp"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="center"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="1dp">
+
+        </com.wei.android.lib.colorview.view.ColorView>
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:text="尿微量白蛋白"
+            android:textColor="@color/main_home" />
+
+
+    </LinearLayout>
+
+    <!--尿微量白蛋白-->
+    <LinearLayout
+        style="@style/ll_follow_up_visit_blood_fat"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_width="100dp"
+            android:text="尿微量白蛋白" />
+
+
+        <com.wei.android.lib.colorview.view.ColorEditText
+            android:id="@+id/et_piss_tiny_albumin"
+            style="@style/et_follow_up_visit_blood_fat"
+            android:layout_width="80dp" />
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="mg/L" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

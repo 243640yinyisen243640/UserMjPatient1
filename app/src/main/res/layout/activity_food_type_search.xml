@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <!--标题栏-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginRight="@dimen/dp_14"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_mall_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_14"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_back_green" />
+
+        <com.wei.android.lib.colorview.view.ColorLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            app:borderColorNormal="@color/color_dc"
+            app:borderWidthNormal="1dp"
+            app:cornerRadiusNormal="180dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mall_home_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                style="@style/et_base_style_no_bg"
+                android:layout_weight="0.8"
+                android:hint="输入你要“搜索”的内容" />
+
+
+            <ImageView
+                android:id="@+id/img_search_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mall_search_del"
+                android:visibility="gone" />
+
+
+        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

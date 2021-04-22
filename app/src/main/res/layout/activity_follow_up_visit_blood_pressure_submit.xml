@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/hh_fi_fi">
+
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/bt_back_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_btn_back"
+            android:drawableLeft="@drawable/back_green"
+            android:drawablePadding="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/tv_page_title"
+            style="@style/text_white_16_w_w"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/main_home"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/more_bac"
+            android:text="保存"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <!--内容-->
+    <ScrollView
+        style="@style/scrollView"
+        android:layout_below="@id/rl_title_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!--背景图和随访问卷时间和随访问券四个字-->
+            <include layout="@layout/include_follow_up_visit_blood_pressure_top" />
+
+
+            <!--十五项 甚是可怕???-->
+
+            <!--总结-->
+            <include
+                layout="@layout/include_follow_up_visit_summary"
+                android:visibility="gone">
+
+            </include>
+
+
+            <!--症状-->
+            <include
+                layout="@layout/include_follow_up_visit_symptom"
+                android:visibility="gone">
+
+            </include>
+
+            <!--体征-->
+            <include
+                layout="@layout/include_follow_up_visit_physical_sign_copy"
+                android:visibility="gone">
+
+            </include>
+
+            <!--生活方式-->
+            <include
+                layout="@layout/include_follow_up_visit_life_style_copy"
+                android:visibility="gone">
+
+            </include>
+            <!--辅助检查-->
+            <include
+                layout="@layout/include_follow_up_visit_drug_use_condition_copy"
+                android:visibility="gone">
+
+            </include>
+            <!--用药情况-->
+            <include
+                layout="@layout/include_follow_up_visit_drug_use_blood_pressure"
+                android:visibility="gone">
+
+            </include>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/line" />
+
+
+    <!--绑定手机号-->
+    <LinearLayout
+        android:id="@+id/ll_bind"
+        style="@style/hh_fi_wr"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:visibility="gone">
+
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="当前绑定手机号" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/text_gray_14_w_w"
+            android:layout_marginTop="@dimen/dp_14"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="13213071373" />
+
+
+        <View style="@style/line" />
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_change_phone"
+            style="@style/text_white_16_f_w"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_18"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="更换手机号"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="@dimen/dp_4" />
+
+
+    </LinearLayout>
+
+    <!--未绑定手机号-->
+    <LinearLayout
+        android:id="@+id/ll_not_bind"
+        style="@style/hh_fi_fi"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_img_not_bind_phone" />
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_bind_phone"
+            style="@style/text_white_16_f_w"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_18"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="绑定手机号"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="@dimen/dp_4" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="home_sign_relation">
+        <item>户主</item>
+        <item>配偶</item>
+        <item>子</item>
+        <item>儿媳</item>
+        <item>女</item>
+        <item>女婿</item>
+        <item>外(孙)子女</item>
+        <item>其他</item>
+    </array>
+
+    <array name="follow_up_visit_seven_blood_sugar">
+        <item>第一天</item>
+        <item>第二天</item>
+        <item>第三天</item>
+        <item>第四天</item>
+        <item>第五天</item>
+        <item>第六天</item>
+        <item>第七天</item>
+    </array>
+    <array name="follow_up_visit_medicine_name">
+        <item>药品名称1</item>
+        <item>药品名称2</item>
+        <item>药品名称3</item>
+        <item>其它药物</item>
+    </array>
+    <array name="follow_up_visit_blood_sugar_symptom">
+        <item>无症状</item>
+        <item>多饮</item>
+        <item>多食</item>
+        <item>多尿</item>
+        <item>感染</item>
+        <item>视力模糊</item>
+        <item>手脚麻木</item>
+        <item>下肢水肿</item>
+    </array>
+
+    <array name="follow_up_visit_blood_pressure_symptom">
+        <item>无症状</item>
+        <item>头痛头晕</item>
+        <item>恶心呕吐</item>
+        <item>眼花耳鸣</item>
+        <item>呼吸困难</item>
+        <item>心悸胸闷</item>
+        <item>四肢发麻</item>
+        <item>下肢水肿</item>
+        <item>鼻出血不止</item>
+    </array>
+    <array name="blood_pressure_title">
+        <item>记录血压</item>
+        <!--<item>智能记录</item>-->
+    </array>
+
+    <array name="bmi_add_title">
+        <item>记录BMI</item>
+        <!--<item>智能记录</item>-->
+    </array>
+
+    <array name="health_record_title">
+        <item>7天</item>
+        <item>30天</item>
+    </array>
+    <array name="follow_up_visit_title">
+        <item>糖尿病</item>
+        <item>高血压</item>
+        <item>肝病</item>
+    </array>
+    <array name="follow_up_visit_title_no_liver">
+        <item>糖尿病</item>
+        <item>高血压</item>
+    </array>
+
+    <array name="my_collect_title">
+        <item>资讯</item>
+        <item>商品</item>
+    </array>
+    <array name="data_sugar_have_symptom_more">
+        <item>无</item>
+        <item>I期</item>
+        <item>II期</item>
+        <item>III期</item>
+        <item>IV期</item>
+        <item>V期</item>
+    </array>
+    <array name="data_sugar_have_symptom">
+        <item>I期</item>
+        <item>II期</item>
+        <item>III期</item>
+        <item>IV期</item>
+        <item>V期</item>
+    </array>
+    <array name="data_sugar_no_symptom">
+        <item>无症状</item>
+        <item>泡沫尿，下肢或颜面部水肿</item>
+    </array>
+
+    <array name="data_retina_have_symptom">
+        <item>视物模糊，重影，“飞蚊症"，视力下降或失明等</item>
+        <item>无症状</item>
+    </array>
+
+    <array name="data_retina_no_symptom">
+        <item>仅有微动脉瘤</item>
+        <item>存在微动脉瘤合并轻度微血管异常(串珠样改变,出血)</item>
+        <item>存在较重微血管异常(串珠样改变，出血)</item>
+        <item>出现一种或多种改变:①新生血管形成;②玻璃体积血;③视网膜前出血</item>
+    </array>
+
+    <array name="data_diabetes_mellitus_condition">
+        <item>确诊无</item>
+        <item>确诊有</item>
+        <item>未诊断</item>
+    </array>
+
+    <array name="data_nerve_no_symptom">
+        <item>周围神经病变</item>
+        <item>消化系统自主神经病变</item>
+        <item>泌尿生殖系统自主神经病变</item>
+        <item>心血管自主神经病变类</item>
+        <item>其他非特征症状</item>
+    </array>
+
+
+    <array name="data_legs_have_symptom">
+        <item>足畸形</item>
+        <item>且伴有下肢溃疡病史或截肢史</item>
+    </array>
+
+
+    <array name="data_legs_no_symptom">
+        <item>静息痛</item>
+        <item>间歇性跛行</item>
+        <item>皮肤发绀、红斑等</item>
+        <item>下肢（足部）破溃、坏疽、感染等</item>
+    </array>
+
+
+    <array name="data_five">
+        <item>高血压</item>
+        <item>高血脂</item>
+        <item>冠心病</item>
+        <item>脑血管病</item>
+    </array>
+
+
+    <array name="tnb_type">
+        <item>1型糖尿病</item>
+        <item>2型糖尿病</item>
+        <item>妊娠糖尿病</item>
+        <item>其他类型</item>
+    </array>
+
+    <array name="data_food_rice">
+        <item>大米</item>
+        <item>面粉</item>
+        <item>混合面</item>
+        <item>各种挂面</item>
+        <item>绿豆、豆、干豌豆</item>
+        <item>油饼</item>
+        <item>油条</item>
+        <item>马铃薯</item>
+        <item>馒头</item>
+        <item>烙饼</item>
+        <item>面饼</item>
+        <item>烧饼</item>
+        <item>咸面包</item>
+        <item>窝窝头</item>
+        <item>生面条</item>
+    </array>
+
+    <array name="data_food_apricot">
+        <item>杏</item>
+        <item>梨</item>
+        <item>橘子</item>
+        <item>橙子</item>
+        <item>柚子</item>
+        <item>桃</item>
+        <item>葡萄(带皮)</item>
+        <item>苹果(带皮)</item>
+        <item>猕猴桃(带皮)</item>
+        <item>柿</item>
+        <item>香蕉</item>
+        <item>鲜荔枝</item>
+        <item>西瓜</item>
+    </array>
+
+    <array name="data_food_yuba">
+        <item>腐竹</item>
+        <item>北豆腐</item>
+        <item>南豆腐</item>
+        <item>豆浆</item>
+    </array>
+
+
+    <array name="data_food_meat">
+        <item>瘦猪肉</item>
+        <item>牛肉</item>
+        <item>羊肉</item>
+        <item>鸭肉</item>
+        <item>带骨排骨</item>
+        <item>鸡蛋(一大个带壳)</item>
+        <item>鸭蛋、松花蛋(一大个带壳)</item>
+        <item>鹌鹑蛋(六个带壳)</item>
+        <item>虾类</item>
+        <item>鱼类</item>
+    </array>
+
+
+    <array name="data_food_milk">
+        <item>奶粉</item>
+        <item>牛奶</item>
+        <item>羊奶</item>
+        <item>其他</item>
+    </array>
+
+    <array name="data_food_nut">
+        <item>杏仁</item>
+        <item>花生米</item>
+        <item>核桃</item>
+        <item>其他</item>
+    </array>
+
+    <array name="data_food_wine">
+        <item>红酒</item>
+        <item>啤酒</item>
+        <item>白酒</item>
+        <item>黄酒</item>
+    </array>
+
+
+    <array name="data_sugar_time">
+        <item>空腹</item>
+        <item>早餐后</item>
+        <item>午餐前</item>
+        <item>午餐后</item>
+        <item>晚餐前</item>
+        <item>晚餐后</item>
+        <item>睡前</item>
+        <item>凌晨</item>
+    </array>
+
+    <array name="seven_and_thirty_sugar">
+        <item>血糖偏高</item>
+        <item>血糖正常</item>
+        <item>血糖偏低</item>
+        <item>最高血糖</item>
+        <item>平均血糖</item>
+        <item>最低血糖</item>
+    </array>
+    <!--array结束-->
+
+    <!--string-array和integer-array开始-->
+    <integer-array name="seven_and_thirty_sugar_colors">
+        <item>@color/main_home</item>
+        <item>@color/sugar_green_bright</item>
+        <item>@color/home_blue</item>
+        <item>@color/sugar_purple</item>
+        <item>@color/sugar_green_light</item>
+        <item>@color/sugar_blue_bright</item>
+    </integer-array>
+
+
+    <!--检验数据开始-->
+    <array name="check_data_img">
+        <item>@drawable/check_data_one</item>
+        <item>@drawable/check_data_two</item>
+        <item>@drawable/check_data_three</item>
+        <item>@drawable/check_data_four</item>
+        <item>@drawable/check_data_five</item>
+        <item>@drawable/check_data_six</item>
+        <item>@drawable/check_data_seven</item>
+        <item>@drawable/check_data_eight</item>
+        <item>@drawable/check_data_nine</item>
+    </array>
+
+    <array name="check_data_title">
+        <item>血压</item>
+        <item>身高体重</item>
+        <item>彩超报告</item>
+        <item>心电图</item>
+        <item>CT检测</item>
+        <item>血常规</item>
+        <item>TR检测</item>
+        <item>尿常规</item>
+        <item>生化分析</item>
+    </array>
+
+    <array name="check_data_blood_common_left">
+        <item>白细胞总数</item>
+        <item>淋巴细胞比率</item>
+        <item>中间细胞比率</item>
+        <item>中性粒细胞比率</item>
+        <item>淋巴细胞总数</item>
+        <item>中间细胞总数</item>
+        <item>中性粒细胞总数</item>
+        <item>红细胞总数</item>
+        <item>血红蛋白</item>
+        <item>红细胞压积</item>
+        <item>红细胞平均体积</item>
+        <item>平均血红蛋白含量</item>
+        <item>平均血红蛋白浓度</item>
+        <item>红细胞分布宽度CV</item>
+        <item>红细胞分布宽度SD</item>
+        <item>血小板总数</item>
+        <item>血小板平均体积</item>
+        <item>血小板分布宽度</item>
+        <item>血小板压积</item>
+        <item>大血小板比率</item>
+    </array>
+
+    <array name="check_data_blood_common_right">
+        <item>x10^9/L</item>
+        <item>%</item>
+        <item>%</item>
+        <item>%</item>
+        <item>x10^9/L</item>
+        <item>x10^9/L</item>
+        <item>x10^9/L</item>
+        <item>x10^12/L</item>
+        <item>g/L</item>
+        <item>%</item>
+        <item>fL</item>
+        <item>pg</item>
+        <item>g/L</item>
+        <item>%</item>
+        <item>f/L</item>
+        <item>x10^9/L</item>
+        <item>f/L</item>
+        <item>f/L</item>
+        <item>%</item>
+        <item>%</item>
+    </array>
+
+    <!--检验数据开始-->
+
+    <!--预约挂号开始-->
+    <array name="report_data_img">
+        <!--新增-->
+        <item>@drawable/report_data_one</item>
+        <item>@drawable/report_data_two</item>
+        <!--检验数据相同-->
+        <item>@drawable/check_data_three</item>
+        <item>@drawable/check_data_four</item>
+        <item>@drawable/check_data_five</item>
+        <item>@drawable/check_data_six</item>
+        <item>@drawable/check_data_seven</item>
+        <item>@drawable/check_data_eight</item>
+        <item>@drawable/check_data_nine</item>
+        <!--新增-->
+        <item>@drawable/report_data_ten</item>
+        <item>@drawable/report_data_eleven</item>
+    </array>
+
+    <array name="report_data_title">
+        <item>医生就诊建议</item>
+        <item>电解质</item>
+        <item>彩超报告</item>
+        <item>心电图</item>
+        <item>CT检测</item>
+        <item>血常规</item>
+        <item>TR检测</item>
+        <item>尿常规</item>
+        <item>生化分析</item>
+        <item>免疫荧光</item>
+        <item>凝血</item>
+    </array>
+    <!--预约挂号结束-->
+
+    <array name="assessment_pic">
+        <item>@drawable/ic_risk_assessment</item>
+        <item>@drawable/ic_diet_assessment</item>
+        <item>@drawable/ic_sport_assessment</item>
+        <item>@drawable/ic_weight_assessment</item>
+        <item>@drawable/ic_depression_assessment</item>
+        <item>@drawable/ic_anxiety_assessment</item>
+    </array>
+
+    <array name="assessment_name">
+        <item>风险测评</item>
+        <item>饮食测评</item>
+        <item>运动测评</item>
+        <item>体重测评</item>
+        <item>抑郁测评</item>
+        <item>焦虑测评</item>
+    </array>
+
+    <array name="assessment_url">
+        <item>http://port.xiyuns.cn/api.php/Knows/tfxpg</item>
+        <item>http://port.xiyuns.cn/api.php/Knows/tyinshi</item>
+        <item>http://port.xiyuns.cn/api.php/Knows/tyundong</item>
+        <item>http://port.xiyuns.cn/api.php/Knows/tbmi</item>
+        <item>http://port.xiyuns.cn/api.php/Knows/tyiyu</item>
+        <item>http://port.xiyuns.cn/api.php/Knows/tjiaolv</item>
+    </array>
+
+    <array name="sport_img">
+        <item>@drawable/buxing</item>
+        <item>@drawable/sanbu</item>
+        <item>@drawable/ziran</item>
+        <item>@drawable/jianbu</item>
+        <item>@drawable/manpao</item>
+        <item>@drawable/kuaipao</item>
+        <item>@drawable/taiji</item>
+        <item>@drawable/zixingche</item>
+        <item>@drawable/xialouti</item>
+        <item>@drawable/zuojiawu</item>
+        <item>@drawable/wudao</item>
+        <item>@drawable/yujia</item>
+        <item>@drawable/youyong</item>
+        <item>@drawable/yumaoqiu</item>
+        <item>@drawable/pingpang</item>
+        <item>@drawable/zuqiu</item>
+        <item>@drawable/lanqiu</item>
+        <item>@drawable/paiqiu</item>
+        <item>@drawable/wangqiu</item>
+    </array>
+
+    <array name="sport_type">
+        <item>步行去工作/上学</item>
+        <item>散步走</item>
+        <item>自然走</item>
+        <item>健步走</item>
+        <item>慢跑</item>
+        <item>快跑</item>
+        <item>太极拳</item>
+        <item>自行车</item>
+        <item>下楼梯</item>
+        <item>做家务</item>
+        <item>舞蹈</item>
+        <item>瑜伽</item>
+        <item>游泳</item>
+        <item>羽毛球</item>
+        <item>乒乓球</item>
+        <item>足球</item>
+        <item>篮球</item>
+        <item>排球</item>
+        <item>网球</item>
+    </array>
+
+    <array name="sport_command">
+        <item>(每分钟/50步)</item>
+        <item>(3.6公里/小时)</item>
+        <item>(4.5公里/小时)</item>
+        <item>(5.4公里/小时)</item>
+        <item>(12公里/小时)</item>
+        <item>(12公里/小时)</item>
+        <item>无</item>
+        <item>(小于19公里/小时)</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+        <item>无</item>
+    </array>
+
+    <array name="health_item_name">
+        <item>记录血糖</item>
+        <item>记录血压</item>
+        <item>记录饮食</item>
+        <item>记录运动</item>
+        <item>记录用药</item>
+        <item>记录BMI</item>
+        <item>记录糖化血红蛋白</item>
+        <item>记录检查</item>
+        <item>记录肝病营养指标</item>
+        <item>记录体重</item>
+        <item>记录血氧</item>
+    </array>
+
+    <array name="health_item_img">
+        <item>@drawable/sugar_icon</item>
+        <item>@drawable/blood_icon</item>
+        <item>@drawable/eat_icon</item>
+        <item>@drawable/sport_icon</item>
+        <item>@drawable/medicine_icon</item>
+        <item>@drawable/weight_icon</item>
+        <item>@drawable/sugar_egg</item>
+        <item>@drawable/check_icon</item>
+        <item>@drawable/hepatopathy_pabulum</item>
+        <item>@drawable/health_weight_icon</item>
+        <item>@drawable/health_blood_oxygen_icon</item>
+    </array>
+
+    <array name="health_item_slogan">
+        <item>点击查看历史纪录</item>
+        <item>点击查看历史纪录</item>
+        <item>点击查看历史纪录</item>
+        <item>点击查看历史纪录</item>
+        <item>点击查看历史纪录</item>
+        <item>点击查看历史纪录</item>
+        <item>点击查看历史纪录</item>
+        <item>点击查看历史纪录</item>
+        <item>点击查看历史纪录</item>
+        <item>点击查看历史纪录</item>
+        <item>点击查看历史纪录</item>
+    </array>
+
+    <array name="food_warehouse_img">
+        <item>@drawable/grains</item>
+        <item>@drawable/meat</item>
+        <item>@drawable/vegetables</item>
+        <item>@drawable/dairy</item>
+        <item>@drawable/fruits</item>
+        <item>@drawable/oils</item>
+        <item>@drawable/beans</item>
+        <item>@drawable/eggs</item>
+        <item>@drawable/seafood</item>
+        <item>@drawable/condiment</item>
+        <item>@drawable/nuts</item>
+        <item>@drawable/snack</item>
+        <item>@drawable/drinks</item>
+        <item>@drawable/sugar</item>
+    </array>
+
+    <array name="check_prescription">
+        <item>胰岛素强化治疗患者的自我血糖监测方案(未达标)胰岛素强化治疗是指多次胰岛素治疗或胰岛素泵治疗,多次胰岛素治疗包括:餐时+基础胰岛素、三次预混胰岛素</item>
+        <item>胰岛素强化治疗患者的自我血糖监测方案(已达标)</item>
+        <item>基础胰岛素治疗患者的血糖监测方案(未达标)</item>
+        <item>基础胰岛素治疗患者的血糖监测方案(已达标)</item>
+        <item>每日2次注射预混胰岛素患者的血糖监测方案(未达标)</item>
+        <item>每日2次注射预混胰岛素患者的自我血糖监测方案(已达标)</item>
+        <item>口服降糖药治疗患者短期强化自我血糖监测方案(适用于有频发低血糖症状、感染等应激状态或调整治疗方案等情况。)</item>
+        <item>口服降糖药治疗患者交替自我血糖监测方案(适用于经过口服降糖药治疗的短期强化方案治疗，在获得充分的血糖数据并采取了相应的治疗措施后的患者。)</item>
+        <item>口服降糖药治疗患者的餐时配对血糖监测方案(适用于帮助患者或者患者了解饮食和相关治疗措施对血糖水平的影响。)</item>
+        <item>单纯生活方式治疗血糖监测方案</item>
+        <item>1--2次基础胰岛素+口服药治疗血糖监测方案</item>
+    </array>
+
+    <array name="sport_prescription_three">
+        <item>当前血压情况: 收缩压&lt; 180mmHg和(或) 舒张压&lt; 100mmHg</item>
+        <item>最近无频发的低血糖</item>
+        <item>未合并各种急性感染</item>
+        <item>未合并新近发生的血栓</item>
+        <item>尿酮体阴性</item>
+        <item>无严重心血管疾病(不稳定心绞痛、心力衰竭、严重心律失常、一过性脑缺血发作)</item>
+        <item>无严重视网膜并发症</item>
+        <item>无严重肾脏疾病</item>
+    </array>
+
+
+    <array name="sport_prescription_three_weight">
+        <item>当前血压情况: 收缩压&lt; 180mmHg和(或) 舒张压&lt; 100mmHg</item>
+        <item>最近无频发的低血糖</item>
+        <item>未合并各种急性感染</item>
+        <item>未合并新近发生的血栓</item>
+        <item>尿酮体阴性</item>
+        <item>无严重心血管疾病(不稳定心绞痛、心力衰竭、严重心律失常、一过性脑缺血发作)</item>
+        <item>无严重视网膜并发症</item>
+        <item>无严重肾脏疾病</item>
+    </array>
+
+    <array name="sport_prescription_one">
+        <item>每天小于3000步</item>
+        <item>每天大于3000步</item>
+    </array>
+
+    <array name="sport_prescription_two">
+        <item>小于30分钟/天， 且小于3天/周</item>
+        <item>大于(或等于) 30分钟/天，且大于(或等于) 3天/周</item>
+    </array>
+
+    <array name="sport_prescription_four">
+        <item>冠心病</item>
+        <!--        <item>高血压</item>-->
+        <item>合并神经病变</item>
+        <item>合并视网膜病变</item>
+        <item>合并肾病</item>
+    </array>
+
+    <array name="food_type_pic_unselected">
+        <item>@drawable/ic_grain_old</item>
+        <item>@drawable/routabview</item>
+        <item>@drawable/shucaitabview</item>
+        <item>@drawable/niunai</item>
+        <item>@drawable/shuiguotabview</item>
+        <item>@drawable/zhifang</item>
+        <item>@drawable/douleitabview</item>
+        <item>@drawable/danleitabview</item>
+        <item>@drawable/haixiantabview</item>
+        <item>@drawable/tiaoweipintabview</item>
+        <item>@drawable/jianguotabview</item>
+        <item>@drawable/xiaochitabview</item>
+        <item>@drawable/yinliaotabview</item>
+        <item>@drawable/tangtabview</item>
+    </array>
+
+    <array name="food_type_pic_selected">
+        <item>@drawable/gushuzalianggreen</item>
+        <item>@drawable/rougreen</item>
+        <item>@drawable/shucainew</item>
+        <item>@drawable/niunaigreen</item>
+        <item>@drawable/shuiguogreen</item>
+        <item>@drawable/zhifanggreen</item>
+        <item>@drawable/douleigreen</item>
+        <item>@drawable/danleinew</item>
+        <item>@drawable/haixiannew</item>
+        <item>@drawable/tiaoweipingreen</item>
+        <item>@drawable/jianguonew</item>
+        <item>@drawable/xiaochigreen</item>
+        <item>@drawable/yinliaogreennew</item>
+        <item>@drawable/tanggreen</item>
+    </array>
+
+
+    <!--智能决策开始-->
+    <array name="make_policy_list_home">
+        <item>@drawable/personalized_hypoglycemic_program</item>
+        <item>@drawable/personalized_depressurization_scheme</item>
+        <item>@drawable/personalized_tcm</item>
+        <item>@drawable/personalized_reduce_weight</item>
+    </array>
+
+    <!--    <array name="make_policy_list_user">-->
+    <!--        <item>@drawable/personalized_depressurization_scheme</item>-->
+    <!--        <item>@drawable/personalized_hypoglycemic_program</item>-->
+    <!--        <item>@drawable/personalized_ill_foot</item>-->
+    <!--        <item>@drawable/personalized_diet_plan</item>-->
+    <!--    </array>-->
+
+    <!--智能决策结束-->
+
+    <string-array name="nation_list">
+        <item>汉族</item>
+        <item>蒙古族</item>
+        <item>回族</item>
+        <item>藏族</item>
+        <item>维吾尔族</item>
+        <item>苗族</item>
+        <item>彝族</item>
+        <item>壮族</item>
+        <item>布依族</item>
+        <item>朝鲜族</item>
+        <item>满族</item>
+        <item>侗族</item>
+        <item>瑶族</item>
+        <item>白族</item>
+        <item>土家族</item>
+        <item>哈尼族</item>
+        <item>哈萨克族</item>
+        <item>傣族</item>
+        <item>黎族</item>
+        <item>傈僳族</item>
+        <item>佤族</item>
+        <item>畲族</item>
+        <item>高山族</item>
+        <item>拉祜族</item>
+        <item>水族</item>
+        <item>东乡族</item>
+        <item>纳西族</item>
+        <item>景颇族</item>
+        <item>柯尔克孜族</item>
+        <item>土族</item>
+        <item>达斡尔族</item>
+        <item>仫佬族</item>
+        <item>羌族</item>
+        <item>布朗族</item>
+        <item>撒拉族</item>
+        <item>毛南族</item>
+        <item>仡佬族</item>
+        <item>锡伯族</item>
+        <item>阿昌族</item>
+        <item>普米族</item>
+        <item>塔吉克族</item>
+        <item>怒族</item>
+        <item>乌孜别克族</item>
+        <item>俄罗斯族</item>
+        <item>鄂温克族</item>
+        <item>德昂族</item>
+        <item>保安族</item>
+        <item>裕固族</item>
+        <item>京族</item>
+        <item>塔塔尔族</item>
+        <item>独龙族</item>
+        <item>鄂伦春族</item>
+        <item>赫哲族</item>
+        <item>门巴族</item>
+        <item>珞巴族</item>
+        <item>基诺族</item>
+    </string-array>
+
+    <integer-array name="diet_plan_colors">
+        <item>@color/diet_color_one</item>
+        <item>@color/diet_color_two</item>
+        <item>@color/diet_color_three</item>
+        <item>@color/diet_color_four</item>
+        <item>@color/diet_color_five</item>
+        <item>@color/diet_color_six</item>
+    </integer-array>
+
+    <!--我的档案-->
+    <!--体格检查-->
+    <array name="my_file_physique_unit">
+        <item>cm</item>
+        <item>kg</item>
+        <item>kg/m²</item>
+        <item>cm</item>
+        <item>cm</item>
+        <item></item>
+        <item>mmHg</item>
+        <item>mmHg</item>
+        <item>次/分</item>
+    </array>
+    <!--血糖情况-->
+    <array name="my_file_blood_sugar">
+        <item>mmol/L</item>
+        <item>%</item>
+        <item>mmol/L</item>
+        <item>mmol/L</item>
+        <item>mmol/L</item>
+        <item>mmol/L</item>
+        <item>mmol/L</item>
+    </array>
+    <!--实验室检查-->
+    <array name="my_file_laboratory_unit">
+        <item>mmol/L</item>
+        <item>mmol/L</item>
+        <item>mmol/L</item>
+        <item>U/L</item>
+        <item>U/L</item>
+        <item>μmol/L</item>
+        <item>mmol/L</item>
+        <item>U/L</item>
+        <item>g/L</item>
+        <item>mg/24h</item>
+        <item>mg/g</item>
+        <item>μmol/min</item>
+        <item>mmol/L</item>
+        <item>ml/min</item>
+    </array>
+    <!--我的档案-->
+
+
+    <array name="family_detail">
+        <item>血糖</item>
+        <item>血压</item>
+        <item>饮食</item>
+        <item>运动</item>
+        <item>用药</item>
+        <item>BMI</item>
+        <item>糖化血红蛋白</item>
+        <item>检验检查</item>
+        <item>肝营养指标</item>
+    </array>
+
+    <array name="family_detail_pic">
+        <item>@drawable/blood_sugar_record</item>
+        <item>@drawable/blood_pressure_record</item>
+        <item>@drawable/diet_record</item>
+        <item>@drawable/sport_record</item>
+        <item>@drawable/medicine_record</item>
+        <item>@drawable/weight_record</item>
+        <item>@drawable/ghb_record</item>
+        <item>@drawable/test_record</item>
+        <item>@drawable/liver_record</item>
+    </array>
+
+
+    <!--劳动强度-->
+    <array name="sport_level_img">
+        <item>@drawable/sport_level_1</item>
+        <item>@drawable/sport_level_2</item>
+        <item>@drawable/sport_level_3</item>
+        <item>@drawable/sport_level_4</item>
+    </array>
+
+
+    <array name="sport_level_title">
+        <item>轻体力劳动</item>
+        <item>中体力劳动</item>
+        <item>重体力劳动</item>
+        <item>卧床</item>
+    </array>
+
+
+    <array name="sport_question_four">
+        <item>冠心病</item>
+        <item>高血压</item>
+        <item>合并神经病变</item>
+        <item>合并视网膜病变</item>
+        <item>合并肾病</item>
+    </array>
+
+    <array name="sport_question_four_list">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+    </array>
+
+    <array name="sport_level_desc">
+        <item>75%时间坐或者站立、25%时间站立活动 例如：教师、售货员、家庭主妇、酒店服务等； 以坐着为主的工作，如办公室工作等。</item>
+        <item>25%时间坐或者站立、75%时间特殊活动 例如：学生日常活动、机动车驾驶、电工安装、 外科医生、体育老师等。</item>
+        <item>例如：建筑工、搬运工、冶炼工、农民（中农活）、运动员、舞蹈者、或者与其相当活动量的职业。</item>
+        <item></item>
+    </array>
+
+
+    <array name="diet_plan_detail_meals_text">
+        <item>早餐</item>
+        <item>午餐</item>
+        <item>晚餐</item>
+    </array>
+
+
+    <array name="diet_plan_detail_meals_img">
+        <item>@drawable/diet_plan_detail_breakfast</item>
+        <item>@drawable/diet_plan_detail_lunch</item>
+        <item>@drawable/diet_plan_detail_dinner</item>
+    </array>
+
+
+    <!--注册问题 start-->
+    <array name="is_have_sugar_disease">
+        <item>是</item>
+        <item>否</item>
+    </array>
+
+    <array name="register_sugar_type">
+        <item>1型糖尿病</item>
+        <item>2型糖尿病</item>
+        <item>妊娠糖尿病</item>
+        <item>其他类型</item>
+    </array>
+
+    <array name="register_pregnant_sugar_type">
+        <item>无</item>
+        <item>1型糖尿病</item>
+        <item>2型糖尿病</item>
+        <item>其他</item>
+    </array>
+
+
+    <array name="register_age_range_1">
+        <item>小于20岁</item>
+        <item>大于等于20岁</item>
+    </array>
+
+
+    <array name="register_age_range_2">
+        <item>小于40岁</item>
+        <item>40~65岁</item>
+        <item>大于65岁</item>
+    </array>
+
+
+    <array name="register_course_of_disease_1">
+        <item>小于2年</item>
+        <item>2~5年</item>
+        <item>5年以上</item>
+    </array>
+
+
+    <array name="register_course_of_disease_2">
+        <item>小于1年</item>
+        <item>1~5年</item>
+        <item>5年以上</item>
+    </array>
+
+
+    <array name="register_sugar_unit">
+        <item>糖尿病足</item>
+        <item>糖尿病肾病</item>
+        <item>糖尿病眼病</item>
+        <item>糖尿病神经病变</item>
+        <item>糖尿病下肢血管病变</item>
+    </array>
+
+    <array name="register_other_4">
+        <item>高血压</item>
+        <item>冠心病</item>
+        <item>慢性阻塞性肺疾病</item>
+        <item>脑卒中</item>
+    </array>
+
+
+    <array name="register_other_5">
+        <item>高血压</item>
+        <item>冠心病</item>
+        <item>慢性阻塞性肺疾病</item>
+        <item>脑卒中</item>
+        <item>糖尿病前期</item>
+    </array>
+
+
+    <!--注册问题 end-->
+
+
+    <!--肝病档案 start-->
+
+    <array name="liver_files_base_info">
+        <item>姓名</item>
+        <item>民族</item>
+        <item>居住地</item>
+        <item>性别</item>
+        <item>文化程度</item>
+        <item>饮酒</item>
+        <item>出生日期</item>
+        <item>职业情况</item>
+    </array>
+
+
+    <array name="liver_files_body_check">
+        <item>身高</item>
+        <item>体重</item>
+        <item>BMI</item>
+        <item>腰围</item>
+        <item>臀围</item>
+        <item>腰臀比</item>
+        <item>体脂百分比</item>
+        <item>上臀围</item>
+        <item>上腰肌围</item>
+        <item>握力</item>
+    </array>
+
+    <array name="liver_files_body_check_unit">
+        <item>cm</item>
+        <item>kg</item>
+        <item></item>
+        <item>cm</item>
+        <item>cm</item>
+        <item></item>
+        <item>%</item>
+        <item></item>
+        <item></item>
+        <item>g</item>
+    </array>
+
+
+    <array name="liver_files_lab_check">
+        <item>ALT</item>
+        <item>白蛋白</item>
+        <item>血糖</item>
+        <item>血红蛋白</item>
+        <item>总胆红素</item>
+        <item>前白蛋白</item>
+        <item>凝血酶原活力度</item>
+        <item>血氨</item>
+    </array>
+
+    <array name="liver_files_lab_check_unit">
+        <item>U/L</item>
+        <item>g/L</item>
+        <item>mmol/L</item>
+        <item>g/L</item>
+        <item>μmol/L</item>
+        <item>mg/L</item>
+        <item>s</item>
+        <item>μmol/L</item>
+    </array>
+
+    <array name="liver_files_liver_record">
+        <item>现在疾病情况</item>
+        <item>既往疾病情况</item>
+        <item>膳食史</item>
+    </array>
+
+    <array name="liver_files_base_info_sex">
+        <item>男</item>
+        <item>女</item>
+    </array>
+
+
+    <array name="liver_files_base_info_culture">
+        <item>小学及以下</item>
+        <item>初中</item>
+        <item>高中/技校/中专</item>
+        <item>大学专科及以上</item>
+    </array>
+
+    <array name="liver_files_base_info_is_or_not">
+        <item>是</item>
+        <item>否</item>
+    </array>
+
+
+    <array name="liver_files_base_info_profession">
+        <item>轻体力</item>
+        <item>中体力</item>
+        <item>重体力</item>
+    </array>
+    <!---->
+
+
+    <array name="home_eight_module">
+        <item>@drawable/home_module_01</item>
+        <item>@drawable/home_module_02</item>
+        <item>@drawable/home_module_03</item>
+        <item>@drawable/home_module_04</item>
+        <item>@drawable/home_module_05</item>
+        <item>@drawable/home_module_06</item>
+        <item>@drawable/home_module_07</item>
+        <item>@drawable/home_module_08</item>
+    </array>
+
+    <array name="analyse_list_adapter">
+        <item>@drawable/report_one_new</item>
+        <item>@drawable/report_two_new</item>
+    </array>
+
+
+    <array name="my_report_text">
+        <item>血糖分析报告</item>
+        <item>血压分析报告</item>
+        <item>糖尿病自我管理处方</item>
+        <item>个性化降压方案</item>
+        <item>中医体质</item>
+        <item>糖尿病足管理处方</item>
+        <item>减重自我管理处方</item>
+        <item>运动周报</item>
+    </array>
+
+    <array name="my_report_img">
+        <item>@drawable/my_report_02</item>
+        <item>@drawable/my_report_01</item>
+        <item>@drawable/my_report_03</item>
+        <item>@drawable/my_report_04</item>
+        <item>@drawable/my_report_05</item>
+        <item>@drawable/my_report_06</item>
+        <item>@drawable/my_report_07</item>
+        <item>@drawable/my_report_08</item>
+    </array>
+
+
+    <array name="home_user_my_service_img">
+        <item>@drawable/home_user_my_report</item>
+        <item>@drawable/home_user_my_doctor</item>
+        <item>@drawable/home_user_my_device</item>
+        <item>@drawable/home_user_my_account</item>
+    </array>
+
+
+    <array name="home_user_my_service_text">
+        <item>我的报告</item>
+        <item>我的医生</item>
+        <item>我的设备</item>
+        <item>关于我们</item>
+    </array>
+
+
+    <!--高血压测试 Start-->
+    <array name="test_of_hbp_question_number">
+        <item>1.是否用药：</item>
+        <item>2.您平时血压最高是多少：</item>
+        <item>3.是否有下列任意疾病：</item>
+        <item>4.是否有靶器官损害：</item>
+        <item>5.您当前身体有以下几种状况：</item>
+    </array>
+
+    <array name="test_of_hbp_question_number_three">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </array>
+
+    <array name="test_of_hbp_question_number_four">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </array>
+
+    <array name="test_of_hbp_question_number_six">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+    </array>
+
+
+    <array name="test_two_of_hbp_question_desc">
+        <item>收缩压120~139mmHg和(或)舒张压80~89mmHg</item>
+        <item>收缩压140~159mmHg和(或)舒张压90~99mmHg</item>
+        <item>收缩压160~179mmHg和(或)舒张压100~109mmHg</item>
+        <item>收缩压≥180mmHg和(或)舒张压≥110mmHg</item>
+    </array>
+
+    <array name="test_three_of_hbp_question_top_desc">
+        <item>脑血管病（脑出血,缺血性脑卒中,短暂性脑缺血发作）</item>
+        <item>心脏疾病(心肌梗死史,心绞痛,冠状动脉血运重建史,慢性心力衰竭)</item>
+        <item>肾脏疾病(糖尿病肾病,肾功能受损，血肌酐:男性≥133 μmol/L(1.5 mg/dl),女性≥124 μmol/L(1.4 mg/dl),蛋白尿(≥300 mg/24
+            h))
+        </item>
+        <item>外周血管疾病</item>
+        <item>视网膜病变</item>
+        <item>糖尿病</item>
+    </array>
+
+    <array name="test_three_of_hbp_question_desc">
+        <item>无</item>
+        <item>有</item>
+        <item>不确定</item>
+    </array>
+
+    <array name="test_four_of_hbp_question_top_desc">
+        <item>左心室肥厚</item>
+        <item>动脉粥样斑块</item>
+        <item>血清肌酐轻度升高:男性115~133μmol/L(1.3~1.5 mg/dl),女性107 ~124 μmol/L(1.2~1.4 mg/dl)</item>
+        <item>微量白蛋白尿:30 ~300 mg/24 h或 白蛋白/肌酐比:≥30 mg/g(3. 5 mg/mmol)</item>
+    </array>
+
+    <array name="test_five_of_hbp_question_desc">
+        <item>无</item>
+        <item>不确定</item>
+        <item>有一种</item>
+        <item>有两种</item>
+        <item>有三种</item>
+        <item>有三种以上</item>
+    </array>
+    <array name="test_five_of_hbp_question_top_desc">
+        <item>吸烟、血脂异常</item>
+        <item>男性>55岁;女性>65岁</item>
+        <item>TC≥5.7 mmol/L(220 mg/dI)或 LDL-C >3.3 mmol/L( 130 mg/dl)或 HDL-C&lt;1.0 mmol/L(40
+            mg/dl)
+        </item>
+        <item>早发心血管病家族史(一级亲属发病年龄男性&lt;55岁,女性&lt;65岁)</item>
+        <item>腹型肥胖(腰围:男性≥90 cm,女性≥85 cm)或肥胖( BMI≥28 kg/㎡ )</item>
+        <item>血同型半胱氨酸升高(≥10 μmol/L)</item>
+    </array>
+    <!--高血压测试 End-->
+
+
+    <array name="my_device_list_pic">
+        <item>@drawable/device_list_vivachek</item>
+      <!--  <item>@drawable/device_list_aicare_wise_medical</item>
+        <item>@drawable/device_list_sphygmomanometer</item>-->
+    </array>
+
+    <array name="my_device_list_name">
+        <item>微策一诺</item>
+       <!-- <item>小糖医</item>
+        <item>血压计</item>-->
+    </array>
+
+
+    <array name="my_device_bind_list_pic">
+        <item>@drawable/my_bind_device_sugar</item>
+        <item>@drawable/my_bind_device_bp</item>
+    </array>
+
+    <array name="my_device_bind_list_name">
+        <item>血糖设备</item>
+        <item>血压设备</item>
+    </array>
+
+    <array name="smart_education_class_detail">
+        <item>内容</item>
+        <item>目录</item>
+    </array>
+
+
+    <array name="little_tools_text">
+        <item>风险预警</item>
+        <item>饮食测评</item>
+        <item>运动测评</item>
+        <item>体重测评</item>
+        <item>抑郁测评</item>
+        <item>焦虑测评</item>
+    </array>
+
+    <array name="little_tools_img">
+        <item>@drawable/little_tools_1</item>
+        <item>@drawable/little_tools_2</item>
+        <item>@drawable/little_tools_3</item>
+        <item>@drawable/little_tools_4</item>
+        <item>@drawable/little_tools_5</item>
+        <item>@drawable/little_tools_6</item>
+    </array>
+
+
+    <array name="sport_question_one">
+        <item>当前血糖情况：空腹血糖＜16.7mmol/L和（或）任意血糖＞4.0mmol/L</item>
+        <item>当前血压情况：收缩压＜180mmHg和（或）舒张压＜100mmHg</item>
+        <item>最近无频发的低血糖</item>
+        <item>未合并各种急性感染</item>
+        <item>未合并新近发生的血栓</item>
+        <item>尿酮体阴性</item>
+        <item>足部病变：健康，无并发症</item>
+        <item>无严重心血管疾病（不稳定心绞痛、心力衰竭、严重心律失常、一过性脑缺血发作）</item>
+        <item>无严重视网膜并发症</item>
+        <item>无严重肾脏疾病</item>
+    </array>
+
+
+    <array name="sport_type_map_title_run">
+        <item>慢跑</item>
+        <item>手动记录</item>
+    </array>
+
+
+    <array name="sport_type_map_title_bike">
+        <item>自行车</item>
+        <item>手动记录</item>
+    </array>
+
+    <array name="sport_type_video_title_skip">
+        <item>跳绳</item>
+        <item>手动记录</item>
+    </array>
+
+    <array name="sport_type_video_title_taiji">
+        <item>太极拳</item>
+        <item>手动记录</item>
+    </array>
+
+
+    <array name="sport_detail_x">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </array>
+
+</resources>

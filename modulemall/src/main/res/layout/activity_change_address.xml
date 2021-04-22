@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_address"
+        layout="@layout/item_shopping_address_list" />
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:orientation="horizontal">
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_cancel"
+            style="@style/text_gray_14_f_w"
+            android:layout_marginRight="@dimen/dp_25"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="取消"
+            android:textSize="15sp"
+            app:backgroundColorNormal="@color/white"
+            app:borderColorNormal="@color/gray_text"
+            app:borderWidthNormal="1dp"
+            app:cornerRadiusNormal="@dimen/dp_4">
+
+        </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_submit"
+            style="@style/text_white_14_f_w"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="提交修改"
+            android:textSize="15sp"
+            app:backgroundColorNormal="@color/main_green"
+            app:cornerRadiusNormal="@dimen/dp_4">
+
+        </com.wei.android.lib.colorview.view.ColorTextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

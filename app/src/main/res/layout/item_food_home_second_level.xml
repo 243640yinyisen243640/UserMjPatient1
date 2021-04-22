@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_black_14_w_w"
+                android:text="燕麦片" />
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    style="@style/text_gray_14_w_w"
+                    android:layout_width="120dp"
+                    android:text="重量:100可数" />
+
+                <TextView
+                    android:id="@+id/tv_kcal"
+                    style="@style/text_gray_14_w_w"
+                    android:text="重量:100可数" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text=">"
+            android:textColor="@color/main_home"
+            android:textSize="32sp" />
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10" />
+
+</LinearLayout>

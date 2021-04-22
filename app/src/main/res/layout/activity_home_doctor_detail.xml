@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+
+        <!--医生个人信息-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_margin="@dimen/dp_12"
+            android:background="@drawable/bg_home_sign"
+            android:padding="@dimen/dp_18">
+
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_doctor_head" />
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        android:id="@+id/tv_doctor_name"
+                        style="@style/text_black_16_f_w"
+                        android:layout_weight="1"
+                        android:text="医生名称" />
+
+                    <TextView
+                        android:id="@+id/tv_doctor_profession"
+                        style="@style/text_gray_14_f_w"
+                        android:layout_weight="1"
+                        android:text="职称"
+                        android:textColor="#242424" />
+
+                    <TextView
+                        android:id="@+id/tv_doctor_good_mark"
+                        style="@style/text_gray_14_f_w"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="98%"
+                        android:textColor="#F60034" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_marginTop="@dimen/dp_12">
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        style="@style/text_gray_14_f_w"
+                        android:layout_weight="0.8"
+                        android:text="金水区东明服务社区" />
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:gravity="right"
+                        android:text="好评率" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--医生擅长和医生简介-->
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_margin="@dimen/dp_12"
+            android:background="@drawable/bg_home_sign"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+
+            <TextView
+                android:id="@+id/tv_skill_desc"
+                style="@style/text_black_14_w_w"
+                android:lineSpacingMultiplier="1.2"
+                android:text="【擅长】：擅长治疗小儿麻痹症；擅长治疗小儿麻痹症；擅长治疗小儿麻痹症；擅长治疗小儿麻痹症；擅长治疗小儿麻痹症；
+            【简介】：我是内分泌科专家，从业23年有余，具有丰富的临床经验。我是内分泌科专家，从业23年有余，具有丰富的临床经验。" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_quick_sign"
+        style="@style/tv_home_sign_bottom"
+        android:text="立即签约"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="5dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_4">
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_black_14_w_w"
+            android:text="2019=02=28" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/text_black_14_w_w"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="早餐" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_4">
+
+        <com.vice.bloodpressure.view.MyListView
+            android:id="@+id/lv_record_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/gray_light"
+            android:dividerHeight="1px" />
+
+        <View style="@style/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="总热量："
+                    android:textSize="@dimen/size_16" />
+
+                <TextView
+                    android:id="@+id/tv_kcal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/main_red"
+                    android:textSize="@dimen/size_16" />
+
+                <TextView
+                    android:id="@+id/tv_daka"
+                    style="@style/text_black_14_w_w"
+                    android:layout_height="wrap_content"
+                    android:text=" 大卡"
+                    android:textSize="@dimen/size_16" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+
+</LinearLayout>

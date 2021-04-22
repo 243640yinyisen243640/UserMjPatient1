@@ -1,0 +1,64 @@
+buildscript {
+    ext.kotlin_version = '1.4.21'
+    repositories {
+        //添加下面的内容
+        //多Module中依赖aar的配置问题
+        //https://www.jianshu.com/p/db33f4850005
+        flatDir {
+            dirs '../modulemall/libs', 'libs'
+        }
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "https://dl.bintray.com/rongcloud/maven" }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
+        maven {url 'https://developer.huawei.com/repo/'}
+        maven{
+            url "https://dl.bintray.com/lizixian/StarrySky/"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+        //Kotlin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //ButterKnife
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.3'
+//        classpath 'com.aliyun.ams:emas-services:1.0.1'
+    }
+}
+
+allprojects {
+    repositories {
+        //添加下面的内容
+        //多Module中依赖aar的配置问题
+        //https://www.jianshu.com/p/db33f4850005
+        flatDir {
+            dirs '../modulemall/libs', 'libs'
+        }
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "https://dl.bintray.com/rongcloud/maven" }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
+        maven {url 'https://developer.huawei.com/repo/'}
+        maven{
+            url "https://dl.bintray.com/lizixian/StarrySky/"
+        }
+    }
+}
+
+
+/*在根目录中配置公用供子模块调用*/
+project.ext {
+    minSdkVersion = 21
+    compileSdkVersion = 29
+    targetSdkVersion = 29
+
+    applicationId = "com.wotongsoft.health"
+    versionCode = 1
+    versionName = "1.0.0"
+}

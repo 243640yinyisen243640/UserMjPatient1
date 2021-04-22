@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:backgroundColorNormal="@color/white"
+        app:cornerRadiusNormal="3dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_black_14_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="标题" />
+
+        <com.wei.android.lib.colorview.view.ColorEditText
+            android:id="@+id/et_input"
+            style="@style/text_black_14_f_w"
+            android:layout_margin="@dimen/dp_10"
+            android:gravity="left"
+            android:hint="请输入"
+            android:minLines="3"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:textColorHint="@color/gray_text"
+            app:borderColorNormal="@color/gray_light"
+            app:borderWidthNormal="1dp"
+            app:cornerRadiusNormal="3dp">
+
+        </com.wei.android.lib.colorview.view.ColorEditText>
+
+
+        <!--        <View style="@style/line" />-->
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="取消"
+                android:textColor="@color/app_color_blue" />
+
+
+            <TextView
+                android:id="@+id/tv_sure"
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="确定"
+                android:textColor="@color/app_color_blue" />
+
+
+        </LinearLayout>
+
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+
+</LinearLayout>

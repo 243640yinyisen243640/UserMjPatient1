@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- solid 设置stroke设置的边框以内的颜色 -->
+    <solid android:color="@color/white" />
+    <!-- corners 设置边框四角弧度 -->
+    <corners android:radius="5dp" />
+    <!-- padding主要设置组件里内容距离组件内边框的间距 -->
+    <padding
+        android:left="23dp"
+        android:right="23dp" />
+</shape>

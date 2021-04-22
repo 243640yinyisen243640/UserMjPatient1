@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--头部医生信息-->
+    <LinearLayout
+        android:id="@+id/ll_shadow_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:background="@drawable/drawable_physical_examination_doctor_info_top"
+        android:padding="@dimen/dp_10">
+
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_doctor_head"
+            app:qmui_border_width="0dp"
+            app:qmui_is_circle="true" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/hh_fi_wr">
+
+
+                <TextView
+                    android:id="@+id/tv_doctor_name"
+                    style="@style/text_black_16_w_w"
+                    android:text="医生名称" />
+
+
+                <TextView
+                    android:id="@+id/tv_doctor_profession"
+                    style="@style/text_black_14_w_w"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="主任医师"
+                    android:textColor="@color/main_home" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_doctor_desc"
+                style="@style/text_gray_12_w_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:lineSpacingMultiplier="1.1"
+                android:text="于02年毕业于北京市北京大学医学系，早期曾在XXX医院进修学习，并于第二年晋升成为了主任医师。" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--排班信息-->
+    <TextView
+        android:id="@+id/tv_refresh"
+        style="@style/text_black_14_f_w"
+        android:drawableRight="@drawable/physical_examination_doctor_info_refresh"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:text="排班信息"
+        android:textColor="@color/main_home" />
+
+
+    <!--排班信息列表-->
+    <LinearLayout
+        android:id="@+id/ll_shadow_bottom"
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_12"
+        android:orientation="vertical">
+
+
+        <!--七天-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_month"
+                style="@style/text_white_16_w_w"
+                android:layout_width="38dp"
+                android:layout_gravity="center_vertical"
+                android:text="7月"
+                android:textColor="@color/main_home" />
+
+            <View
+                style="@style/line"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/main_home" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_seven"
+                style="@style/hh_fi_wr"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.wei.android.lib.colorview.view.ColorRelativeLayout
+                    android:id="@+id/rl_one"
+                    style="@style/appointment_of_time_seven_days_rl_copy">
+
+                    <TextView
+                        android:id="@+id/tv_week_one"
+                        style="@style/appointment_of_time_seven_days_tv_top"
+                        android:text="日"
+                        android:textColor="@color/main_home" />
+
+                    <TextView
+                        android:id="@+id/tv_day_one"
+                        style="@style/appointment_of_time_seven_days_tv_bottom"
+                        android:text="14"
+                        android:textColor="@color/main_home" />
+
+
+                </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+
+                <com.wei.android.lib.colorview.view.ColorRelativeLayout
+                    android:id="@+id/rl_two"
+                    style="@style/appointment_of_time_seven_days_rl_copy">
+
+                    <TextView
+                        android:id="@+id/tv_week_two"
+                        style="@style/appointment_of_time_seven_days_tv_top"
+                        android:text="日"
+                        android:textColor="@color/main_home" />
+
+                    <TextView
+                        android:id="@+id/tv_day_two"
+                        style="@style/appointment_of_time_seven_days_tv_bottom"
+                        android:text="14"
+                        android:textColor="@color/main_home" />
+
+
+                </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+
+                <com.wei.android.lib.colorview.view.ColorRelativeLayout
+                    android:id="@+id/rl_three"
+                    style="@style/appointment_of_time_seven_days_rl_copy">
+
+                    <TextView
+                        android:id="@+id/tv_week_three"
+                        style="@style/appointment_of_time_seven_days_tv_top"
+                        android:text="日"
+                        android:textColor="@color/main_home" />
+
+                    <TextView
+                        android:id="@+id/tv_day_three"
+                        style="@style/appointment_of_time_seven_days_tv_bottom"
+                        android:text="14"
+                        android:textColor="@color/main_home" />
+
+
+                </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+
+                <com.wei.android.lib.colorview.view.ColorRelativeLayout
+                    android:id="@+id/rl_four"
+                    style="@style/appointment_of_time_seven_days_rl_copy">
+
+                    <TextView
+                        android:id="@+id/tv_week_four"
+                        style="@style/appointment_of_time_seven_days_tv_top"
+                        android:text="日"
+                        android:textColor="@color/main_home" />
+
+                    <TextView
+                        android:id="@+id/tv_day_four"
+                        style="@style/appointment_of_time_seven_days_tv_bottom"
+                        android:text="14"
+                        android:textColor="@color/main_home" />
+
+
+                </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+
+                <com.wei.android.lib.colorview.view.ColorRelativeLayout
+                    android:id="@+id/rl_five"
+                    style="@style/appointment_of_time_seven_days_rl_copy">
+
+                    <TextView
+                        android:id="@+id/tv_week_five"
+                        style="@style/appointment_of_time_seven_days_tv_top"
+                        android:text="日"
+                        android:textColor="@color/main_home" />
+
+                    <TextView
+                        android:id="@+id/tv_day_five"
+                        style="@style/appointment_of_time_seven_days_tv_bottom"
+                        android:text="14"
+                        android:textColor="@color/main_home" />
+
+
+                </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+
+                <com.wei.android.lib.colorview.view.ColorRelativeLayout
+                    android:id="@+id/rl_six"
+                    style="@style/appointment_of_time_seven_days_rl_copy">
+
+                    <TextView
+                        android:id="@+id/tv_week_six"
+                        style="@style/appointment_of_time_seven_days_tv_top"
+                        android:text="日"
+                        android:textColor="@color/main_home" />
+
+                    <TextView
+                        android:id="@+id/tv_day_six"
+                        style="@style/appointment_of_time_seven_days_tv_bottom"
+                        android:text="14"
+                        android:textColor="@color/main_home" />
+
+
+                </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+
+                <com.wei.android.lib.colorview.view.ColorRelativeLayout
+                    android:id="@+id/rl_seven"
+                    style="@style/appointment_of_time_seven_days_rl_copy">
+
+                    <TextView
+                        android:id="@+id/tv_week_seven"
+                        style="@style/appointment_of_time_seven_days_tv_top"
+                        android:text="日"
+                        android:textColor="@color/main_home" />
+
+                    <TextView
+                        android:id="@+id/tv_day_seven"
+                        style="@style/appointment_of_time_seven_days_tv_bottom"
+                        android:text="14"
+                        android:textColor="@color/main_home" />
+
+
+                </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@color/main_home" />
+
+
+        <!--上午-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_white_16_w_w"
+                android:layout_width="38dp"
+                android:layout_gravity="center_vertical"
+                android:text="上午"
+                android:textColor="@color/main_home" />
+
+            <View
+                style="@style/line"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/main_home" />
+
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_am_state_one"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_am_state_two"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_am_state_three"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_am_state_four"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_am_state_five"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_am_state_six"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_am_state_seven"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            style="@style/line"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@color/main_home" />
+        <!--下午-->
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_white_16_w_w"
+                android:layout_width="38dp"
+                android:layout_gravity="center_vertical"
+                android:text="下午"
+                android:textColor="@color/main_home" />
+
+            <View
+                style="@style/line"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/main_home" />
+
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_pm_state_one"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_pm_state_two"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_pm_state_three"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_pm_state_four"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_pm_state_five"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_pm_state_six"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_pm_state_seven"
+                        style="@style/text_gray_14_f_w"
+                        android:gravity="center"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="约满"
+                        app:backgroundColorNormal="@color/color_e5"
+                        app:cornerRadiusNormal="90dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/hh_fi_wr"
+    android:layout_marginTop="@dimen/dp_15"
+    android:background="@color/white"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_25"
+    android:visibility="visible">
+
+    <!--头部指示器-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:background="@drawable/green_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="每日运动"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fifteen"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_home_sport_look_more"
+            style="@style/text_black_14_w_w"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/home_smart_education_arrow_right"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="查看更多"
+            android:textColor="@color/main_home" />
+
+
+    </RelativeLayout>
+
+    <!--阴影布局-->
+    <com.lihang.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        app:hl_cornerRadius="@dimen/dp_18"
+        app:hl_shadowColor="#000000"
+        app:hl_shadowOffsetX="0dp"
+        app:hl_shadowOffsetY="0dp"
+        app:hl_strokeColor="#F2F2F2"
+        app:hl_strokeWith="1dp">
+
+        <!--有运动方案-->
+        <LinearLayout
+            android:id="@+id/ll_home_sport_have"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_16"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_home_sport_desc"
+                style="@style/text_gray_14_f_w"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16"
+                android:text="根据您的基本信息，您的体重为正常，建议进行中等强度的运动，每天3次，每次20分钟，全天共60分钟。" />
+
+            <!--消耗热量-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home_diet_kj" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_weight="0.8"
+                    android:text="今日需要消耗热量"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_home_sport_kj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1700千卡"
+                    android:textColor="#E64646" />
+
+
+            </LinearLayout>
+
+            <!--消耗热量 水流滚动图(暂时放置圈圈代替)-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16">
+
+                <!--多套两层圈-->
+                <com.wei.android.lib.colorview.view.ColorLinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    app:borderColorNormal="#F2F2F2"
+                    app:borderWidthNormal="1dp"
+                    app:cornerRadiusNormal="180dp">
+
+                    <com.wei.android.lib.colorview.view.ColorLinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        app:borderColorNormal="#F2F2F2"
+                        app:borderWidthNormal="1dp"
+                        app:cornerRadiusNormal="180dp">
+
+                        <com.wei.android.lib.colorview.view.ColorLinearLayout
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            app:backgroundColorNormal="@color/main_home"
+                            app:cornerRadiusNormal="180dp">
+
+                            <TextView
+                                style="@style/text_white_14_w_w"
+                                android:layout_marginTop="52dp"
+                                android:text="消耗热量Kcal" />
+
+                            <TextView
+                                android:id="@+id/tv_home_sport_consume_kcal"
+                                style="@style/text_white_14_w_w"
+                                android:layout_marginTop="18dp"
+                                android:text="0"
+                                android:textSize="32sp" />
+
+
+                        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+                    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+                </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+                <TextView
+                    style="@style/text_gray_14_w_w"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="今日实际消耗热量" />
+
+            </LinearLayout>
+
+            <!--运动推荐-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home_sport_recommend" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_weight="0.8"
+                    android:text="运动推荐"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <!--今日步数-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16">
+
+                <TextView
+                    android:id="@+id/tv_home_sport_today_steps"
+                    style="@style/text_black_14_f_w"
+                    android:layout_weight="0.8"
+                    android:text="今日一共走了 2806 步" />
+
+                <TextView
+                    android:id="@+id/tv_home_sport_today_steps_kcal"
+                    style="@style/text_black_14_w_w"
+                    android:text="156千卡"
+                    android:textColor="#E64545" />
+
+
+            </LinearLayout>
+
+            <com.wei.android.lib.colorview.view.ColorLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_12"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                app:backgroundColorNormal="#F9F9FB"
+                app:cornerRadiusNormal="@dimen/dp_4">
+
+                <!--推荐运动-->
+                <LinearLayout
+                    android:id="@+id/ll_home_sport_recommend_type"
+                    style="@style/hh_fi_wr"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_home_sport_recommend_type"
+                        style="@style/text_black_14_w_w"
+                        android:layout_marginRight="@dimen/dp_40"
+                        android:drawableRight="@drawable/home_sport_arrow_down"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text="跳绳" />
+
+                    <TextView
+                        android:id="@+id/tv_home_sport_recommend_time"
+                        style="@style/text_black_14_f_w"
+                        android:layout_weight="0.8"
+                        android:text="00:00:00" />
+
+
+                    <TextView
+                        android:id="@+id/tv_home_sport_recommend_type_kcal"
+                        style="@style/text_black_14_w_w"
+                        android:text="1700千卡"
+                        android:textColor="#E64545" />
+
+
+                </LinearLayout>
+
+                <!--进度条-->
+                <com.vice.bloodpressure.view.TextProgressBar
+                    android:id="@+id/pb_home_sport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10">
+
+                </com.vice.bloodpressure.view.TextProgressBar>
+
+                <RelativeLayout
+                    android:id="@+id/rl_home_sport_to_do"
+                    style="@style/hh_fi_wr"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@drawable/diet_plan_result_more"
+                        android:drawableRight="@drawable/diet_plan_result_right_arrow"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:text="去完成" />
+
+                </RelativeLayout>
+
+
+            </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+
+        </LinearLayout>
+
+        <!--没有饮食方案 立即开启-->
+        <LinearLayout
+            android:id="@+id/ll_home_sport_empty"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_16"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/tv_home_sport_empty_desc"
+                style="@style/text_black_14_w_w"
+                android:lineSpacingMultiplier="1.2"
+                android:text="经系统自动分析，您填写的基本资料不完整，请完成下列选择题，以便为您制定更科学、更有针对性的运动方案！" />
+
+
+            <com.wei.android.lib.colorview.view.ColorTextView
+                android:id="@+id/tv_home_sport_empty_open"
+                style="@style/text_white_14_w_w"
+                android:layout_width="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:paddingLeft="11dp"
+                android:paddingTop="9dp"
+                android:paddingRight="11dp"
+                android:paddingBottom="9dp"
+                android:text="开启专属运动"
+                android:textSize="15sp"
+                app:backgroundColorNormal="@color/main_home"
+                app:cornerRadiusNormal="@dimen/dp_5" />
+
+
+        </LinearLayout>
+
+
+    </com.lihang.ShadowLayout>
+
+
+</LinearLayout>
+
+

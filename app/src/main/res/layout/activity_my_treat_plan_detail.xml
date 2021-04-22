@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+        <!--头部-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/my_treat_plan_detail_top" />
+
+            <TextView
+                style="@style/text_black_18_w_w"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="您的专属降压方案" />
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_5"
+                android:lineSpacingMultiplier="1.2"
+                android:text="根据您的基本情况进行评估,为您定制的专属降压方案为生活方式干预+药物治疗,以下为方案详情" />
+
+
+        </LinearLayout>
+
+        <!--生活方式干预-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/background"
+            android:gravity="center">
+
+            <View
+                style="@style/line"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_20"
+                android:background="@color/main_home"></View>
+
+            <TextView
+                style="@style/text_black_16_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="生活方式干预" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_gray_14_f_w"
+            android:background="@color/white"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="@dimen/dp_10"
+            android:text="@string/my_treat_plan_detail" />
+        <!--生活方式干预-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/background"
+            android:gravity="center">
+
+            <View
+                style="@style/line"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_20"
+                android:background="@color/main_home"></View>
+
+            <TextView
+                style="@style/text_black_16_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="生活方式干预" />
+
+        </LinearLayout>
+        <!--生活方式干预 图片-->
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_treat_plan_detail_pic"
+            android:visibility="visible" />
+
+
+        <!--随诊建议-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/background"
+            android:gravity="center">
+
+            <View
+                style="@style/line"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_20"
+                android:background="@color/main_home"></View>
+
+            <TextView
+                android:id="@+id/tv_advice"
+                style="@style/text_black_16_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="随诊建议" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_follow_up_advice"
+            style="@style/text_gray_14_f_w"
+            android:background="@color/white"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="@dimen/dp_10"
+            android:text="@string/my_treat_plan_detail" />
+
+
+        <!--医生建议-->
+
+
+        <LinearLayout
+            android:id="@+id/ll_doctor_advice"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/background"
+                android:gravity="center">
+
+                <View
+                    style="@style/line"
+                    android:layout_width="@dimen/dp_8"
+                    android:layout_height="@dimen/dp_20"
+                    android:background="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_16_f_w"
+                    android:padding="@dimen/dp_10"
+                    android:text="医生建议" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_doctor_advice"
+                style="@style/text_gray_14_f_w"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="@dimen/dp_10"
+                android:text="医生建议!!!!!" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_40"
+            style="@style/line"
+            android:layout_height="@dimen/dp_40" />
+
+        <!--药物治疗-->
+        <LinearLayout
+            android:id="@+id/ll_medicine"
+            style="@style/hh_fi_wr"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/background"
+                android:gravity="center">
+
+                <View
+                    style="@style/line"
+                    android:layout_width="@dimen/dp_8"
+                    android:layout_height="@dimen/dp_20"
+                    android:background="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_16_f_w"
+                    android:padding="@dimen/dp_10"
+                    android:text="药物治疗" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="@dimen/dp_10"
+                android:text="根据您的疾病情况诊断，建议使用以下药物进行治疗:" />
+
+            <ImageView
+                android:id="@+id/img_get_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/my_treat_plan_detail_bottom" />
+
+        </LinearLayout>
+
+
+        <com.wei.android.lib.colorview.view.ColorButton
+            android:id="@+id/bt_get_again"
+            style="@style/text_white_16_w_w"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="重新获取"
+            android:visibility="gone"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="90dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

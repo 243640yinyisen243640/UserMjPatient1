@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView style="@style/hh_fi_fi">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_sugar_disease_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="36dp"
+            android:paddingTop="@dimen/dp_14"
+            android:paddingRight="36dp"
+            android:paddingBottom="@dimen/dp_14"
+            android:scaleType="centerCrop"
+            android:src="@drawable/register_question_back" />
+
+
+        <include layout="@layout/include_register_sugar" />
+
+
+        <include layout="@layout/include_register_sugar_question_desc" />
+
+        <LinearLayout
+            android:id="@+id/ll_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/img_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="86dp"
+                android:layout_marginRight="@dimen/dp_16"
+                android:src="@drawable/sport_level_uncheck"
+                android:visibility="visible" />
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_gravity="center_vertical"
+                android:text="无" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <com.wei.android.lib.colorview.view.ColorButton
+            android:id="@+id/bt_next"
+            style="@style/register_question_bt_next"
+            android:text="下一题" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

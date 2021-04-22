@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_id_number"
+        style="@style/et_base_style_no_bg"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="50dp"
+        android:hint="请输入个人身份证号码" />
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_50">
+
+
+    </View>
+
+
+    <TextView
+        style="@style/text_gray_12_f_w"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:text="注意：身份证号你一旦提交 不可修改，请确认输入无误" />
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_sure"
+        style="@style/text_gray_14_f_w"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_50"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="绑定"
+        app:backgroundColorNormal="@color/color_eb"
+        app:cornerRadiusNormal="@dimen/dp_2">
+
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+</LinearLayout>

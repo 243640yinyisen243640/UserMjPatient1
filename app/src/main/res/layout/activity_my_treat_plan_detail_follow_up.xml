@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_treat_plan_follow_up" />
+
+    <!--随诊建议-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:background="@color/background"
+        android:gravity="center">
+
+        <View
+            style="@style/line"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_20"
+            android:background="@color/main_home" />
+
+        <TextView
+            android:id="@+id/tv_advice"
+            style="@style/text_black_16_f_w"
+            android:padding="@dimen/dp_10"
+            android:text="就诊建议" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_follow_up_advice"
+        style="@style/text_gray_14_f_w"
+        android:background="@color/white"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="@dimen/dp_10"
+        android:text="@string/my_treat_plan_detail" />
+
+
+    <!--医生建议-->
+
+    <LinearLayout
+        android:id="@+id/ll_doctor_advice"
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/background"
+            android:gravity="center">
+
+            <View
+                style="@style/line"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_20"
+                android:background="@color/main_home" />
+
+            <TextView
+                style="@style/text_black_16_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="医生建议" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_doctor_advice"
+            style="@style/text_gray_14_f_w"
+            android:background="@color/white"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="@dimen/dp_10"
+            android:text="医生建议!!!!!" />
+    </LinearLayout>
+
+
+    <!--重新获取-->
+    <com.wei.android.lib.colorview.view.ColorButton
+        android:id="@+id/bt_get_again"
+        style="@style/text_white_16_w_w"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="重新获取"
+        android:visibility="visible"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="90dp" />
+
+
+</LinearLayout>

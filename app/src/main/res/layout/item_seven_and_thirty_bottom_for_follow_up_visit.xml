@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_height="42dp">
+
+        <View
+            style="@style/line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sugar_divider" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_black_14_w_w"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="第一天"
+            android:textColor="@color/main_home"
+            android:textSize="10sp" />
+
+        <View
+            style="@style/line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sugar_divider" />
+
+        <!--凌晨-->
+        <FrameLayout
+            android:id="@+id/fl_one"
+            style="@style/rl_seven_and_thirty">
+
+            <TextView
+                android:id="@+id/tv_one"
+                style="@style/tv_seven_and_thirty"
+                android:text="凌晨"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/img_one"
+                style="@style/img_seven_and_thirty_add"
+                android:src="@drawable/sugar_add"
+                android:visibility="gone" />
+
+
+        </FrameLayout>
+
+        <View
+            style="@style/line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sugar_divider" />
+        <!--早餐前 早餐后-->
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/hh_fi_wr">
+
+                <!--早餐前-->
+                <FrameLayout
+                    android:id="@+id/fl_two"
+                    style="@style/rl_seven_and_thirty">
+
+                    <TextView
+                        android:id="@+id/tv_two"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="早餐前" />
+
+                    <ImageView
+                        android:id="@+id/img_two"
+                        style="@style/img_seven_and_thirty_add"
+                        android:src="@drawable/sugar_add" />
+
+
+                </FrameLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/sugar_divider" />
+                <!--早餐后-->
+                <FrameLayout
+                    android:id="@+id/fl_three"
+                    style="@style/rl_seven_and_thirty">
+
+                    <TextView
+                        android:id="@+id/tv_three"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="早餐后" />
+
+                    <ImageView
+                        android:id="@+id/img_three"
+                        style="@style/img_seven_and_thirty_add"
+                        android:src="@drawable/sugar_add" />
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sugar_divider" />
+
+        <!--午餐前 午餐后-->
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/hh_fi_wr">
+                <!--午餐前-->
+                <FrameLayout
+                    android:id="@+id/fl_four"
+                    style="@style/rl_seven_and_thirty">
+
+                    <TextView
+                        android:id="@+id/tv_four"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="午餐前" />
+
+                    <ImageView
+                        android:id="@+id/img_four"
+                        style="@style/img_seven_and_thirty_add"
+                        android:src="@drawable/sugar_add" />
+
+
+                </FrameLayout>
+
+
+                <View
+                    style="@style/line"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/sugar_divider" />
+                <!--午餐后-->
+
+                <FrameLayout
+                    android:id="@+id/fl_five"
+                    style="@style/rl_seven_and_thirty">
+
+                    <TextView
+                        android:id="@+id/tv_five"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="午餐后" />
+
+                    <ImageView
+                        android:id="@+id/img_five"
+                        style="@style/img_seven_and_thirty_add"
+                        android:src="@drawable/sugar_add" />
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sugar_divider" />
+        <!--晚餐前 晚餐后-->
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/hh_fi_wr">
+                <!--晚餐前-->
+                <FrameLayout
+                    android:id="@+id/fl_six"
+                    style="@style/rl_seven_and_thirty">
+
+                    <TextView
+                        android:id="@+id/tv_six"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="晚餐前" />
+
+                    <ImageView
+                        android:id="@+id/img_six"
+                        style="@style/img_seven_and_thirty_add"
+                        android:src="@drawable/sugar_add" />
+
+
+                </FrameLayout>
+
+
+                <View
+                    style="@style/line"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/sugar_divider" />
+                <!--晚餐后-->
+
+                <FrameLayout
+                    android:id="@+id/fl_seven"
+                    style="@style/rl_seven_and_thirty">
+
+                    <TextView
+                        android:id="@+id/tv_seven"
+                        style="@style/tv_seven_and_thirty"
+                        android:text="晚餐后" />
+
+                    <ImageView
+                        android:id="@+id/img_seven"
+                        style="@style/img_seven_and_thirty_add"
+                        android:src="@drawable/sugar_add" />
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sugar_divider" />
+        <!--睡后-->
+
+        <FrameLayout
+            android:id="@+id/fl_eight"
+            style="@style/rl_seven_and_thirty">
+
+            <TextView
+                android:id="@+id/tv_eight"
+                style="@style/tv_seven_and_thirty"
+                android:text="睡前" />
+
+            <ImageView
+                android:id="@+id/img_eight"
+                style="@style/img_seven_and_thirty_add"
+                android:src="@drawable/sugar_add" />
+
+
+        </FrameLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sugar_divider" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sugar_divider" />
+</LinearLayout>

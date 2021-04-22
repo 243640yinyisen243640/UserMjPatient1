@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+        <!--姓名描述-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_black_14_f_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                android:text="李亚东,你好!" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                style="@style/text_black_14_f_w"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="此份为2017年3月份的控糖报告（2型糖尿病），系掌控糖尿病以您记录在2017.03.01-2017.03.31期间的数据为依据分析生成，仅供参考，不作为诊疗依据。" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:layout_height="4dp" />
+
+        <!--近3个月糖化血红蛋白情况-->
+        <LinearLayout
+            android:id="@+id/ll_recent_three_month"
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_black_16_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="近3个月糖化血红蛋白情况" />
+
+
+            <TextView
+                android:id="@+id/tv_sugar_control_target"
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="right"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="糖化控制目标：6.0%~7.0%" />
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_blood_sugar_report"
+                style="@style/listView"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+            <TextView
+                android:id="@+id/tv_recent_three_month_desc"
+                style="@style/text_black_14_f_w"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="@dimen/dp_10"
+                android:text="您近期共检测糖化血红蛋白3次，达标1次，未达标2次。您最近血糖水平控制未达标，血糖控制的不好哦。建议您咨询医生，以便于调整糖尿病管理方案，同时要记得及时监测血糖和糖化血红蛋白哦。" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_recent_three_month_no_data"
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_16_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="近3个月糖化血红蛋白情况" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/blood_sugar_report_no_data" />
+
+            <TextView
+                android:id="@+id/tv_recent_three_month_no_data"
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="您已经超过3个月没做糖化血红蛋白检测了，健康容不得偷懒哦，快去测一下吧。" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:layout_height="4dp" />
+
+        <!--3月份血糖概况-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_month_sugar_title"
+                style="@style/text_black_16_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="3月份血糖概况" />
+
+            <LinearLayout
+                android:id="@+id/ll_pie_have_data"
+                style="@style/hh_fi_wr"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pie_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                </com.github.mikephil.charting.charts.PieChart>
+
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:padding="@dimen/dp_10">
+
+                    <LinearLayout
+                        style="@style/hh_fi_wr"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <com.wei.android.lib.colorview.view.ColorTextView
+                            android:layout_width="@dimen/dp_10"
+                            android:layout_height="@dimen/dp_10"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:background="@color/sugar_low"
+                            app:backgroundColorNormal="@color/sugar_low"
+                            app:cornerRadiusNormal="@dimen/dp_10" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="偏低"
+                            android:textSize="@dimen/size_18" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/hh_fi_wr"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <com.wei.android.lib.colorview.view.ColorTextView
+
+                            android:layout_width="@dimen/dp_10"
+                            android:layout_height="@dimen/dp_10"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:background="@color/sugar_normal"
+                            app:backgroundColorNormal="@color/sugar_normal"
+                            app:cornerRadiusNormal="@dimen/dp_10" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="正常"
+                            android:textSize="@dimen/size_18" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/hh_fi_wr"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <com.wei.android.lib.colorview.view.ColorTextView
+                            android:layout_width="@dimen/dp_10"
+                            android:layout_height="@dimen/dp_10"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:background="@color/sugar_high"
+                            app:backgroundColorNormal="@color/sugar_high"
+                            app:cornerRadiusNormal="@dimen/dp_10" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="偏高"
+                            android:textSize="@dimen/size_18" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_pie_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/blood_sugar_report_no_data" />
+
+
+            <TextView
+                android:id="@+id/tv_month_sugar_desc"
+                style="@style/text_black_14_f_w"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="@dimen/dp_10"
+                android:text="您本月测量了88次血糖，其中72次正常，15次偏高，1次偏低。血糖有波动，请规律用药，合理饮食与运动，保持血糖稳定。特别注意本月出现血糖偏低记录，有低血糖的风险，请咨询医生。" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:layout_height="@dimen/dp_4" />
+
+        <!--空腹血糖趋势图-->
+        <LinearLayout
+            android:id="@+id/ll_empty"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_black_16_f_w"
+                    android:padding="@dimen/dp_10"
+                    android:text="空腹血糖趋势图" />
+
+                <LinearLayout
+                    android:id="@+id/ll_empty_have_data"
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        style="@style/hh_fi_wr"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_alignParentRight="true">
+
+                            <com.wei.android.lib.colorview.view.ColorTextView
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:background="@color/sugar_normal"
+                                app:backgroundColorNormal="@color/sugar_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_empty_sugar_control_target"
+                                style="@style/text_black_14_w_w"
+                                android:text="空腹血糖控制目标：4.4-7mmol/L" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.github.mikephil.charting.charts.ScatterChart
+                        android:id="@+id/sc_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                    </com.github.mikephil.charting.charts.ScatterChart>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_empty_desc"
+                    style="@style/text_black_14_f_w"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="@dimen/dp_10"
+                    android:text="本月共测量20次空腹血糖，其中19次正常，1次偏低。最高为6.8mmol/L，最低为4.0mmol/L。空腹出现一次低血糖，有低血糖风险，请咨询医生。" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_height="@dimen/dp_4" />
+
+        </LinearLayout>
+
+
+        <!--早餐后-->
+        <LinearLayout
+            android:id="@+id/ll_after_break"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_black_16_f_w"
+                    android:padding="@dimen/dp_10"
+                    android:text="早餐后血糖趋势图" />
+
+                <LinearLayout
+                    android:id="@+id/ll_after_break_have_data"
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        style="@style/hh_fi_wr"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_alignParentRight="true">
+
+                            <com.wei.android.lib.colorview.view.ColorTextView
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:background="@color/sugar_normal"
+                                app:backgroundColorNormal="@color/sugar_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_after_break_sugar_control_target"
+                                style="@style/text_black_14_w_w"
+                                android:text="空腹血糖控制目标：4.4-7mmol/L" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.github.mikephil.charting.charts.ScatterChart
+                        android:id="@+id/sc_after_break"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                    </com.github.mikephil.charting.charts.ScatterChart>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_after_break_desc"
+                    style="@style/text_black_14_f_w"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="@dimen/dp_10"
+                    android:text="本月共测量20次空腹血糖，其中19次正常，1次偏低。最高为6.8mmol/L，最低为4.0mmol/L。空腹出现一次低血糖，有低血糖风险，请咨询医生。" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_height="@dimen/dp_4" />
+
+        </LinearLayout>
+
+        <!--午餐前-->
+        <LinearLayout
+            android:id="@+id/ll_before_lunch"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_black_16_f_w"
+                    android:padding="@dimen/dp_10"
+                    android:text="午餐前血糖趋势图" />
+
+                <LinearLayout
+                    android:id="@+id/ll_before_lunch_have_data"
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        style="@style/hh_fi_wr"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_alignParentRight="true">
+
+                            <com.wei.android.lib.colorview.view.ColorTextView
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:background="@color/sugar_normal"
+                                app:backgroundColorNormal="@color/sugar_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_before_lunch_sugar_control_target"
+                                style="@style/text_black_14_w_w"
+                                android:text="空腹血糖控制目标：4.4-7mmol/L" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.github.mikephil.charting.charts.ScatterChart
+                        android:id="@+id/sc_before_lunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                    </com.github.mikephil.charting.charts.ScatterChart>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_before_lunch_desc"
+                    style="@style/text_black_14_f_w"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="@dimen/dp_10"
+                    android:text="本月共测量20次空腹血糖，其中19次正常，1次偏低。最高为6.8mmol/L，最低为4.0mmol/L。空腹出现一次低血糖，有低血糖风险，请咨询医生。" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_height="@dimen/dp_4" />
+        </LinearLayout>
+
+
+        <!--午餐后-->
+        <LinearLayout
+            android:id="@+id/ll_after_lunch"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_black_16_f_w"
+                    android:padding="@dimen/dp_10"
+                    android:text="午餐后血糖趋势图" />
+
+                <LinearLayout
+                    android:id="@+id/ll_after_lunch_have_data"
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        style="@style/hh_fi_wr"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_alignParentRight="true">
+
+                            <com.wei.android.lib.colorview.view.ColorTextView
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:background="@color/sugar_normal"
+                                app:backgroundColorNormal="@color/sugar_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_after_lunch_sugar_control_target"
+                                style="@style/text_black_14_w_w"
+                                android:text="空腹血糖控制目标：4.4-7mmol/L" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.github.mikephil.charting.charts.ScatterChart
+                        android:id="@+id/sc_after_lunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                    </com.github.mikephil.charting.charts.ScatterChart>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_after_lunch_desc"
+                    style="@style/text_black_14_f_w"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="@dimen/dp_10"
+                    android:text="本月共测量20次空腹血糖，其中19次正常，1次偏低。最高为6.8mmol/L，最低为4.0mmol/L。空腹出现一次低血糖，有低血糖风险，请咨询医生。" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_height="@dimen/dp_4" />
+        </LinearLayout>
+
+        <!--晚餐前-->
+        <LinearLayout
+            android:id="@+id/ll_before_dinner"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_black_16_f_w"
+                    android:padding="@dimen/dp_10"
+                    android:text="晚餐前血糖趋势图" />
+
+                <LinearLayout
+                    android:id="@+id/ll_before_dinner_have_data"
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        style="@style/hh_fi_wr"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_alignParentRight="true">
+
+                            <com.wei.android.lib.colorview.view.ColorTextView
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:background="@color/sugar_normal"
+                                app:backgroundColorNormal="@color/sugar_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_before_dinner_sugar_control_target"
+                                style="@style/text_black_14_w_w"
+                                android:text="空腹血糖控制目标：4.4-7mmol/L" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.github.mikephil.charting.charts.ScatterChart
+                        android:id="@+id/sc_before_dinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                    </com.github.mikephil.charting.charts.ScatterChart>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_before_dinner_desc"
+                    style="@style/text_black_14_f_w"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="@dimen/dp_10"
+                    android:text="本月共测量20次空腹血糖，其中19次正常，1次偏低。最高为6.8mmol/L，最低为4.0mmol/L。空腹出现一次低血糖，有低血糖风险，请咨询医生。" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_height="@dimen/dp_4" />
+        </LinearLayout>
+
+        <!--晚餐后-->
+        <LinearLayout
+            android:id="@+id/ll_after_dinner"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_black_16_f_w"
+                    android:padding="@dimen/dp_10"
+                    android:text="晚餐后血糖趋势图" />
+
+                <LinearLayout
+                    android:id="@+id/ll_after_dinner_have_data"
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        style="@style/hh_fi_wr"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_alignParentRight="true">
+
+                            <com.wei.android.lib.colorview.view.ColorTextView
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:background="@color/sugar_normal"
+                                app:backgroundColorNormal="@color/sugar_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_after_dinner_sugar_control_target"
+                                style="@style/text_black_14_w_w"
+                                android:text="空腹血糖控制目标：4.4-7mmol/L" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.github.mikephil.charting.charts.ScatterChart
+                        android:id="@+id/sc_after_dinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                    </com.github.mikephil.charting.charts.ScatterChart>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_after_dinner_desc"
+                    style="@style/text_black_14_f_w"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="@dimen/dp_10"
+                    android:text="本月共测量20次空腹血糖，其中19次正常，1次偏低。最高为6.8mmol/L，最低为4.0mmol/L。空腹出现一次低血糖，有低血糖风险，请咨询医生。" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_height="@dimen/dp_4" />
+        </LinearLayout>
+
+        <!--睡前-->
+        <LinearLayout
+            android:id="@+id/ll_before_sleep"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_black_16_f_w"
+                    android:padding="@dimen/dp_10"
+                    android:text="睡前血糖趋势图" />
+
+                <LinearLayout
+                    android:id="@+id/ll_before_sleep_have_data"
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        style="@style/hh_fi_wr"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_alignParentRight="true">
+
+                            <com.wei.android.lib.colorview.view.ColorTextView
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:background="@color/sugar_normal"
+                                app:backgroundColorNormal="@color/sugar_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_before_sleep_sugar_control_target"
+                                style="@style/text_black_14_w_w"
+                                android:text="空腹血糖控制目标：4.4-7mmol/L" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.github.mikephil.charting.charts.ScatterChart
+                        android:id="@+id/sc_before_sleep"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                    </com.github.mikephil.charting.charts.ScatterChart>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_before_sleep_desc"
+                    style="@style/text_black_14_f_w"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="@dimen/dp_10"
+                    android:text="本月共测量20次空腹血糖，其中19次正常，1次偏低。最高为6.8mmol/L，最低为4.0mmol/L。空腹出现一次低血糖，有低血糖风险，请咨询医生。" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_height="@dimen/dp_4" />
+        </LinearLayout>
+
+        <!--凌晨-->
+        <LinearLayout
+            android:id="@+id/ll_night"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_black_16_f_w"
+                    android:padding="@dimen/dp_10"
+                    android:text="凌晨血糖趋势图" />
+
+                <LinearLayout
+                    android:id="@+id/ll_night_have_data"
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        style="@style/hh_fi_wr"
+                        android:padding="@dimen/dp_10">
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:text="mmol/L" />
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_alignParentRight="true">
+
+                            <com.wei.android.lib.colorview.view.ColorTextView
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/dp_10"
+                                android:layout_marginRight="@dimen/dp_10"
+                                android:background="@color/sugar_normal"
+                                app:backgroundColorNormal="@color/sugar_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_night_sugar_control_target"
+                                style="@style/text_black_14_w_w"
+                                android:text="空腹血糖控制目标：4.4-7mmol/L" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.github.mikephil.charting.charts.ScatterChart
+                        android:id="@+id/sc_night"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                    </com.github.mikephil.charting.charts.ScatterChart>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_night_desc"
+                    style="@style/text_black_14_f_w"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="@dimen/dp_10"
+                    android:text="本月共测量20次空腹血糖，其中19次正常，1次偏低。最高为6.8mmol/L，最低为4.0mmol/L。空腹出现一次低血糖，有低血糖风险，请咨询医生。" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_height="@dimen/dp_4" />
+
+        </LinearLayout>
+
+
+        <!--总结性文字-->
+        <LinearLayout
+            android:id="@+id/ll_total_desc"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_total_desc"
+                style="@style/text_black_14_f_w"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="@dimen/dp_10"
+                android:text="" />
+
+            <View
+                style="@style/line"
+                android:layout_height="4dp" />
+
+        </LinearLayout>
+
+
+        <!--最底部-->
+        <TextView
+            android:id="@+id/tv_bottom_reference_data"
+            style="@style/text_black_14_f_w"
+            android:background="@color/white"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="@dimen/dp_10"
+            android:text="参考资料：\n中国2型糖尿病防治指南（2017）\n中国老年2型糖尿病诊疗措施专家共识（2018年版）\n中国1型糖尿病诊治指南（2011年版）\n妊娠合并糖尿病诊治指南（2014）" />
+
+    </LinearLayout>
+</ScrollView>

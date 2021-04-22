@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:scaleType="centerCrop"
+        android:src="@drawable/diet_plan" />
+
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:layout_marginTop="36dp"
+        android:text="智能饮食健康方案问卷" />
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_50"
+        android:text="智能食谱文字介绍，主要介绍内容为：" />
+
+    <TextView
+        style="@style/text_gray_12_w_w"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_50"
+        android:lineSpacingMultiplier="1.2"
+        android:text="1.通过提交以下服务问卷，经过平台大数据+人功智能技术为您推出“智能饮食健康方案”，方案包含早、午、晚及加餐应该怎么吃。" />
+
+    <TextView
+        style="@style/text_gray_12_w_w"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/dp_50"
+        android:lineSpacingMultiplier="1.2"
+        android:text="2.为保证分析结果的准确性，请务必真实、准确、完整的填写问卷内容，我们承诺对您的信息严格保密。" />
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_next"
+        style="@style/text_white_16_f_w"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="38dp"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="开启智能体验"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="3dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+</LinearLayout>

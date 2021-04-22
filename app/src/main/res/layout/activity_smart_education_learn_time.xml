@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical"
+        app:backgroundColorNormal="@color/white"
+        app:cornerRadiusNormal="@dimen/dp_4">
+
+
+        <TextView
+            style="@style/text_black_16_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="17dp"
+            android:text="系列课程时长统计" />
+
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/stl"
+            android:layout_width="250dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            tl:tl_bar_color="#ffffff"
+            tl:tl_indicator_color="#EEEEEE"
+            tl:tl_indicator_corner_radius="8dp"
+            tl:tl_tab_padding="20dp"
+            tl:tl_textSelectColor="@color/black_text"
+            tl:tl_textUnselectColor="@color/gray_text" />
+
+        <FrameLayout
+            android:id="@+id/fl_chart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+</LinearLayout>

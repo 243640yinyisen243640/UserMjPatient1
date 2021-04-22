@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_over">
+
+
+        <com.vice.bloodpressure.view.video.MyJzvdForSport
+            android:id="@+id/jzvd_for_sport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/img_gif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/text_white_14_w_w"
+                android:text="000000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_sport_name"
+                style="@style/text_white_14_w_w"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:text="跳绳" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_over"
+        style="@style/hh_fi_wr"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_home"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_white_16_w_w"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/sport_type_video_playing_pause"
+            android:drawablePadding="10dp"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_16"
+            android:text="点击结束" />
+    </RelativeLayout>
+
+</RelativeLayout>

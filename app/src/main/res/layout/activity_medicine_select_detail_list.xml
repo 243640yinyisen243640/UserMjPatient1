@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        style="@style/text_black_14_f_w"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="哈哈哈哈哈"
+        android:textColor="@color/main_red" />
+
+    <TextView
+        style="@style/text_black_14_f_w"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="(本方案仅供参考，实际用药请遵医嘱)"
+        android:textColor="@color/main_red" />
+
+    <ListView
+        android:id="@+id/lv"
+        style="@style/listView">
+
+    </ListView>
+
+
+</LinearLayout>

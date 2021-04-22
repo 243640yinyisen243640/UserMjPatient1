@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View style="@style/line" />
+
+
+        <TextView
+            style="@style/text_black_16_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="《注意事项》" />
+
+
+        <!--第一部分-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="【1】检查须知"
+                android:textColor="@color/color_666" />
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_5"
+                android:lineSpacingMultiplier="1.2"
+                android:text="• 就诊前一日，晚餐应尽可能吃清淡食物，请勿饮酒。晚上九点以后，请勿进食任何食物和饮料，但可 喝适量的水。" />
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_2"
+                android:lineSpacingMultiplier="1.2"
+                android:text="• 就诊当日，早晨起床后请勿进食、勿食口香糖，空腹做抽血化验和B超检查。" />
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_2"
+                android:lineSpacingMultiplier="1.2"
+                android:text="• 上腹部（肝、胆、脾、胰）B超检查前，应空腹并排空大便，做泌尿及生殖器系统B超检查时（即肾 、输尿管、膀胱、子宫及其附件、前列腺）须憋尿，使膀胱充盈后才能进行。" />
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_2"
+                android:lineSpacingMultiplier="1.2"
+                android:text="• 服药用户请勿停药，并将服药情况记录在体检册上或告知体检医生。" />
+
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_2"
+                android:lineSpacingMultiplier="1.2"
+                android:text="• 尿液标本时需取中段尿（女性月经期不宜做），粪便取新鲜（当天）样本。" />
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="注:提前30分钟到医院排队就诊" />
+
+        </LinearLayout>
+
+        <!--第二部分-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="【2】检后须知"
+                android:textColor="@color/color_666" />
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_5"
+                android:lineSpacingMultiplier="1.2"
+                android:text="• 医院中心为每位用户建立完整的个人电子健康档案，以便日后查询。" />
+
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_2"
+                android:lineSpacingMultiplier="1.2"
+                android:text="• 请您认真听取医生的建议，对异常的结果及时复查、随诊或来我院专科进行规范的诊治。" />
+
+            <TextView
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_2"
+                android:lineSpacingMultiplier="1.2"
+                android:text="• 如果您对就诊结果有疑问或有其他身体不适，欢迎致电咨询（根据当地医院定）" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

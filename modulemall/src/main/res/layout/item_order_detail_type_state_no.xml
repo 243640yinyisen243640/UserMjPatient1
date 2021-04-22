@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dp"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10"
+    app:backgroundColorNormal="@color/white">
+
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:text="交易关闭"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginRight="@dimen/dp_10"
+            app:backgroundColorNormal="@color/main_green"
+            app:cornerRadiusNormal="180dp">
+
+        </com.wei.android.lib.colorview.view.ColorTextView>
+
+        <TextView
+            android:id="@+id/tv_type_state_cancel_type"
+            style="@style/text_black_14_w_w"
+            android:text="关闭类型：买家取消订单"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginRight="@dimen/dp_10"
+            app:backgroundColorNormal="@color/main_green"
+            app:cornerRadiusNormal="180dp">
+
+        </com.wei.android.lib.colorview.view.ColorTextView>
+
+        <TextView
+            android:id="@+id/tv_type_state_cancel_desc"
+            style="@style/text_black_14_w_w"
+            android:text="原因：我不想买了"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</com.wei.android.lib.colorview.view.ColorLinearLayout>

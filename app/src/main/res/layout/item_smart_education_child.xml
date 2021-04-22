@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_10">
+
+
+    <TextView
+        android:id="@+id/tv_class_name"
+        style="@style/text_black_14_f_w"
+        android:layout_weight="0.8"
+        android:text="第一节：什么是糖尿病？" />
+
+
+    <TextView
+        android:id="@+id/tv_class_state"
+        style="@style/text_black_14_w_w"
+        android:text="已完成"
+        android:visibility="gone" />
+
+
+</LinearLayout>

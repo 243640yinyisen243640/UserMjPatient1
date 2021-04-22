@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_14"
+    android:paddingTop="@dimen/dp_18"
+    android:paddingRight="@dimen/dp_14"
+    android:paddingBottom="@dimen/dp_18">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mall_home_recommend" />
+
+
+    <TextView
+        android:id="@+id/tv_all_goods"
+        style="@style/text_gray_14_w_w"
+        android:layout_alignParentRight="true"
+        android:drawableRight="@drawable/mall_home_goods_more"
+        android:drawablePadding="@dimen/dp_5"
+        android:text="全部商品" />
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="bottom_popup_cancel_order_and_refund_reason">
+        <item>不想要了</item>
+        <item>地址写错了</item>
+        <item>拍错了</item>
+        <item>其他</item>
+    </array>
+
+    <array name="bottom_popup_product_state">
+        <item>未收到货</item>
+        <item>已收到货</item>
+    </array>
+
+    <array name="pay_type_pic">
+        <item>@drawable/pay_type_wechat</item>
+        <item>@drawable/pay_type_ali</item>
+    </array>
+</resources>

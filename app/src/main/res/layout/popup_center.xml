@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sugar_add_warning">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_white_16_w_w"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="150dp"
+            android:gravity="left"
+            android:text="血糖高了"
+            android:textColor="@color/main_home" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/text_gray_16_w_w"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="180dp"
+            android:gravity="left"
+            android:text="您上传xx值已经超出范围" />
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_know"
+            style="@style/text_white_16_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="50dp"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="知道了"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="@dimen/dp_18" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

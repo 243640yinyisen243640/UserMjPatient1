@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_symptom"
+    style="@style/ll_follow_up_visit_include_item"
+    android:orientation="horizontal">
+    <!--症状-->
+
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_marginRight="2dp">
+
+        <com.wei.android.lib.colorview.view.ColorView
+            android:layout_width="2dp"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="center"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="1dp">
+
+        </com.wei.android.lib.colorview.view.ColorView>
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:text="症状"
+            android:textColor="@color/main_home" />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_symptom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

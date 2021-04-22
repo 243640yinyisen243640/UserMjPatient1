@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_advice"
+        style="@style/hh_fi_fi"
+        android:layout_above="@+id/tv_ask_advice">
+
+        <ListView
+            android:id="@+id/lv_advice"
+            style="@style/listView">
+
+        </ListView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/tv_ask_advice"
+        style="@style/text_white_16_f_w"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_home"
+        android:gravity="center"
+        android:padding="@dimen/dp_12"
+        android:text="@string/ask_doctor" />
+
+</RelativeLayout>

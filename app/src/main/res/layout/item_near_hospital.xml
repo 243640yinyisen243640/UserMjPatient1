@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:padding="@dimen/dp_10">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hospital_name"
+                style="@style/text_black_14_f_w"
+                android:text="北京医院" />
+
+            <TextView
+                android:id="@+id/tv_hospital_type"
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="专科医院" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_hospital"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_hospital" />
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10"></View>
+
+
+</LinearLayout>

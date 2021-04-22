@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_black_16_w_w"
+        android:background="@drawable/shape_circle"
+        android:gravity="center"
+        android:text="1/5" />
+
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/text_black_14_w_w"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="您的性别是？" />
+</LinearLayout>

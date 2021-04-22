@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_input_new_phone_number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="50dp">
+
+
+        <TextView
+            android:id="@+id/tv_add_86"
+            style="@style/text_black_14_w_w"
+            android:drawableRight="@drawable/right_arrow_down"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="+86" />
+
+
+        <EditText
+            android:id="@+id/et_new_phone_number"
+            style="@style/et_base_style_no_bg"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_toRightOf="@+id/tv_add_86"
+            android:hint="请输入原手机号"
+            android:inputType="phone" />
+
+    </RelativeLayout>
+
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_50">
+
+    </View>
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_get_register_code"
+        style="@style/text_gray_14_f_w"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_50"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="获取验证码"
+        app:backgroundColorNormal="@color/color_eb"
+        app:cornerRadiusNormal="@dimen/dp_2">
+
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+</LinearLayout>

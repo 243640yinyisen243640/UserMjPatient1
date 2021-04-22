@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_margin="@dimen/dp_10">
+
+        <!--选中-->
+        <CheckBox
+            android:id="@+id/cb_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/patient_select_check_selector"
+            android:button="@null"
+            android:checked="false"
+            android:enabled="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+
+        <!--名称 联系方式 身份证号-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_black_16_w_w"
+                android:text="名称" />
+
+
+            <TextView
+                android:id="@+id/tv_tel"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="联系方式" />
+
+            <TextView
+                android:id="@+id/tv_id_number"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="身份证号" />
+
+
+        </LinearLayout>
+
+
+        <!--默认就诊人-->
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_default"
+            style="@style/text_white_12_w_w"
+            android:layout_gravity="center"
+            android:paddingLeft="7dp"
+            android:paddingTop="3dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="3dp"
+            android:text="默认就诊人"
+            android:visibility="gone"
+            app:backgroundColorNormal="#FF7A45"
+            app:cornerRadiusNormal="@dimen/dp_2">
+
+        </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10" />
+
+
+</LinearLayout>

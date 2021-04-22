@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        style="@style/line"
+        android:layout_height="@dimen/dp_10" />
+    <!--就诊人-->
+    <RelativeLayout
+        style="@style/hh_fi_wr"
+        android:padding="@dimen/dp_10">
+
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="就诊人" />
+
+
+        <EditText
+            android:id="@+id/et_person_name"
+            style="@style/et_base_style_no_bg"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="请输入就诊人">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+
+    <!--手机号-->
+    <RelativeLayout
+        style="@style/hh_fi_wr"
+        android:padding="@dimen/dp_10">
+
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="手机号" />
+
+
+        <EditText
+            android:id="@+id/et_phone_number"
+            style="@style/et_base_style_no_bg"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLength="11">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+
+    <!--身份证号-->
+    <RelativeLayout
+        style="@style/hh_fi_wr"
+        android:padding="@dimen/dp_10">
+
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="身份证号" />
+
+
+        <EditText
+            android:id="@+id/et_id_number"
+            style="@style/et_base_style_no_bg"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="请输入身份证号"
+            android:maxLength="18">
+
+        </EditText>
+
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <!--默认就诊人-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_10"
+            android:text="设为默认就诊人"
+            android:textColor="@color/color_666" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/sb_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:sb_checked="false"
+            app:sb_show_indicator="false" />
+
+    </RelativeLayout>
+
+    <!--添加就诊人提醒-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/appoint_remind" />
+
+        <TextView
+            style="@style/text_gray_14_w_w"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:text="温馨提示" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/appoint_remind"
+            android:visibility="invisible" />
+
+        <TextView
+            style="@style/text_gray_12_w_w"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:text="1.就诊人姓名、身份证号码将用于医院建档信息匹配；" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/appoint_remind"
+            android:visibility="invisible" />
+
+        <TextView
+            style="@style/text_gray_12_w_w"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:text="2.手机号码将用于接受通知信息。" />
+    </LinearLayout>
+
+
+</LinearLayout>

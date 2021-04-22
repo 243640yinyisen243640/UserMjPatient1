@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/text_white_14_w_w"
+    android:layout_margin="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="6dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="6dp"
+    android:text="HelloWorld"
+    app:backgroundColorNormal="@color/main_home"
+    app:cornerRadiusNormal="90dp">
+
+</com.wei.android.lib.colorview.view.ColorTextView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/line" />
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:id="@+id/ll_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_18"
+        app:backgroundColorNormal="#FAFAFA"
+        app:cornerRadiusNormal="11dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/med_store_search" />
+
+        <TextView
+            style="@style/text_gray_14_w_w"
+            android:layout_marginStart="10dp"
+            android:text="请输入您需要的药品" />
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_med"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

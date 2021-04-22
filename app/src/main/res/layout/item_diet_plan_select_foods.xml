@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/diet_plan_select_food_checked"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/img_food"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_food_name"
+                style="@style/text_black_14_w_w"
+                android:text="窝头" />
+
+            <TextView
+                android:id="@+id/tv_food_kcal"
+                style="@style/text_gray_12_w_w"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="4dp"
+                android:text="90千卡/100g" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_40" />
+</LinearLayout>

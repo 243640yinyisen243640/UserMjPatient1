@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_15"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_15"
+        app:backgroundColorNormal="@color/white"
+        app:cornerRadiusNormal="@dimen/dp_4">
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_width="@dimen/dp_40"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_year"
+                style="@style/text_black_14_w_w"
+                android:text="2020"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_month_day"
+                style="@style/text_gray_12_w_w"
+                android:text="03-17" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/img_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/patient_education_video" />
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/text_black_14_w_w"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="重要通知,测试一下" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sub_title"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="重要通知，3.16更新了某某某模块测试一下重要通知，测试一下重要通知，测试一......" />
+
+        </LinearLayout>
+
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+</LinearLayout>

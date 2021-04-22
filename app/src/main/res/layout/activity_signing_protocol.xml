@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:orientation="vertical"
+        tools:context=".ui.activity.homesign.SignProtocolActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8.5dp"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/agreement_title_one"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8.5dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/agreement_content_one"
+            android:textSize="@dimen/size_12"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8.5dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/agreement_title_two"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8.5dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/agreement_content_two"
+            android:textSize="@dimen/size_12"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8.5dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/agreement_title_three"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8.5dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_14"
+            android:text="@string/agreement_content_three"
+            android:textSize="@dimen/size_12"
+            android:typeface="monospace" />
+
+
+        <com.lihang.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            app:hl_cornerRadius="@dimen/dp_5"
+            app:hl_shadowColor="#2b0a0204"
+            app:hl_shadowOffsetX="@dimen/dp_0"
+            app:hl_shadowOffsetY="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="拍照证明"
+                android:textSize="@dimen/size_13" />
+
+            <ImageView
+                android:id="@+id/iv_group_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_50"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:src="@drawable/group_photo" />
+
+        </com.lihang.ShadowLayout>
+
+        <com.lihang.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_20"
+            app:hl_cornerRadius="@dimen/dp_5"
+            app:hl_shadowColor="#2b0a0204"
+            app:hl_shadowOffsetX="@dimen/dp_0"
+            app:hl_shadowOffsetY="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="电子签名"
+                    android:textSize="@dimen/size_13" />
+
+                <ImageView
+                    android:id="@+id/iv_doctor_autograph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:src="@drawable/doctor_autograph" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医生电子签名"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/size_13" />
+
+                <ImageView
+                    android:id="@+id/iv_patient_autograph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_50"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:src="@drawable/patient_autograph" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="患者电子签名"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/size_13" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_25"
+                    android:text="签约时间：2019-11-07"
+                    android:textSize="@dimen/size_13" />
+
+            </LinearLayout>
+
+        </com.lihang.ShadowLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/hh_wr_wr"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="￥" />
+
+                <TextView
+                    android:id="@+id/tv_pay_money"
+                    style="@style/text_black_14_w_w"
+                    android:text="99.99"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_count_down"
+            style="@style/text_gray_12_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="剩余23时59分59秒，订单自动关闭..." />
+
+
+        <com.wei.android.lib.colorview.view.ColorLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_48"
+            android:layout_marginRight="@dimen/dp_14"
+            app:backgroundColorNormal="@color/white"
+            app:cornerRadiusNormal="5dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_pay_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_pay_type_select_list">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+    </LinearLayout>
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_pay"
+        style="@style/text_white_14_f_w"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="支付"
+        android:textSize="15sp"
+        app:backgroundColorNormal="@color/main_green"
+        app:cornerRadiusNormal="@dimen/dp_4">
+
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+</RelativeLayout>

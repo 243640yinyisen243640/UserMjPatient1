@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<item>基本信息</item>-->
+        <LinearLayout
+            android:id="@+id/ll_base_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center"
+                    android:background="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="基本信息" />
+
+                <ImageView
+                    android:id="@+id/img_base_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+
+        </LinearLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/el_base_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="600"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_base_info"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <!--<item>体格检查</item>-->
+
+        <LinearLayout
+            android:id="@+id/ll_body_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center"
+                    android:background="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="体格检查" />
+
+                <ImageView
+                    android:id="@+id/img_body_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/el_body_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="600"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_body_check"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <!--<item>实验室检查</item>-->
+        <LinearLayout
+            android:id="@+id/ll_lab_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center"
+                    android:background="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="实验室检查" />
+
+                <ImageView
+                    android:id="@+id/img_lab_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/el_lab_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="600"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_lab_check"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <!--<item>肝病记录</item>-->
+        <LinearLayout
+            android:id="@+id/ll_liver_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center"
+                    android:background="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="肝病记录" />
+
+                <ImageView
+                    android:id="@+id/img_liver_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/el_liver_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="600"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_liver_record"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <!--<item>轻诊断</item>-->
+        <LinearLayout
+            android:id="@+id/ll_soft_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center"
+                    android:background="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="轻诊断" />
+
+                <ImageView
+                    android:id="@+id/img_soft_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/el_soft_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="600"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_soft_check"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <!--<item>用药史</item>-->
+        <LinearLayout
+            android:id="@+id/ll_medicine_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center"
+                    android:background="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="用药史" />
+
+                <ImageView
+                    android:id="@+id/img_medicine_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+
+        </LinearLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/el_medicine_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="600"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_medicine_history"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </LinearLayout>
+</ScrollView>

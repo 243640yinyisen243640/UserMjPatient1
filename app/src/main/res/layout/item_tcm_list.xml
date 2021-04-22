@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:gravity="center"
+        android:padding="@dimen/dp_12">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_tcm_list" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="体质报告" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="2019-08-12 09:23" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_tcm_right_arrow" />
+
+    </LinearLayout>
+
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10"></View>
+
+</LinearLayout>

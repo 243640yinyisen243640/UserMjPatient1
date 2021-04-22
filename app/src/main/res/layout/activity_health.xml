@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/hh_fi_fi"
+    android:orientation="vertical">
+
+    <View style="@style/line" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="vertical">
+
+            <View
+                style="@style/line"
+                android:layout_height="@dimen/dp_10" />
+
+            <com.vice.bloodpressure.view.MyListView
+                android:id="@+id/lv_health"
+                style="@style/listView">
+
+            </com.vice.bloodpressure.view.MyListView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

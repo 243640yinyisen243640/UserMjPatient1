@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/line" />
+
+    <TextView
+        android:id="@+id/tv_account_safe"
+        style="@style/text_black_16_f_w"
+        android:drawableRight="@drawable/arrow_setting"
+        android:padding="18dp"
+        android:text="账号与安全" />
+
+    <View style="@style/line" />
+
+
+    <TextView
+        android:id="@+id/tv_reset_sugar"
+        style="@style/text_black_16_f_w"
+        android:drawableRight="@drawable/arrow_setting"
+        android:padding="18dp"
+        android:text="血糖目标设置" />
+
+    <View style="@style/line" />
+
+
+    <TextView
+        android:id="@+id/tv_sugar_time_reset"
+        style="@style/text_black_16_f_w"
+        android:drawableRight="@drawable/arrow_setting"
+        android:padding="18dp"
+        android:text="血糖控制时间设置" />
+
+    <View style="@style/line" />
+
+
+    <com.wei.android.lib.colorview.view.ColorButton
+        android:id="@+id/bt_exit"
+        style="@style/text_white_16_f_w"
+        android:layout_gravity="center"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="38dp"
+        android:text="切换账号"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="4dp" />
+
+
+</LinearLayout>

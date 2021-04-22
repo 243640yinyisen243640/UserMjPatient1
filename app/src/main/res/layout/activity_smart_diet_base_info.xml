@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.smartdiet.DietPlanBaseInfoActivity">
+
+
+    <ImageView
+        android:id="@+id/img_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:scaleType="centerCrop"
+        android:src="@drawable/base_info_diet_special" />
+
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/text_black_14_f_w"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_50"
+        android:lineSpacingMultiplier="1.2"
+        android:text="因糖尿病肾病Ⅲ期及以上的饮食较为特殊，需要严格控制蛋白质的摄入，建议您咨询专业临床营养师为您设计精确的饮食方案。"
+        android:textColor="@color/black_text" />
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_next"
+        style="@style/diet_plan_question_tv_next"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="返回首页"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="3dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+</LinearLayout>

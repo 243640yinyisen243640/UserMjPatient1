@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lihang.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/diet_detail_card">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+
+        <!--早餐-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/img_meals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/diet_plan_detail_lunch" />
+
+
+                <TextView
+                    android:id="@+id/tv_meals"
+                    style="@style/text_black_14_w_w"
+                    android:text="早餐" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/diet_plan_result_refresh" />
+
+
+        </LinearLayout>
+
+        <!--虚线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/line_stroke"
+            android:layerType="software" />
+
+        <!--菜品列表-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</com.lihang.ShadowLayout>

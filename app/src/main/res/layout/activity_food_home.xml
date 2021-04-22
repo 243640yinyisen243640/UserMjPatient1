@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/line" />
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="horizontal">
+
+        <!--左边-->
+        <ListView
+            android:id="@+id/lv_left"
+            style="@style/listView"
+            android:layout_width="95dp"
+            android:layout_marginTop="22dp">
+
+        </ListView>
+        <!--右边-->
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical">
+
+
+            <com.lihang.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:hl_cornerRadius="@dimen/dp_5"
+                app:hl_shadowColor="@color/color_1c333"
+                app:hl_shadowOffsetX="0dp"
+                app:hl_shadowOffsetY="3dp">
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/healthy_diet_search" />
+
+                    <EditText
+                        android:id="@+id/et_search"
+                        style="@style/et_base_style_no_bg"
+                        android:hint="输入食物名称搜索"
+                        android:imeOptions="actionSearch"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="7dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+            </com.lihang.ShadowLayout>
+
+
+            <ListView
+                android:id="@+id/lv_right"
+                style="@style/listView"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:visibility="gone">
+
+            </ListView>
+
+
+            <include layout="@layout/include_food_home_search_no_data" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

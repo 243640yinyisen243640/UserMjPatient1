@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/img_pic"
+        android:layout_width="227dp"
+        android:layout_height="317dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:scaleType="fitCenter"
+        android:src="@drawable/default_supplier_pic" />
+
+
+    <TextView
+        style="@style/text_gray_12_w_w"
+        android:layout_margin="@dimen/dp_15"
+        android:lineSpacingMultiplier="1.2"
+        android:text="注：以上营业执照信息，根据国家工商总局《网络交易管理办法》要求对入驻商家营业执照信息进行公示，除企业名称通过之外，其余信息由卖家自行申报填写。如需进一步核实，请联系当地工商行政管理部门。"
+        android:textSize="10sp" />
+</LinearLayout>

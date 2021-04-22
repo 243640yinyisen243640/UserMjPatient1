@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+
+            <LinearLayout style="@style/hh_fi_wr">
+
+
+                <ImageView
+                    android:id="@+id/img_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sport_level_1" />
+
+                <TextView
+                    android:id="@+id/tv_sport_title"
+                    style="@style/text_black_14_w_w"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:text="轻体力劳动" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_sport_desc"
+                style="@style/text_gray_14_f_w"
+                android:layout_marginLeft="@dimen/dp_18"
+                android:text="75%时间坐或者站立、25%时间站立活动 例如：教师、售货员、家庭主妇、酒店服务等； 以坐着为主的工作，如办公室工作等。" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/sport_level_checked"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</com.wei.android.lib.colorview.view.ColorLinearLayout>

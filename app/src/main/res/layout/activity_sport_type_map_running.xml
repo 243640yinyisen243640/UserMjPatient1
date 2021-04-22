@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#524A5F"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="112dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_running_distance"
+                style="@style/text_black_14_w_w"
+                android:layout_centerInParent="true"
+                android:text="0.00"
+                android:textColor="@color/white"
+                android:textSize="90sp" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_alignBottom="@+id/tv_running_distance"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_toRightOf="@+id/tv_running_distance"
+                android:text="公里"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sport_running_speed" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sport_running_speed" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sport_running_speed" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    style="@style/text_black_14_w_w"
+                    android:layout_centerInParent="true"
+                    android:text="--"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/text_black_14_w_w"
+                    android:layout_centerInParent="true"
+                    android:text="00:00:16"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_kcal"
+                    style="@style/text_black_14_w_w"
+                    android:layout_centerInParent="true"
+                    android:text="--"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_centerInParent="true"
+                    android:text="配速"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_centerInParent="true"
+                    android:text="用时"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_centerInParent="true"
+                    android:text="千卡"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        style="@style/hh_fi_wr"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp">
+
+        <!--暂停-->
+        <com.wei.android.lib.colorview.view.ColorRelativeLayout
+            android:id="@+id/rl_pause"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:backgroundColorNormal="@color/white"
+            app:cornerRadiusNormal="180dp">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/sport_running_pause"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="暂停" />
+
+        </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+        <!--继续 结束-->
+        <LinearLayout
+            android:id="@+id/ll_continue_and_over"
+            style="@style/hh_wr_wr"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_toLeftOf="@+id/tv_change_map"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.wei.android.lib.colorview.view.ColorRelativeLayout
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginRight="@dimen/dp_30"
+                app:backgroundColorNormal="@color/white"
+                app:cornerRadiusNormal="180dp">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/sport_running_pause"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="暂停" />
+
+            </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+
+            <com.wei.android.lib.colorview.view.ColorRelativeLayout
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                app:backgroundColorNormal="@color/white"
+                app:cornerRadiusNormal="180dp">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/sport_running_pause"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:text="暂停" />
+
+            </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_change_map"
+            style="@style/text_black_14_w_w"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_40"
+            android:drawableTop="@drawable/sport_running_map"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="切换地图"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

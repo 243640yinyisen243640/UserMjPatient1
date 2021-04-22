@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.activity.homesign.HospitalizationAppointmentDetailActivity">
+
+        <com.lihang.ShadowLayout style="@style/appointment_for_hospitalization_card">
+
+            <LinearLayout
+                style="@style/hh_fi_fi"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/rl_appointment_for_hospitalization">
+
+                    <TextView
+                        style="@style/tv_name_appointment_for_hospitalization"
+                        android:text="患者姓名" />
+
+                    <TextView
+                        android:id="@+id/tv_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="95dp"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/color_f333"
+                        android:textSize="@dimen/size_14" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/rl_appointment_for_hospitalization">
+
+                    <TextView
+                        style="@style/tv_name_appointment_for_hospitalization"
+                        android:text="住院类型" />
+
+                    <TextView
+                        android:id="@+id/tv_two"
+                        style="@style/value_appointment_for_hospitalization"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:textColor="@color/color_f333" />
+
+
+                    <View
+                        style="@style/line"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/rl_appointment_for_hospitalization">
+
+                    <TextView
+                        style="@style/tv_name_appointment_for_hospitalization"
+                        android:text="年龄" />
+
+                    <TextView
+                        android:id="@+id/tv_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="95dp"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/color_f333"
+                        android:textSize="@dimen/size_14" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/rl_appointment_for_hospitalization">
+
+                    <TextView
+                        style="@style/tv_name_appointment_for_hospitalization"
+                        android:text="性别" />
+
+                    <TextView
+                        android:id="@+id/tv_four"
+                        style="@style/value_appointment_for_hospitalization"
+                        android:hint=""
+                        android:textColor="@color/color_f333" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/rl_appointment_for_hospitalization">
+
+                    <TextView
+                        style="@style/tv_name_appointment_for_hospitalization"
+                        android:text="联系电话" />
+
+                    <TextView
+                        android:id="@+id/tv_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="95dp"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/color_f333"
+                        android:textSize="@dimen/size_14" />
+
+                    <View
+                        style="@style/line"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/rl_appointment_for_hospitalization">
+
+                    <TextView
+                        style="@style/tv_name_appointment_for_hospitalization"
+                        android:text="预约时间" />
+
+                    <TextView
+                        android:id="@+id/tv_six"
+                        style="@style/value_appointment_for_hospitalization"
+                        android:layout_weight="1"
+                        android:hint=""
+                        android:textColor="@color/color_f333" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </com.lihang.ShadowLayout>
+
+        <com.lihang.ShadowLayout style="@style/appointment_for_hospitalization_card">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tv_name_appointment_for_hospitalization"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:text="疾病诊断" />
+
+                <TextView
+                    android:id="@+id/tv_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:background="@drawable/bg_et_appointment_for_hospitalization"
+                    android:gravity="top|start"
+                    android:lines="5"
+                    android:maxLines="5"
+                    android:padding="7dp"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/size_13" />
+
+            </LinearLayout>
+
+        </com.lihang.ShadowLayout>
+
+        <com.lihang.ShadowLayout style="@style/appointment_for_hospitalization_card">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tv_name_appointment_for_hospitalization"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:text="上传病例资料" />
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_marginBottom="13.5dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="19dp"
+                    android:paddingEnd="12dp">
+
+                    <ImageView
+                        android:id="@+id/iv_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/img_follow_up_add" />
+
+                    <ImageView
+                        android:id="@+id/iv_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:layout_weight="1"
+                        android:src="@drawable/img_follow_up_add" />
+
+                    <ImageView
+                        android:id="@+id/iv_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:layout_weight="1"
+                        android:src="@drawable/img_follow_up_add" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.lihang.ShadowLayout>
+
+        <com.lihang.ShadowLayout
+            android:id="@+id/sl_reply"
+            style="@style/appointment_for_hospitalization_card"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tv_name_appointment_for_hospitalization"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:text="医生回复" />
+
+                <TextView
+                    android:id="@+id/tv_doctor_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:background="@drawable/bg_et_appointment_for_hospitalization"
+                    android:gravity="top|start"
+                    android:lines="5"
+                    android:maxLines="5"
+                    android:padding="7dp"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/size_13" />
+
+            </LinearLayout>
+
+        </com.lihang.ShadowLayout>
+
+    </LinearLayout>
+
+</ScrollView>

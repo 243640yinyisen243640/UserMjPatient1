@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_hemoglobin_sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/thirteen">
+
+        <TextView
+            android:id="@+id/tv_blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sugar_value"
+            android:textSize="@dimen/size_15" />
+
+        <EditText
+            android:id="@+id/et_hemoglobin"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_unit_three"
+            android:background="@null"
+            android:gravity="center|top"
+            android:hint="@string/please_enter"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/size_15" />
+
+        <TextView
+            android:id="@+id/tv_unit_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="%"
+            android:textSize="@dimen/size_15" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light" />
+
+    <RelativeLayout
+        android:id="@+id/rl_hemoglobin_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_hemoglobin_sugar"
+        android:background="@color/white"
+        android:padding="@dimen/thirteen">
+
+        <TextView
+            android:id="@+id/tv_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="用药时间"
+            android:textSize="@dimen/size_15" />
+
+        <TextView
+            android:id="@+id/tv_hemoglobin_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/iv_green_arrow"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请选择时间"
+            android:textSize="@dimen/size_15" />
+
+        <ImageView
+            android:id="@+id/iv_green_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/greensanjiao" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_five"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_hemoglobin_save"
+        android:layout_below="@+id/rl_hemoglobin_time"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_marginBottom="@dimen/forty_five"
+        android:background="@color/white"
+        android:padding="@dimen/ten"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:padding="@dimen/five"
+            android:text="@string/note" />
+
+        <GridView
+            android:id="@+id/gv_hemoglobin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_note"
+            android:layout_margin="@dimen/ten"
+            android:horizontalSpacing="@dimen/fifteen"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/thirteen" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.activity.nondrug.SelectPrescriptionActivity">
+        <!--背景-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/img_banner"
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/select_prescription_banner" />
+
+
+        </LinearLayout>
+
+
+        <!--请选择-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8">
+
+            <View
+                style="@style/line"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:background="@color/main_home" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="请选择本次需要生成的处方" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center_vertical"
+                android:text="(饮食处方为必选)"
+                android:textColor="@color/main_red" />
+
+        </LinearLayout>
+
+        <!--五个选择-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--饮食处方-->
+            <LinearLayout
+                android:id="@+id/ll_food"
+                style="@style/hh_fi_wr"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_8">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/non_drug_food" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_weight="0.8"
+                    android:text="饮食处方" />
+
+                <CheckBox
+                    android:id="@+id/cb_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/non_drug_check_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+            <!--运动处方-->
+            <LinearLayout
+                android:id="@+id/ll_sport"
+                style="@style/hh_fi_wr"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_8">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/non_drug_sport" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_weight="0.8"
+                    android:text="运动处方" />
+
+                <CheckBox
+                    android:id="@+id/cb_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/non_drug_check_selector"
+                    android:button="@null" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+
+            <!--减重处方-->
+            <LinearLayout
+                android:id="@+id/ll_weight"
+                style="@style/hh_fi_wr"
+                android:orientation="vertical">
+
+
+                <!--监测处方-->
+                <LinearLayout
+                    android:id="@+id/ll_check"
+                    style="@style/hh_fi_wr"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_8">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/non_drug_check" />
+
+                    <TextView
+                        style="@style/text_black_14_f_w"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_weight="0.8"
+                        android:text="监测处方" />
+
+                    <CheckBox
+                        android:id="@+id/cb_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/non_drug_check_selector"
+                        android:button="@null" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+                <!--教育处方-->
+                <LinearLayout
+                    android:id="@+id/ll_education"
+                    style="@style/hh_fi_wr"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_8">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/non_drug_education" />
+
+                    <TextView
+                        style="@style/text_black_14_f_w"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_weight="0.8"
+                        android:text="教育处方" />
+
+                    <CheckBox
+                        android:id="@+id/cb_education"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/non_drug_check_selector"
+                        android:button="@null" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginStart="@dimen/dp_10" />
+                <!--并发症处方-->
+                <LinearLayout
+                    android:id="@+id/ll_complication"
+                    style="@style/hh_fi_wr"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_8">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/non_drug_complication" />
+
+                    <TextView
+                        style="@style/text_black_14_f_w"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_weight="0.8"
+                        android:text="并发症处方" />
+
+                    <CheckBox
+                        android:id="@+id/cb_complication"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/non_drug_check_selector"
+                        android:button="@null" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="@dimen/dp_10" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--开始评估-->
+        <com.wei.android.lib.colorview.view.ColorButton
+            android:id="@+id/bt_start"
+            style="@style/text_white_16_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp"
+            android:text="开始评估"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="90dp" />
+
+    </LinearLayout>
+
+</ScrollView>

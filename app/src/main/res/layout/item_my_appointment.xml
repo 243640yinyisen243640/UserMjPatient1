@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10">
+    <!--套一层设置padding-->
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:backgroundColorNormal="@color/white"
+        app:cornerRadiusNormal="@dimen/dp_10">
+
+        <!--预约编号-->
+        <com.wei.android.lib.colorview.view.ColorLinearLayout
+            android:id="@+id/ll_title"
+            style="@style/hh_fi_wr"
+            android:background="@color/main_home"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusTopLeftNormal="@dimen/dp_10"
+            app:cornerRadiusTopRightNormal="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_number"
+                style="@style/text_white_16_w_w"
+                android:text="预约编号：08" />
+
+
+            <TextView
+                android:id="@+id/tv_operate_time"
+                style="@style/text_white_14_w_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="操作时间：2019-10-18 10:28:23" />
+
+
+        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+        <!--医生信息-->
+
+        <com.wei.android.lib.colorview.view.ColorLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_20"
+            app:backgroundColorNormal="@color/white"
+            app:cornerRadiusBottomLeftNormal="@dimen/dp_10"
+            app:cornerRadiusBottomRightNormal="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_hospital_name"
+                style="@style/text_black_14_w_w"
+                android:text="医院名称" />
+
+
+            <TextView
+                android:id="@+id/tv_department_name"
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="科室名称" />
+
+            <TextView
+                android:id="@+id/tv_doctor_name"
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="医生名称" />
+
+            <TextView
+                android:id="@+id/tv_treat_time"
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="就诊时间" />
+
+
+            <TextView
+                android:id="@+id/tv_patient_name"
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="就诊人名称" />
+
+
+            <TextView
+                android:id="@+id/tv_patient_address"
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="就诊人地址" />
+
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+
+                        android:text="挂号费" />
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_marginLeft="8dp"
+                        android:text="￥0.00"
+                        android:textColor="#DB0550" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:layout_alignParentRight="true">
+
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_del"
+                        style="@style/text_black_14_w_w"
+                        android:layout_width="90dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_20"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="删除"
+                        app:borderColorNormal="#ECECF6"
+                        app:borderWidthNormal="@dimen/dp_2"
+                        app:cornerRadiusNormal="@dimen/dp_2">
+
+
+                    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+                    <com.wei.android.lib.colorview.view.ColorTextView
+                        android:id="@+id/tv_state"
+                        style="@style/text_white_14_w_w"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_20"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="已过期"
+                        app:backgroundColorNormal="@color/main_home"
+                        app:cornerRadiusNormal="@dimen/dp_2">
+
+
+                    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+</LinearLayout>

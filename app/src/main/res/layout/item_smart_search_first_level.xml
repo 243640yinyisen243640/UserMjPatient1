@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bg"
+    android:layout_width="95dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <View
+        android:id="@+id/line_indicator"
+        style="@style/line"
+        android:layout_width="@dimen/dp_6"
+        android:layout_height="55dp"
+        android:background="@color/main_home" />
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        style="@style/text_black_14_f_w"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="血糖相关" />
+
+</LinearLayout>

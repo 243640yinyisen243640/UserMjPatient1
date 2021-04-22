@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_medicine_content"
+            style="@style/text_black_14_f_w"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="@dimen/dp_10"
+            android:text="I/O 大会的第一天，我们公布了下一个版本的 Android，也就是 Android P 的 beta 版本。Android P 将 AI 定位为操作系统的核心，并侧重于提供智能且简洁的体验。让我们一起来了解下这个版本带来了哪些全新功能。" />
+
+
+    </LinearLayout>
+
+</ScrollView>

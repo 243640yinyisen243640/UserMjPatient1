@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="9dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_home_guide" />
+
+    <!--    <TextView-->
+    <!--        style="@style/text_white_14_w_w"-->
+    <!--        android:text="掌握糖尿病知识是控制好血糖的前提。根据个人情况，我们为您制定了科学的学习课程，每日更新一节，消耗小时间，掌握大知识。" />-->
+
+
+    <!--    <com.wei.android.lib.colorview.view.ColorTextView-->
+    <!--        style="@style/text_white_14_w_w"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginTop="@dimen/dp_10"-->
+    <!--        android:paddingLeft="11dp"-->
+    <!--        android:paddingTop="9dp"-->
+    <!--        android:paddingRight="11dp"-->
+    <!--        android:paddingBottom="9dp"-->
+    <!--        android:text="开启您的专属课堂"-->
+    <!--        app:backgroundColorNormal="@color/main_home"-->
+    <!--        app:cornerRadiusNormal="@dimen/dp_5" />-->
+
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        android:src="@drawable/home_guideview_line" />-->
+
+</LinearLayout>

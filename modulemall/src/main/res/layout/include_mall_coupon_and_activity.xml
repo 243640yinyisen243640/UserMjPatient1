@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_15"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+<!--    android:focusable="false"-->
+<!--    android:focusableInTouchMode="false"-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_coupon_and_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_mall_coupon_and_activity">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

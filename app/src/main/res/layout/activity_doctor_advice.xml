@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_20"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chat_sugar_abnormal" />
+
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/text_black_16_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="午餐前血糖值" />
+
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10">
+
+            <LinearLayout
+                style="@style/hh_wr_wr"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv_text"
+                    style="@style/text_black_14_w_w"
+                    android:text="18.0"
+                    android:textColor="@color/main_home" />
+
+                <TextView
+                    android:id="@+id/tv_text_unit"
+                    style="@style/text_black_14_w_w"
+                    android:layout_toRightOf="@+id/tv_text"
+                    android:text="mmol/L" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/text_black_16_f_w"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_20"
+        android:text="医生建议"
+        android:textColor="@color/main_home" />
+
+    <TextView
+        android:id="@+id/tv_advice"
+        style="@style/text_gray_14_f_w"
+        android:background="@color/white"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="@dimen/dp_12"
+        android:text="这是建议 这是建议 这是建议这是建议 这是建议 这是建议这是建议 这是建议 这是建议这是建议 这是建议 这是建议这是建议 这是建议 这是建议" />
+
+</LinearLayout>

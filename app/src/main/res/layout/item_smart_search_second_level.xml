@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="7.5dp"
+    android:paddingTop="@dimen/dp_15"
+    android:paddingRight="7.5dp"
+    android:paddingBottom="@dimen/dp_15">
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_text"
+        style="@style/text_black_12_f_w"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:singleLine="true"
+        android:text="血糖血糖"
+        app:borderColorNormal="@color/main_home"
+        app:borderWidthNormal="1dp"
+        app:cornerRadiusNormal="3dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+</LinearLayout>

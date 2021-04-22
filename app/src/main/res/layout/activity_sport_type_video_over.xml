@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="212dp">
+
+        <ImageView
+            android:id="@+id/img_type_bg"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            android:background="@drawable/sport_over_bg_skip"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_type_over"
+                    style="@style/text_white_14_w_w"
+                    android:text="完成太极"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/tv_current_time"
+                    style="@style/text_white_14_w_w"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="08月25日 10:11" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_margin="22dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_sport_type"
+            style="@style/text_black_14_f_w"
+            android:layout_weight="1"
+            android:text="跳绳"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/tv_sport_time"
+            style="@style/text_black_14_f_w"
+            android:layout_weight="1"
+            android:text="时长：00:00:00" />
+
+        <TextView
+            android:id="@+id/tv_sport_kcal"
+            style="@style/text_black_14_f_w"
+            android:layout_weight="1"
+            android:text="消耗:54千卡" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/text_black_14_f_w"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="规律的运动有助于增加人体内的胰岛素的敏感性，更加有效地发挥降糖作用，降低心血管疾病发生的危险性，同时减轻体重，增加生活幸福指数。" />
+</LinearLayout>

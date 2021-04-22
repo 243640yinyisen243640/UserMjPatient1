@@ -1,0 +1,180 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        //配置语言
+        resConfigs "zh", "zh-rCN"
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY  : "ccd511ef1bd60ff5326733aa",
+                JPUSH_CHANNEL : "developer-default",
+                //四大厂商配置
+                //小米配置
+                XIAOMI_APPKEY : "MI-5511785339353",
+                XIAOMI_APPID  : "MI-2882303761517853353",
+                //vivo配置
+                VIVO_APPKEY   : "47e0646d-0223-435e-96cd-060d4f46ed2d",
+                VIVO_APPID    : "14749",
+                //OPPO配置
+                OPPO_APPKEY   : "OP-63d86bfd3a5441929cc66f5f11e9dabb",
+                OPPO_APPID    : "OP-3710466",
+                OPPO_APPSECRET: "OP-91f24bf3f35b4e0daffeb0625e100f1f"
+        ]
+        multiDexEnabled true
+    }
+
+
+    signingConfigs {
+        release {
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+            storeFile file(KEYSTORE_FILE)
+            storePassword KEYSTORE_PASSWOED
+        }
+    }
+
+
+    buildTypes {
+        debug {
+            zipAlignEnabled false
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release {
+            zipAlignEnabled false
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //OpenInstall安装
+    implementation files('libs/OpenInstall_v2.5.0.jar')
+    implementation project(path: ':libpickers')
+    implementation project(path: ':libchart')
+    implementation project(path: ':libsteps')
+    implementation project(path: ':modulemall')
+    //BaseAdapterForRV
+    implementation 'com.zhy:base-rvadapter:3.0.3'
+    //
+    implementation 'com.zhy:magic-viewpager:1.0.1'
+    //Zxing
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+    implementation 'me.devilsen:czxing:1.0.17'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    //Android流式布局
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+    //RxHttpUtils
+    implementation 'com.github.lygttpod:RxHttpUtils:2.3.3'
+    //卷尺
+    implementation 'com.github.superSp:RulerView:v1.5'
+    //蓝牙
+    implementation 'com.clj.fastble:FastBleLib:2.3.4'
+    //城市选择器
+    implementation 'liji.library.dev:citypickerview:5.2.4'
+    //MPAndroidChart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    //ShadowLayout
+    implementation 'com.github.lihangleo2:ShadowLayout:3.2.0'
+    //签名
+    implementation 'com.github.F1ReKing:SignatureView:1.1.0'
+    //Gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    //展开收起
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    //视频播放
+    implementation 'cn.jzvd:jiaozivideoplayer:7.6.0'
+    //Exoplayer内核
+    implementation 'com.google.android.exoplayer:exoplayer:2.12.0'
+    //音频播放
+    implementation 'com.lzx:StarrySkyX:2.4.4'
+    //Banner
+    implementation 'com.youth.banner:banner:2.1.0'
+    //Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    //FlycoTabLayout
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    def glideVersion = "4.12.0"
+    api "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+//    def jPushVersion = "3.6.6"
+//    //极光推送 Start
+//    //此处以JPush 3.5.6 版本为例。
+//    implementation "cn.jiguang.sdk:jpush:$jPushVersion"
+//    //此处以JCore 2.2.8 版本为例。
+//    implementation 'cn.jiguang.sdk:jcore:2.3.8'
+//    //小米
+//    implementation "cn.jiguang.sdk.plugin:xiaomi:$jPushVersion"
+//    //vivo
+//    implementation "cn.jiguang.sdk.plugin:vivo:$jPushVersion"
+//    //OPPO
+//    implementation "cn.jiguang.sdk.plugin:oppo:$jPushVersion"
+//    //华为
+//    implementation "cn.jiguang.sdk.plugin:huawei:$jPushVersion"
+//    implementation 'com.huawei.hms:push:3.0.3.301'
+//    //极光推送 End
+
+    //融云IM开始
+    def rongImVersion = "4.0.3"
+    implementation "cn.rongcloud.sdk:im_kit:$rongImVersion"
+    //im_kit必须依赖im_lib，所以需要加入对应依赖
+    implementation "cn.rongcloud.sdk:im_lib:$rongImVersion"
+    //融云IM结束
+
+    //阿里推送 Start
+    def aliCloudVersion = "3.2.3"
+    //移动推送SDK
+    implementation "com.aliyun.ams:alicloud-android-push:$aliCloudVersion"
+    //辅助通道SDK
+    implementation "com.aliyun.ams:alicloud-android-third-push:$aliCloudVersion"
+    //华为依赖
+    implementation "com.aliyun.ams:alicloud-android-third-push-huawei:$aliCloudVersion"
+    //小米依赖
+    implementation "com.aliyun.ams:alicloud-android-third-push-xiaomi:$aliCloudVersion"
+    //OPPO依赖
+    implementation "com.aliyun.ams:alicloud-android-third-push-oppo:$aliCloudVersion"
+    //vivo依赖
+    implementation "com.aliyun.ams:alicloud-android-third-push-vivo:$aliCloudVersion"
+    //阿里推送 End
+}

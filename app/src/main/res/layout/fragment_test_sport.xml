@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_top_indicator_of_hbp_three" />
+
+
+        <!--第一个-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="一般情况下，每日步行步数(单选)" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <!--第二个修改-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="一般情况下，每日步行步数时间(单选)" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+        <!--第二个-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="是否有运动习惯(单选)" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+            <!--是-->
+            <LinearLayout
+                android:id="@+id/ll_yes"
+                style="@style/hh_fi_wr"
+                android:padding="@dimen/dp_10">
+
+                <CheckBox
+                    android:id="@+id/cb_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/non_drug_check_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+
+                <TextView
+                    style="@style/text_gray_14_f_w"
+                    android:paddingLeft="10dp"
+                    android:text="是" />
+
+            </LinearLayout>
+            <!--否-->
+            <LinearLayout
+                android:id="@+id/ll_no"
+                style="@style/hh_fi_wr"
+                android:padding="@dimen/dp_10">
+
+                <CheckBox
+                    android:id="@+id/cb_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/non_drug_check_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+
+                <TextView
+                    style="@style/text_gray_14_f_w"
+                    android:paddingLeft="10dp"
+                    android:text="否" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--第二个 子模块-->
+        <LinearLayout
+            android:id="@+id/ll_empty"
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="是否空腹运动(单选)" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+            <!--是-->
+            <LinearLayout
+                android:id="@+id/ll_yes_empty"
+                style="@style/hh_fi_wr"
+                android:padding="@dimen/dp_10">
+
+                <CheckBox
+                    android:id="@+id/cb_yes_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/non_drug_check_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+
+                <TextView
+                    style="@style/text_gray_14_f_w"
+                    android:paddingLeft="10dp"
+                    android:text="是" />
+
+            </LinearLayout>
+            <!--否-->
+            <LinearLayout
+                android:id="@+id/ll_no_empty"
+                style="@style/hh_fi_wr"
+                android:padding="@dimen/dp_10">
+
+                <CheckBox
+                    android:id="@+id/cb_no_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/non_drug_check_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+
+                <TextView
+                    style="@style/text_gray_14_f_w"
+                    android:paddingLeft="10dp"
+                    android:text="否" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+            <!--运动时间-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="运动时间" />
+
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:layout_alignParentRight="true">
+
+                    <EditText
+                        android:id="@+id/et_sport_time"
+                        style="@style/et_non_drug_input"
+                        android:hint="请输入"
+                        android:inputType="number" />
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="分钟/次" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+            <!--运动频率 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="运动频率" />
+
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:layout_alignParentRight="true">
+
+                    <EditText
+                        android:id="@+id/et_sport_rate"
+                        style="@style/et_non_drug_input"
+                        android:hint="请输入"
+                        android:inputType="number"
+                        android:maxLength="1" />
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="天/周" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <!--第三个-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="需勾选所有选项方可制定运动处方" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+        <!--第四个-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_10"
+                android:text="患者是否具有疾病(多选)" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <com.wei.android.lib.colorview.view.ColorButton
+            android:id="@+id/bt_submit"
+            style="@style/text_white_16_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="完成提交"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="90dp" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

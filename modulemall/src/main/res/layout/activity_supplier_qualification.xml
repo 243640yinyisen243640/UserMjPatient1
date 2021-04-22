@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:orientation="vertical"
+        app:backgroundColorNormal="@color/white"
+        app:cornerRadiusNormal="4dp">
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8">
+
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:layout_weight="0.8"
+                android:text="供应商："
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_supplier_name"
+                style="@style/text_gray_14_w_w"
+                android:text="海南XXX旗舰店" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_business_qualification"
+            style="@style/text_black_14_f_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:drawableRight="@drawable/product_detail_right_arrow"
+            android:padding="@dimen/dp_8"
+            android:text="营业资质:"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_other_qualification"
+            style="@style/text_black_14_f_w"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:drawableRight="@drawable/product_detail_right_arrow"
+            android:padding="@dimen/dp_8"
+            android:text="其它资质:"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10">
+
+    <View
+        android:id="@+id/view_indicator"
+        android:layout_width="3dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@drawable/green_background" />
+
+    <TextView
+        android:id="@+id/tv_catalogue"
+        style="@style/text_black_16_w_w"
+        android:layout_gravity="center_vertical"
+        android:text="第一节：什么是糖尿病" />
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:padding="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/tv_medicine_name"
+            style="@style/text_black_14_f_w"
+            android:layout_weight="0.8"
+            android:text="感冒灵颗粒" />
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            style="@style/text_white_14_w_w"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_2"
+            android:text="查看"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="90dp" />
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10"></View>
+
+
+</LinearLayout>

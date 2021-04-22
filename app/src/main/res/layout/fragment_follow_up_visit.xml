@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_follow_up_visit"
+        style="@style/hh_fi_fi"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/lv_follow_up_visit"
+            style="@style/listView">
+
+        </ListView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <include layout="@layout/include_default_no_data" />
+
+</LinearLayout>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:lsp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        style="@style/scrollView"
+        android:layout_above="@+id/tv_next">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/tv_jump"
+                style="@style/text_black_12_w_w"
+                android:layout_gravity="right"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_16"
+                android:text="跳过"
+                android:textSize="@dimen/size_15" />
+
+
+            <!--信息完善-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/complete_personal_info_top" />
+
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="信息完善"
+                        android:textSize="22sp" />
+
+
+                    <TextView
+                        style="@style/text_gray_12_w_w"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="完善信息，制定健康方案..." />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--姓名-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="@dimen/dp_30"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:text="姓名:" />
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        style="@style/et_base_style_no_bg"
+                        android:hint="请输入姓名">
+
+                    </EditText>
+
+                    <View
+                        style="@style/line"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="#A1A1A1" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--性别-->
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="@dimen/dp_30"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:text="性别:" />
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/hh_fi_wr"
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dit_plan_man_un_check" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:text="男" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/hh_fi_wr"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_women"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dit_plan_woman_uncheck" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="2dp"
+                            android:text="女" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--身高-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="@dimen/dp_30"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="身高:" />
+
+                    <TextView
+                        android:id="@+id/tv_height"
+                        style="@style/text_black_14_w_w"
+                        android:layout_centerInParent="true"
+                        android:text="170"
+                        android:textColor="@color/main_home"
+                        android:textSize="@dimen/sp_20" />
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_alignParentRight="true"
+                        android:text="cm"
+                        android:textSize="@dimen/sp_16" />
+
+                </RelativeLayout>
+
+
+                <com.lsp.RulerView
+                    android:id="@+id/ruler_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    lsp:bgColor="@color/background"
+                    lsp:firstScale="170"
+                    lsp:isBgRoundRect="true"
+                    lsp:largeScaleColor="@color/main_home"
+                    lsp:largeScaleStroke="5dp"
+                    lsp:maxScale="270"
+                    lsp:midScaleColor="@color/gray_text"
+                    lsp:midScaleStroke="3dp"
+                    lsp:minScale="0"
+                    lsp:resultNumColor="@color/main_home"
+                    lsp:resultNumTextSize="20sp"
+                    lsp:rulerHeight="60dp"
+                    lsp:rulerToResultgap="8dp"
+                    lsp:scaleCount="10"
+                    lsp:scaleGap="10dp"
+                    lsp:scaleLimit="10"
+                    lsp:scaleNumColor="@color/color_666"
+                    lsp:scaleNumTextSize="16sp"
+                    lsp:showScaleResult="false"
+                    lsp:smallScaleColor="@color/color_aaa"
+                    lsp:smallScaleStroke="2dp"
+                    lsp:unit="cm"
+                    lsp:unitColor="@color/main_home"
+                    lsp:unitTextSize="10sp" />
+
+            </LinearLayout>
+            <!--体重-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="@dimen/dp_30"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12">
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:text="体重:" />
+
+                    <TextView
+                        android:id="@+id/tv_weight"
+                        style="@style/text_black_14_w_w"
+                        android:layout_centerInParent="true"
+                        android:text="60"
+                        android:textColor="@color/main_home"
+                        android:textSize="@dimen/sp_20" />
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_alignParentRight="true"
+                        android:text="kg"
+                        android:textSize="@dimen/sp_16" />
+
+                </RelativeLayout>
+
+
+                <com.lsp.RulerView
+                    android:id="@+id/ruler_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    lsp:bgColor="@color/background"
+                    lsp:firstScale="60"
+                    lsp:isBgRoundRect="true"
+                    lsp:largeScaleColor="@color/main_home"
+                    lsp:largeScaleStroke="5dp"
+                    lsp:maxScale="300"
+                    lsp:midScaleColor="@color/gray_text"
+                    lsp:midScaleStroke="3dp"
+                    lsp:minScale="0"
+                    lsp:resultNumColor="@color/main_home"
+                    lsp:resultNumTextSize="20sp"
+                    lsp:rulerHeight="60dp"
+                    lsp:rulerToResultgap="8dp"
+                    lsp:scaleCount="10"
+                    lsp:scaleGap="10dp"
+                    lsp:scaleLimit="10"
+                    lsp:scaleNumColor="@color/color_666"
+                    lsp:scaleNumTextSize="16sp"
+                    lsp:showScaleResult="false"
+                    lsp:smallScaleColor="@color/color_aaa"
+                    lsp:smallScaleStroke="2dp"
+                    lsp:unit="cm"
+                    lsp:unitColor="@color/main_home"
+                    lsp:unitTextSize="10sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_next"
+        style="@style/diet_plan_question_tv_next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="进入首页"
+        android:textColor="@color/white"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="3dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+</RelativeLayout>
+

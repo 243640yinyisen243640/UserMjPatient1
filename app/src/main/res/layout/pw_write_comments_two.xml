@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
+
+            <EditText
+                android:id="@+id/et_write_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/switch_account"
+                android:gravity="start"
+                android:hint="写评论..."
+                android:padding="@dimen/fifteen" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_pw_write_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fifteen"
+            android:layout_weight="1.3"
+            android:background="@drawable/login_button"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fifteen"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

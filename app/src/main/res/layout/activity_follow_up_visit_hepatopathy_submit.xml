@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/hh_fi_fi">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/bt_back_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_btn_back"
+            android:drawableLeft="@drawable/back_green"
+            android:drawablePadding="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/tv_title_new"
+            style="@style/text_white_16_w_w"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/main_home"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_more_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/more_bac"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/scrollView"
+        android:layout_below="@+id/rl_title_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!--背景图和随访问卷时间和随访问券四个字-->
+            <include layout="@layout/include_follow_up_visit_blood_sugar_top" />
+
+            <!--总结-->
+            <include
+                layout="@layout/include_follow_up_visit_summary"
+                android:visibility="gone">
+
+            </include>
+
+            <!--指标-->
+            <LinearLayout style="@style/ll_follow_up_visit_include_item">
+                <!--指标字体-->
+                <LinearLayout
+                    android:id="@+id/ll_index_text"
+                    style="@style/hh_wr_wr"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:visibility="gone">
+
+
+                    <com.wei.android.lib.colorview.view.ColorView
+                        style="@style/tv_follow_up_visit_indicate_lump"
+                        app:backgroundColorNormal="@color/main_home"
+                        app:cornerRadiusNormal="1dp">
+
+                    </com.wei.android.lib.colorview.view.ColorView>
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="指标"
+                        android:textColor="@color/main_home" />
+
+
+                </LinearLayout>
+                <!--ALT-->
+                <LinearLayout
+                    android:id="@+id/ll_alt"
+                    style="@style/hh_fi_wr"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_left"
+                        android:text="ALT" />
+
+                    <com.wei.android.lib.colorview.view.ColorEditText
+                        android:id="@+id/et_alt"
+                        style="@style/et_liver_eight_center"
+                        app:borderColorNormal="@color/gray_text"
+                        app:borderWidthNormal="1dp" />
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_right"
+                        android:text="U/L" />
+
+
+                </LinearLayout>
+                <!--总胆红素-->
+                <LinearLayout
+                    android:id="@+id/ll_total"
+                    style="@style/hh_fi_wr"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_left"
+                        android:text="总胆红素" />
+
+                    <com.wei.android.lib.colorview.view.ColorEditText
+                        android:id="@+id/et_total"
+                        style="@style/et_liver_eight_center"
+                        app:borderColorNormal="@color/gray_text"
+                        app:borderWidthNormal="1dp" />
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_right"
+                        android:text="μmol/L" />
+
+
+                </LinearLayout>
+                <!--白蛋白-->
+                <LinearLayout
+                    android:id="@+id/ll_white"
+                    style="@style/hh_fi_wr"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_left"
+                        android:text="白蛋白" />
+
+                    <com.wei.android.lib.colorview.view.ColorEditText
+                        android:id="@+id/et_white"
+                        style="@style/et_liver_eight_center"
+                        app:borderColorNormal="@color/gray_text"
+                        app:borderWidthNormal="1dp" />
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_right"
+                        android:text="g/L" />
+
+
+                </LinearLayout>
+                <!--前白蛋白-->
+                <LinearLayout
+                    android:id="@+id/ll_forward"
+                    style="@style/hh_fi_wr"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_left"
+                        android:text="前白蛋白" />
+
+                    <com.wei.android.lib.colorview.view.ColorEditText
+                        android:id="@+id/et_forward"
+                        style="@style/et_liver_eight_center"
+                        app:borderColorNormal="@color/gray_text"
+                        app:borderWidthNormal="1dp" />
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_right"
+                        android:text="mg/L" />
+
+
+                </LinearLayout>
+                <!--血糖-->
+                <LinearLayout
+                    android:id="@+id/ll_blood_sugar"
+                    style="@style/hh_fi_wr"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_left"
+                        android:text="血糖" />
+
+                    <com.wei.android.lib.colorview.view.ColorEditText
+                        android:id="@+id/et_blood_sugar"
+                        style="@style/et_liver_eight_center"
+                        app:borderColorNormal="@color/gray_text"
+                        app:borderWidthNormal="1dp" />
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_right"
+                        android:text="mmol/L" />
+
+
+                </LinearLayout>
+                <!--凝血酶原活力度-->
+                <LinearLayout
+                    android:id="@+id/ll_blood_clotting"
+                    style="@style/hh_fi_wr"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_left"
+                        android:text="凝血酶原活力度" />
+
+                    <com.wei.android.lib.colorview.view.ColorEditText
+                        android:id="@+id/et_blood_clotting"
+                        style="@style/et_liver_eight_center"
+                        app:borderColorNormal="@color/gray_text"
+                        app:borderWidthNormal="1dp" />
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_right"
+                        android:text="s" />
+
+
+                </LinearLayout>
+                <!--血红蛋白-->
+                <LinearLayout
+                    android:id="@+id/ll_blood_red"
+                    style="@style/hh_fi_wr"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_left"
+                        android:text="血红蛋白" />
+
+                    <com.wei.android.lib.colorview.view.ColorEditText
+                        android:id="@+id/et_blood_red"
+                        style="@style/et_liver_eight_center"
+                        app:borderColorNormal="@color/gray_text"
+                        app:borderWidthNormal="1dp" />
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_right"
+                        android:text="g/L" />
+
+
+                </LinearLayout>
+                <!--血氨-->
+                <LinearLayout
+                    android:id="@+id/ll_blood_ammonia"
+                    style="@style/hh_fi_wr"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_left"
+                        android:text="血氨" />
+
+                    <com.wei.android.lib.colorview.view.ColorEditText
+                        android:id="@+id/et_blood_ammonia"
+                        style="@style/et_liver_eight_center"
+                        app:borderColorNormal="@color/gray_text"
+                        app:borderWidthNormal="1dp" />
+
+
+                    <TextView
+                        style="@style/tv_liver_eight_right"
+                        android:text="μmol/L" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--症状体征-->
+            <LinearLayout
+                android:id="@+id/ll_sas"
+                style="@style/ll_follow_up_visit_include_item"
+                android:visibility="gone">
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12">
+
+
+                    <com.wei.android.lib.colorview.view.ColorView
+                        style="@style/tv_follow_up_visit_indicate_lump"
+                        app:backgroundColorNormal="@color/main_home"
+                        app:cornerRadiusNormal="1dp">
+
+                    </com.wei.android.lib.colorview.view.ColorView>
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="症状及体征"
+                        android:textColor="@color/main_home" />
+
+
+                </LinearLayout>
+
+                <com.wei.android.lib.colorview.view.ColorEditText
+                    android:id="@+id/et_sas"
+                    style="@style/et_liver_bottom_three"
+                    app:backgroundColorNormal="@color/color_eb"
+                    app:cornerRadiusNormal="7dp" />
+
+            </LinearLayout>
+            <!--膳食调查-->
+            <LinearLayout
+                android:id="@+id/ll_ds"
+                style="@style/ll_follow_up_visit_include_item"
+                android:visibility="gone">
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12">
+
+
+                    <com.wei.android.lib.colorview.view.ColorView
+                        style="@style/tv_follow_up_visit_indicate_lump"
+                        app:backgroundColorNormal="@color/main_home"
+                        app:cornerRadiusNormal="1dp">
+
+                    </com.wei.android.lib.colorview.view.ColorView>
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="膳食调查"
+                        android:textColor="@color/main_home" />
+
+
+                </LinearLayout>
+
+                <com.wei.android.lib.colorview.view.ColorEditText
+                    android:id="@+id/et_ds"
+                    style="@style/et_liver_bottom_three"
+                    app:backgroundColorNormal="@color/color_eb"
+                    app:cornerRadiusNormal="7dp" />
+
+            </LinearLayout>
+            <!--体格检查-->
+            <LinearLayout
+                android:id="@+id/ll_pe"
+                style="@style/ll_follow_up_visit_include_item"
+                android:visibility="gone">
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12">
+
+
+                    <com.wei.android.lib.colorview.view.ColorView
+                        style="@style/tv_follow_up_visit_indicate_lump"
+                        app:backgroundColorNormal="@color/main_home"
+                        app:cornerRadiusNormal="1dp">
+
+                    </com.wei.android.lib.colorview.view.ColorView>
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="体格检查"
+                        android:textColor="@color/main_home" />
+
+
+                </LinearLayout>
+
+                <com.wei.android.lib.colorview.view.ColorEditText
+                    android:id="@+id/et_pe"
+                    style="@style/et_liver_bottom_three"
+                    app:backgroundColorNormal="@color/color_eb"
+                    app:cornerRadiusNormal="7dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+

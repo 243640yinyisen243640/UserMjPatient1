@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:orientation="vertical"
+    app:backgroundColorNormal="@color/white"
+    app:cornerRadiusNormal="4dp">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+
+        <ImageView
+            android:id="@+id/img_device"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/my_bind_device_sugar" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/text_black_14_f_w"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_weight="0.8"
+            android:text="这是名字" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/device_list_arrow_gray" />
+
+    </LinearLayout>
+
+</com.wei.android.lib.colorview.view.ColorLinearLayout>

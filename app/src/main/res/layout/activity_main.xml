@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_bottom">
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:layout_above="@+id/ll_bottom"
+        android:background="#f1f1f1" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <!--首页-->
+        <RelativeLayout
+            android:id="@+id/rl_main_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_main_home"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home_selected" />
+
+            <TextView
+                android:id="@+id/tv_main_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_main_home"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="首页"
+                android:textColor="@color/main_home"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+        <!--圈子-->
+        <RelativeLayout
+            android:id="@+id/rl_main_register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_main_register"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/registration_default" />
+
+            <TextView
+                android:id="@+id/tv_main_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_main_register"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="预约"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+        <!--院外管理占位-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+        </RelativeLayout>
+        <!--商城-->
+        <RelativeLayout
+            android:id="@+id/rl_main_mall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_main_mall"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_centerInParent="true"
+                android:src="@drawable/home_mall_default" />
+
+            <TextView
+                android:id="@+id/tv_main_mall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_main_mall"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="商城"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+        <!--我的-->
+        <RelativeLayout
+            android:id="@+id/rl_main_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_main_me"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_me_default" />
+
+            <TextView
+                android:id="@+id/tv_main_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_main_me"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="我的"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!--中间院外管理-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_main_outside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_circle_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/middle_bg" />
+
+            <ImageView
+                android:id="@+id/img_out_side"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_6"
+                android:src="@drawable/outside" />
+
+            <TextView
+                android:id="@+id/tv_main_outside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_out_side"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:singleLine="true"
+                android:text="院外管理"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_red_point"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:visibility="gone"
+            app:backgroundColorNormal="@color/main_red"
+            app:cornerRadiusNormal="@dimen/dp_10" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

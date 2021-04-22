@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:backgroundColorNormal="@color/white"
+    app:cornerRadiusNormal="3dp">
+
+
+    <ImageView
+        android:id="@+id/iv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/dp_5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doctor_appoint_hot_state_normal" />
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/iv_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doctor_appoint_head_img"
+        app:qmui_border_width="0dp"
+        app:qmui_is_circle="true" />
+
+
+    <TextView
+        android:id="@+id/tv_doctor_name"
+        style="@style/text_black_16_w_w"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="医生名称" />
+
+    <TextView
+        android:id="@+id/tv_doctor_profession"
+        style="@style/text_black_14_w_w"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="主任医师" />
+
+    <TextView
+        android:id="@+id/tv_doctor_skill"
+        style="@style/text_black_12_w_w"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="擅长主治擅长主治擅长主治擅长主治擅长主治擅长主治擅长主治擅长主治" />
+
+
+</com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+

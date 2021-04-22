@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ll_follow_up_visit_include_item"
+    android:layout_marginTop="@dimen/dp_50"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
+
+
+    <!--头部 随访问卷 时间-->
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:cornerRadiusNormal="2dp">
+
+
+        <com.wei.android.lib.colorview.view.ColorLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:borderColorNormal="@color/main_home"
+            app:borderDashGapNormal="@dimen/dp_2"
+            app:borderDashWidthNormal="@dimen/dp_2"
+            app:borderWidthNormal="1dp"
+            app:cornerRadiusNormal="@dimen/dp_2">
+
+
+            <TextView
+                style="@style/text_black_18_w_w"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:text="随访问卷"
+                android:textColor="@color/color_666" />
+
+
+            <TextView
+                android:id="@+id/tv_top_add_time"
+                style="@style/text_black_14_w_w"
+                android:text="请填写2019-07-04~2019-06-28日"
+                android:textColor="@color/main_home" />
+
+            <TextView
+                android:id="@+id/tv_top_submit_time"
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:text="检测信息并在2019-07-24日24点前完成提交"
+                android:textColor="@color/main_home" />
+
+
+        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+
+</LinearLayout>

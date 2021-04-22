@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_15">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_article"
+                android:layout_width="@dimen/dp_18"
+                android:layout_height="@dimen/dp_18"
+                android:scaleType="centerCrop"
+                android:src="@drawable/item_smart_education" />
+
+            <TextView
+                android:id="@+id/tv_article_name"
+                style="@style/text_black_14_f_w"
+                android:paddingLeft="@dimen/dp_5"
+                android:text="糖尿病是不是一种严重的疾病？"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_article_desc"
+            style="@style/text_gray_14_f_w"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="中国是糖尿病大国，我国18岁及以上成人中糖..."
+            android:textColor="@color/black_text" />
+
+        <TextView
+            android:id="@+id/tv_article_time"
+            style="@style/text_black_14_w_w"
+            android:layout_gravity="right"
+            android:text="2020-03-24"
+            android:textColor="@color/black_text" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10" />
+
+</LinearLayout>

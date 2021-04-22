@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_10">
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/non_drug_check_selector"
+        android:button="@null" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_5">
+
+        <TextView
+            style="@style/text_gray_14_w_w"
+            android:paddingLeft="10dp"
+            android:text="足部病变等级：" />
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/text_gray_14_w_w"
+            android:paddingLeft="10dp"
+            android:text="这是选项" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

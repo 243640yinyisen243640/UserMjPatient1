@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_my_order_list"
+        style="@style/hh_fi_fi">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_my_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_my_refund_order_list">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <!--中间内容 没有数据-->
+    <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/img_empty_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shopping_cart_no_data_bg" />
+
+        <TextView
+            style="@style/text_black_12_w_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="亲,您还没有退款订单哦"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/line" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:scaleType="centerCrop"
+            android:src="@drawable/high_blood_pressure_main_top" />
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="56dp"
+            android:text="高血压自我管理处方" />
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="47dp"
+            android:layout_marginRight="47dp"
+            android:layout_marginBottom="53dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:scaleType="centerCrop"
+                android:src="@drawable/high_blood_pressure_main_warning" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center"
+                android:text="为给您定制降压方案， 请认真填写完成以下测试..."
+                android:textSize="@dimen/size_13" />
+
+
+        </LinearLayout>
+
+
+        <com.wei.android.lib.colorview.view.ColorButton
+            android:id="@+id/bt_start_test"
+            style="@style/text_white_16_f_w"
+            android:layout_gravity="center"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginRight="38dp"
+            android:text="开始测试"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="3dp" />
+
+    </LinearLayout>
+</ScrollView>

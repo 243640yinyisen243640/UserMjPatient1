@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/text_black_14_w_w"
+            android:text="姓名" />
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_right_left"
+                style="@style/text_black_14_w_w"
+                android:text="内容" />
+
+            <TextView
+                android:id="@+id/tv_right_right"
+                style="@style/text_black_14_w_w"
+                android:paddingLeft="5dp"
+                android:text="单位" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10" />
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/text_black_14_w_w"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/text_black_14_w_w"
+            android:layout_alignParentRight="true"
+            android:text="李亚东" />
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10" />
+
+
+</LinearLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_piss_common"
+    style="@style/ll_follow_up_visit_include_item">
+
+    <!--尿常规-->
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_marginLeft="@dimen/dp_12">
+
+        <com.wei.android.lib.colorview.view.ColorView
+            android:layout_width="2dp"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="center"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="1dp">
+
+        </com.wei.android.lib.colorview.view.ColorView>
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:text="尿常规"
+            android:textColor="@color/main_home" />
+
+
+    </LinearLayout>
+
+    <!--亚硝酸盐-->
+    <!--尿胆原-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_12">
+
+        <!--亚硝酸盐-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_left">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="亚硝酸盐" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_one_left"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+        <!--尿胆原-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_right">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="尿胆原" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_one_right"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--白细胞-->
+    <!--潜血-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_12">
+
+        <!--白细胞-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_left">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="白细胞" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_two_left"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+        <!--潜血-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_right">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="潜血" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_two_right"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--酸碱度-->
+    <!--尿比重-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_12">
+
+        <!--酸碱度-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_left">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="酸碱度" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_three_left"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+        <!--尿比重-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_right">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="尿比重" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_three_right"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--尿酮-->
+    <!--胆红素-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_12">
+
+        <!--尿酮-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_left">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="尿酮" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_four_left"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+        <!--胆红素-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_right">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="胆红素" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_four_right"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--尿蛋白-->
+    <!--尿糖-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_12">
+
+        <!--尿蛋白-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_left">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="尿蛋白" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_five_left"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+        <!--尿糖-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_right">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="尿糖" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_five_right"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--维生素C-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_12">
+
+        <!--维生素C-->
+        <LinearLayout style="@style/ll_follow_up_visit_piss_common_left">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="维生素C" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_piss_common_six_left"
+                style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+        <!--尿胆原-->
+        <LinearLayout
+            style="@style/ll_follow_up_visit_piss_common_right"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="80dp"
+                android:text="尿胆原" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText style="@style/et_follow_up_visit_piss_common" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

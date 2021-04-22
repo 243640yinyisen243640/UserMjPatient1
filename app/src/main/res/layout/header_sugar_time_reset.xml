@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_home"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_16">
+
+    <TextView
+        style="@style/tv_sugar_time_reset_header"
+        android:text="名称" />
+
+
+    <TextView
+        style="@style/tv_sugar_time_reset_header"
+        android:text="开始时间" />
+
+    <TextView
+        style="@style/tv_sugar_time_reset_header"
+        android:text="结束时间" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_neuropathy"
+    style="@style/ll_follow_up_visit_include_item">
+
+    <!--肝功能-->
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:gravity="center_vertical">
+
+        <com.wei.android.lib.colorview.view.ColorView
+            android:layout_width="2dp"
+            android:layout_height="@dimen/dp_15"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="1dp">
+
+        </com.wei.android.lib.colorview.view.ColorView>
+
+        <TextView
+            android:id="@+id/tv_neuropathy_tips"
+            style="@style/text_black_14_w_w"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:text="神经病变相关检查"
+            android:textColor="@color/main_home" />
+
+        <TextView
+            style="@style/text_gray_12_w_w"
+            android:text="(最多可添加3张)" />
+
+
+    </LinearLayout>
+
+    <!--三张图片-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_neuropathy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:overScrollMode="never" />
+
+    <!--结果 介绍 说明-->
+    <com.wei.android.lib.colorview.view.ColorEditText
+        android:id="@+id/tv_neuropathy_desc"
+        style="@style/text_black_14_f_w"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="left|top"
+        android:hint="请输入结果..."
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:minLines="2"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:textColorHint="@color/gray_text"
+        app:backgroundColorNormal="@color/white"
+        app:borderColorNormal="@color/color_ed"
+        app:borderWidthNormal="1dp"
+        app:cornerRadiusNormal="3dp">
+
+
+    </com.wei.android.lib.colorview.view.ColorEditText>
+
+
+</LinearLayout>

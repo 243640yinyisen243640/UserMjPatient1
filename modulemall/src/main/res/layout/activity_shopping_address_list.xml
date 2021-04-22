@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_add"
+        android:visibility="visible"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_shopping_address_list">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_empty"
+        style="@style/hh_fi_fi"
+        android:visibility="gone"
+        android:layout_above="@+id/tv_add"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/address_empty" />
+    </RelativeLayout>
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_add"
+        style="@style/text_white_14_f_w"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="＋ 添加新地址"
+        android:textSize="15sp"
+        app:backgroundColorNormal="@color/main_green"
+        app:cornerRadiusNormal="@dimen/dp_4">
+
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/scrollView">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hbp_detail_one" />
+
+            <LinearLayout
+                style="@style/hh_wr_wr"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="根据评估您当前属于："
+                    android:textColor="@color/gray_text" />
+
+                <TextView
+                    android:id="@+id/tv_degree"
+                    style="@style/text_black_14_w_w"
+                    android:text="高血压1级（中危）"
+                    android:textColor="@color/main_red" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_desc"
+                style="@style/text_black_14_w_w"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_16"
+                android:lineSpacingMultiplier="1.2"
+                android:text="此处有一大段文案." />
+
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_16"
+                android:text="就诊建议："
+                android:textColor="@color/main_home" />
+
+            <TextView
+                android:id="@+id/tv_treat_advice"
+                style="@style/text_black_14_w_w"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/dp_16"
+                android:lineSpacingMultiplier="1.2"
+                android:text="建议您及时就诊于心内科专科门诊 。" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_doctor_advice"
+                style="@style/hh_fi_wr"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="医生建议："
+                    android:textColor="@color/main_home" />
+
+                <TextView
+                    android:id="@+id/tv_doctor_advice"
+                    style="@style/text_gray_14_w_w"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="建议您及时就诊于心内科专科门诊 。" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <com.wei.android.lib.colorview.view.ColorButton
+            android:id="@+id/bt_re_get"
+            style="@style/text_white_16_f_w"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="重新获取"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="3dp" />
+    </RelativeLayout>
+
+</ScrollView>
+

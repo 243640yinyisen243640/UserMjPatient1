@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_blood_warning"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/forty_five"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/blood_warning" />
+
+            <View
+                android:id="@+id/view_warning_left"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tv_add"
+                android:layout_alignLeft="@+id/tv_add"
+                android:layout_alignRight="@+id/tv_add"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="3dp"
+                android:background="@color/black_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sugar_warning"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/forty_five"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_system"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/sugar_warning" />
+
+            <View
+                android:id="@+id/view_warning_right"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tv_system"
+                android:layout_alignLeft="@+id/tv_system"
+                android:layout_alignRight="@+id/tv_system"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="3dp"
+                android:background="@color/black_text"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_warning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp">
+
+    </FrameLayout>
+
+</LinearLayout>

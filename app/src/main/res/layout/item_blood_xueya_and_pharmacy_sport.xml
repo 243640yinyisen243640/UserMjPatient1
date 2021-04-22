@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/sixteen">
+
+        <TextView
+            android:id="@+id/tv_bloodpressure_time"
+            style="@style/text_black_14_w_w"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="2018-01-01  16:16" />
+
+        <TextView
+            android:id="@+id/tv_blood_num"
+            style="@style/text_black_16_w_w"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_tongyong"
+            android:text="180/120" />
+
+        <TextView
+            android:id="@+id/tv_tongyong"
+            style="@style/text_gray_14_w_w"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="mmHg" />
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+
+</LinearLayout>

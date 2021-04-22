@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <View
+            style="@style/line"
+            android:layout_height="@dimen/dp_5">
+
+        </View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_health_archive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <!--用药史单独写-->
+        <LinearLayout
+            android:id="@+id/ll_medicine_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12">
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center"
+                    android:background="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="用药史" />
+
+                <ImageView
+                    android:id="@+id/img_medicine_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/right_arrow" />
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+
+        </LinearLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/el_medicine_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="600"
+            app:el_expanded="false"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_medicine_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <include layout="@layout/item_add_medicine" />
+            </LinearLayout>
+
+
+            <!--            <com.vice.bloodpressure.view.MyListView-->
+            <!--                android:id="@+id/lv_medicine_history"-->
+            <!--                style="@style/listView">-->
+
+            <!--            </com.vice.bloodpressure.view.MyListView>-->
+
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+

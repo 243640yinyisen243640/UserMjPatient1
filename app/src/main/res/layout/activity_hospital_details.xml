@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <!--医院头部-->
+    <LinearLayout
+        android:id="@+id/ll_top"
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_hospital"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_hospital" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hospital_name"
+                style="@style/text_black_16_f_w"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="北京医科大学" />
+
+            <TextView
+                android:id="@+id/tv_hospital_type"
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="专科医院" />
+
+            <TextView
+                android:id="@+id/tv_hospital_address"
+                style="@style/text_gray_14_f_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="地址:河南郑州" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <ListView
+            android:id="@+id/lv_left"
+            style="@style/listView"
+            android:layout_weight="3"
+            android:background="@color/white">
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_right"
+            style="@style/listView"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

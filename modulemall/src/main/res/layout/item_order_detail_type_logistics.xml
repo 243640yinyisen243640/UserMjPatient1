@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dp"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10"
+    app:backgroundColorNormal="@color/white">
+
+
+    <ImageView
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_order_detail_logistics" />
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_type_state_text"
+            style="@style/text_black_14_w_w"
+            android:text="物流信息" />
+
+
+        <TextView
+            android:id="@+id/tv_type_state_logistics_info"
+            style="@style/text_gray_12_f_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="您的快件已被*****" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/text_gray_14_w_w"
+        android:text=">"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+</com.wei.android.lib.colorview.view.ColorLinearLayout>

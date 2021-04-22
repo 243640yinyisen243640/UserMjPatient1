@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dp"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10"
+    app:backgroundColorNormal="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_order_detail_address" />
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_type_state_name"
+                style="@style/text_black_14_w_w"
+                android:text="张三" />
+
+
+            <TextView
+                android:id="@+id/tv_type_state_phone"
+                style="@style/text_gray_12_w_w"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:text="17756984568" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_type_state_address"
+            style="@style/text_gray_12_w_w"
+            android:layout_marginTop="9dp"
+            android:text="河南省郑州市金水区红专路街道二七广场名门国际中心1925" />
+
+    </LinearLayout>
+
+
+</com.wei.android.lib.colorview.view.ColorLinearLayout>

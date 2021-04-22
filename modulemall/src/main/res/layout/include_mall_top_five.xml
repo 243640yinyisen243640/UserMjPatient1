@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_search"
+        layout="@layout/include_mall_title" />
+
+    <include
+        android:id="@+id/banner"
+        layout="@layout/include_mall_banner" />
+
+    <include
+        android:id="@+id/classify"
+        layout="@layout/include_mall_classify" />
+
+    <include
+        android:id="@+id/coupon_and_activity"
+        layout="@layout/include_mall_coupon_and_activity" />
+
+    <include
+        android:id="@+id/header_product_list"
+        layout="@layout/include_mall_header_product_list" />
+</LinearLayout>

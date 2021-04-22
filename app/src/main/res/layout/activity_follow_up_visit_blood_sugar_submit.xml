@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/hh_fi_fi">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/bt_back_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_btn_back"
+            android:drawableLeft="@drawable/back_green"
+            android:drawablePadding="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/tv_title_new"
+            style="@style/text_white_16_w_w"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/main_home"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_more_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/more_bac"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/scrollView"
+        android:layout_below="@+id/rl_title_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!--背景图和随访问卷时间和随访问券四个字-->
+            <include layout="@layout/include_follow_up_visit_blood_sugar_top" />
+
+
+            <!--总结-->
+            <include
+                layout="@layout/include_follow_up_visit_summary"
+                android:visibility="gone">
+
+            </include>
+
+            <!--症状-->
+            <include
+                layout="@layout/include_follow_up_visit_symptom"
+                android:visibility="gone">
+
+            </include>
+
+            <!--体征-->
+            <include
+                layout="@layout/include_follow_up_visit_physical_sign"
+                android:visibility="gone">
+
+            </include>
+
+            <!--生活方式-->
+
+            <include
+                layout="@layout/include_follow_up_visit_life_style"
+                android:visibility="gone">
+
+            </include>
+            <!--辅助检查-->
+            <include
+                layout="@layout/include_follow_up_examine"
+                android:visibility="gone">
+
+            </include>
+
+
+            <!--用药情况-->
+            <LinearLayout
+                android:id="@+id/ll_drug_use"
+                style="@style/ll_follow_up_visit_include_item"
+                android:visibility="gone">
+
+                <include layout="@layout/include_follow_up_visit_drug_use_condition">
+
+                </include>
+
+                <!--三种药-->
+
+                <com.vice.bloodpressure.view.MyListView
+                    android:id="@+id/lv_drug_use"
+                    style="@style/listView">
+
+                </com.vice.bloodpressure.view.MyListView>
+
+                <!--胰岛素-->
+                <!--胰岛素 剂量-->
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_12"
+                        android:paddingRight="@dimen/dp_12">
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/text_black_14_w_w"
+                                android:text="胰岛素" />
+
+                            <TextView
+                                style="@style/text_black_14_w_w"
+                                android:text="*"
+                                android:textColor="@color/main_home" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout style="@style/hh_wr_wr">
+
+                            <com.wei.android.lib.colorview.view.ColorEditText
+                                android:id="@+id/et_insulin"
+                                android:layout_width="66dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_6"
+                                android:layout_marginRight="@dimen/dp_6"
+                                android:hint=""
+                                android:paddingLeft="@dimen/dp_10"
+                                android:paddingTop="2dp"
+                                android:paddingRight="@dimen/dp_10"
+                                android:paddingBottom="2dp"
+                                android:textColor="@color/black_text"
+                                android:textColorHint="@color/gray_text"
+                                android:textSize="@dimen/sp_14"
+                                app:borderColorNormal="@color/gray_text"
+                                app:borderWidthNormal="1dp" />
+
+                            <TextView
+                                style="@style/text_gray_14_w_w"
+                                android:text="次"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/hh_wr_wr"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_12"
+                        android:paddingRight="@dimen/dp_12">
+
+                        <LinearLayout
+                            style="@style/hh_wr_wr"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <TextView
+                                style="@style/text_black_14_w_w"
+                                android:text="剂量" />
+
+                            <TextView
+                                style="@style/text_black_14_w_w"
+                                android:text="*"
+                                android:textColor="@color/main_home" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout style="@style/hh_wr_wr">
+
+                            <com.wei.android.lib.colorview.view.ColorEditText
+                                android:id="@+id/et_insulin_dosage"
+                                android:layout_width="66dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_6"
+                                android:layout_marginRight="@dimen/dp_6"
+                                android:hint=""
+                                android:inputType="numberDecimal"
+                                android:paddingLeft="@dimen/dp_10"
+                                android:paddingTop="2dp"
+                                android:paddingRight="@dimen/dp_10"
+                                android:paddingBottom="2dp"
+                                android:textColor="@color/black_text"
+                                android:textColorHint="@color/gray_text"
+                                android:textSize="@dimen/sp_14"
+                                app:borderColorNormal="@color/gray_text"
+                                app:borderWidthNormal="1dp" />
+
+                            <TextView
+                                style="@style/text_gray_14_w_w"
+                                android:layout_marginLeft="@dimen/dp_6"
+                                android:text="u" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--血糖-->
+            <include
+                layout="@layout/include_follow_up_visit_blood_sugar"
+                android:visibility="gone">
+
+            </include>
+
+            <!--尿常规-->
+            <include
+                layout="@layout/include_follow_up_visit_piss_common"
+                android:visibility="gone">
+
+            </include>
+
+            <!--血脂-->
+            <include
+                layout="@layout/include_follow_up_visit_blood_fat"
+                android:visibility="gone" />
+
+            <!--尿微量白蛋白-->
+            <include
+                layout="@layout/include_follow_up_visit_piss_tiny_albumin"
+                android:visibility="gone" />
+
+            <!--血清肌酐-->
+            <include
+                layout="@layout/include_follow_up_visit_serum"
+                android:visibility="gone" />
+
+            <!--肝功能-->
+            <include
+                layout="@layout/include_follow_up_visit_liver_function"
+                android:visibility="gone" />
+            <!--促甲状腺激素(TSH)-->
+            <include
+                layout="@layout/include_follow_up_visit_tsh"
+                android:visibility="gone" />
+
+
+            <!--心电图-->
+            <include
+                layout="@layout/include_follow_up_visit_electrocardiogram"
+                android:visibility="gone" />
+            <!--眼底照相-->
+            <include
+                layout="@layout/include_follow_up_visit_fundus_photography"
+                android:visibility="gone" />
+            <!--神经病变相关检查-->
+            <include
+                layout="@layout/include_follow_up_visit_neuropathy_related_examination"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        tools:context=".ui.activity.smartdiet.DietPlanDetailActivity">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_three_meals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <!--加餐方案-->
+        <com.lihang.ShadowLayout
+            style="@style/diet_detail_card"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_15">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="加餐方案" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@drawable/line_stroke"
+                    android:layerType="software" />
+
+
+                <TextView
+                    style="@style/text_black_12_f_w"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="\u3000\u30001.当空腹血糖控制在7.0mmol/L（126mg/dl）以下，餐后2小时血糖小于10mmol/L（180mg/dl），糖化血红蛋白小于7.5%，且血糖没有较大波动时，就可以选择水果，但需代替部分主食。\n\u3000\u30002.食用最好在两餐之间，病情控制不满意者暂不食用，可吃少量生黄瓜和生西红柿。\n\u3000\u30003.进食水果要减少主食的摄入量，少食25克的主食可换苹果、橘子、桃子150克，梨100克、西瓜500克等。\n\u3000\u30004.葡萄干、桂圆、枣、板栗等含糖量较高，应少食用。" />
+
+            </LinearLayout>
+
+
+        </com.lihang.ShadowLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

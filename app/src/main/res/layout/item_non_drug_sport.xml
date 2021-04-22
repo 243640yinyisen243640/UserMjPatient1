@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_10">
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/non_drug_check_selector"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/text_gray_14_f_w"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="10dp"
+        android:text="这是内容!这是内容!这是内容!这是内容!这是内容!这是内容!这是内容!这是内容!这是内容!这是内容!这是内容!" />
+
+
+</LinearLayout>

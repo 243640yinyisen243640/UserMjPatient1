@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:layout_marginTop="@dimen/dp_40"
+    android:background="@color/sugar_background">
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="日期" />
+
+    <View
+        style="@style/line"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white" />
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="凌晨" />
+
+    <View
+        style="@style/line"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white" />
+
+
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="早餐" />
+
+        <View
+            style="@style/line"
+            android:background="@color/white" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_height="25dp">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="空腹" />
+
+            <View
+                style="@style/line"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="后" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white" />
+
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="午餐" />
+
+        <View
+            style="@style/line"
+            android:background="@color/white" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_height="25dp">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="前" />
+
+            <View
+                style="@style/line"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="后" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white" />
+
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="晚餐" />
+
+        <View
+            style="@style/line"
+            android:background="@color/white" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_height="25dp">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="前" />
+
+            <View
+                style="@style/line"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="后" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white" />
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="睡前" />
+</LinearLayout>

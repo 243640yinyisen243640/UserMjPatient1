@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <View style="@style/line" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tbl_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/main_home"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/dp_2"
+        app:tabSelectedTextColor="@color/main_home"
+        app:tabTextAppearance="@style/TabTextTitleSizeDietList"
+        app:tabTextColor="@color/black_text"
+        app:tabUnboundedRipple="false">
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5">
+
+    </FrameLayout>
+</LinearLayout>

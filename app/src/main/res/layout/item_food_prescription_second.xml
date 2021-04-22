@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10" />
+
+    <RelativeLayout
+        android:id="@+id/rl_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12">
+
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/text_black_14_w_w"
+            android:text="谷薯种类" />
+
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/et_non_drug_select"
+            android:hint="请选择" />
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12">
+
+
+        <TextView
+            android:id="@+id/tv_unit_left"
+            style="@style/text_black_14_w_w"
+            android:text="份量" />
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_alignParentRight="true">
+
+            <EditText
+                android:id="@+id/et_input"
+                style="@style/et_non_drug_input"
+                android:hint="请输入" />
+
+
+            <TextView
+                android:id="@+id/tv_unit_right"
+                style="@style/text_black_14_w_w"
+                android:text="g" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_second"
+        style="@style/hh_fi_wr"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12">
+
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="摄入次数" />
+
+
+            <LinearLayout
+                style="@style/hh_wr_wr"
+                android:layout_alignParentRight="true">
+
+                <EditText
+                    android:id="@+id/et_input_second"
+                    style="@style/et_non_drug_input"
+                    android:hint="请输入" />
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="次/周" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="@dimen/dp_10"></View>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--列表页-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_add_del_sure"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_list"
+            style="@style/listView">
+
+        </ListView>
+
+        <TextView
+            style="@style/text_gray_12_w_w"
+            android:layout_margin="@dimen/dp_10"
+            android:drawableLeft="@drawable/appoint_remind"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="温馨提示：最多可添加十个就诊人！" />
+    </LinearLayout>
+
+    <!--空页面-->
+    <include layout="@layout/include_default_no_data">
+
+    </include>
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_add_del_sure"
+        style="@style/text_white_16_f_w"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_10"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="添加"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="3dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lsp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--手动记录点击完成直接回首页-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/text_black_14_w_w"
+            android:layout_gravity="center"
+            android:text="完成100分钟 消耗2000千卡"
+            android:textSize="24sp" />
+
+
+        <TextView
+            style="@style/text_gray_14_w_w"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_25"
+            android:lineSpacingMultiplier="1.2"
+            android:text="规律的运动有助于增加人体内的胰岛素的敏感性，更加有效地发挥降糖作用，降低心血管疾病发生的危险性，同时减轻体重，增加生活幸福指数。" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_black_14_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:text="30"
+            android:textColor="@color/main_home"
+            android:textSize="28sp" />
+
+
+        <com.lsp.RulerView
+            android:id="@+id/ruler_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            lsp:bgColor="@color/background"
+            lsp:firstScale="30"
+            lsp:isBgRoundRect="true"
+            lsp:largeScaleColor="@color/main_home"
+            lsp:largeScaleStroke="5dp"
+            lsp:maxScale="1000000000"
+            lsp:midScaleColor="@color/gray_text"
+            lsp:midScaleStroke="3dp"
+            lsp:minScale="0"
+            lsp:resultNumColor="@color/main_home"
+            lsp:resultNumTextSize="20sp"
+            lsp:rulerHeight="60dp"
+            lsp:rulerToResultgap="8dp"
+            lsp:scaleCount="10"
+            lsp:scaleGap="10dp"
+            lsp:scaleLimit="10"
+            lsp:scaleNumColor="@color/color_666"
+            lsp:scaleNumTextSize="16sp"
+            lsp:showScaleResult="false"
+            lsp:smallScaleColor="@color/color_aaa"
+            lsp:smallScaleStroke="2dp"
+            lsp:unit="cm"
+            lsp:unitColor="@color/main_home"
+            lsp:unitTextSize="10sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_sure"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_home">
+
+
+        <TextView
+            style="@style/text_white_18_w_w"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/sport_manual_add_sure"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="确定" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:id="@+id/rl_knowledge_item"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/item_fragment_home">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_know_title"
+                    style="@style/text_black_16_f_w"
+                    android:layout_marginRight="10dp"
+                    android:text="标题哈哈哈哈哈" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    style="@style/text_gray_14_f_w"
+                    android:layout_below="@+id/tv_know_title"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLines="2"
+                    android:text="电影《哈哈哈》是由罗燕、刘利年执导，黄伊汶、吴大维、后舍男生、李" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/tv_look_count"
+                        style="@style/text_gray_14_w_w"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/eyes"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:text="123456" />
+
+                    <ImageView
+                        android:id="@+id/iv_collect"
+                        android:layout_width="45dp"
+                        android:layout_height="39dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/tv_look_count"
+                        android:padding="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/heart_unselect" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/yellow_back"
+                        android:gravity="center"
+                        android:text="阅读"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="100dp"
+        android:layout_height="145dp"
+        android:layout_marginLeft="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_medicine"
+        app:qmui_border_color="@color/color_f2"
+        app:qmui_border_width="1dp"
+        app:qmui_corner_radius="10dp" />
+
+</FrameLayout>

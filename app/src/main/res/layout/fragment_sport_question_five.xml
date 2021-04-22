@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_diet_plan_question_title_and_desc" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="28dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_yes"
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_yes"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sport_level_uncheck" />
+
+                <TextView
+                    style="@style/text_gray_14_w_w"
+                    android:text="是" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_no"
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_no"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sport_level_uncheck" />
+
+                <TextView
+                    style="@style/text_gray_14_w_w"
+                    android:text="否" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_is_show_have"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="28dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_black_14_f_w"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_weight="1"
+                    android:text="是否有空腹运动？" />
+
+                <LinearLayout
+                    style="@style/hh_fi_wr"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_yes_empty"
+                        style="@style/hh_fi_wr"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_yes_empty"
+                            android:layout_width="23dp"
+                            android:layout_height="23dp"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/sport_level_uncheck" />
+
+                        <TextView
+                            style="@style/text_gray_14_w_w"
+                            android:text="是" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_no_empty"
+                        style="@style/hh_fi_wr"
+                        android:layout_marginRight="@dimen/dp_40"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_no_empty"
+                            android:layout_width="23dp"
+                            android:layout_height="23dp"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/sport_level_uncheck" />
+
+                        <TextView
+                            style="@style/text_gray_14_w_w"
+                            android:text="否" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:text="运动时间:" />
+
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_time"
+                        style="@style/et_base_style_no_bg_wr"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:hint="请输入"
+                        android:inputType="number">
+
+
+                    </EditText>
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_width="@dimen/dp_50"
+                        android:text="分钟/次" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_25">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:text="运动频率:" />
+
+
+                <LinearLayout
+                    style="@style/hh_wr_wr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_frequency"
+                        style="@style/et_base_style_no_bg_wr"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:hint="请输入"
+                        android:inputType="number">
+
+
+                    </EditText>
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_width="@dimen/dp_50"
+                        android:gravity="right"
+                        android:text="天/周" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_next"
+        style="@style/diet_plan_question_tv_next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="70dp"
+        android:text="下一步"
+        android:textColor="@color/color_666"
+        app:backgroundColorNormal="@color/color_eb"
+        app:cornerRadiusNormal="3dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+</RelativeLayout>

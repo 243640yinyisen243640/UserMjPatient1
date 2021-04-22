@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_blood_fat"
+    style="@style/ll_follow_up_visit_include_item">
+
+    <!--血脂-->
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_marginLeft="@dimen/dp_12">
+
+        <com.wei.android.lib.colorview.view.ColorView
+            android:layout_width="2dp"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="center"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="1dp">
+
+        </com.wei.android.lib.colorview.view.ColorView>
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:text="血脂"
+            android:textColor="@color/main_home" />
+
+
+    </LinearLayout>
+
+    <!--胆固醇-->
+    <LinearLayout
+        style="@style/ll_follow_up_visit_blood_fat"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_width="80dp"
+            android:text="胆固醇" />
+
+
+        <com.wei.android.lib.colorview.view.ColorEditText
+            android:id="@+id/et_blood_fat_one"
+            style="@style/et_follow_up_visit_blood_fat"
+            android:layout_width="80dp" />
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="mmol/L" />
+
+    </LinearLayout>
+    <!--甘油三酯-->
+    <LinearLayout
+        style="@style/ll_follow_up_visit_blood_fat"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_width="80dp"
+            android:text="甘油三酯" />
+
+
+        <com.wei.android.lib.colorview.view.ColorEditText
+            android:id="@+id/et_blood_fat_two"
+            style="@style/et_follow_up_visit_blood_fat"
+            android:layout_width="80dp" />
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="mmol/L" />
+
+    </LinearLayout>
+    <!--低密度脂蛋白-->
+    <LinearLayout
+        style="@style/ll_follow_up_visit_blood_fat"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_width="110dp"
+            android:text="低密度脂蛋白" />
+
+
+        <com.wei.android.lib.colorview.view.ColorEditText
+            android:id="@+id/et_blood_fat_three"
+            style="@style/et_follow_up_visit_blood_fat"
+            android:layout_width="80dp" />
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="mmol/L" />
+
+    </LinearLayout>
+    <!--高密度脂蛋白-->
+    <LinearLayout
+        style="@style/ll_follow_up_visit_blood_fat"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_width="110dp"
+            android:text="高密度脂蛋白" />
+
+
+        <com.wei.android.lib.colorview.view.ColorEditText
+            android:id="@+id/et_blood_fat_four"
+            style="@style/et_follow_up_visit_blood_fat"
+            android:layout_width="80dp" />
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="mmol/L" />
+
+    </LinearLayout>
+
+</LinearLayout>

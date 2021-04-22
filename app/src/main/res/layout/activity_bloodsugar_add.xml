@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:lsp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/line" />
+
+    <TextView
+        android:id="@+id/tv_target"
+        style="@style/text_black_14_f_w"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+        android:text="控制目标:  4.4-10.0"
+        android:textSize="15sp" />
+
+    <View style="@style/line" />
+
+    <TextView
+        style="@style/text_black_16_f_w"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:text="血糖测量时间段"
+        android:textSize="15sp" />
+
+
+    <GridView
+        android:id="@+id/gv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:horizontalSpacing="@dimen/dp_12"
+        android:numColumns="4"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:verticalSpacing="@dimen/dp_12"
+        android:visibility="visible">
+
+    </GridView>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_select_time"
+        style="@style/hh_fi_wr"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="16dp"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="16dp">
+
+        <TextView
+            style="@style/text_black_14_f_w"
+            android:layout_weight="0.8"
+            android:text="检测时间"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_check_time"
+            style="@style/text_black_14_w_w"
+            android:drawableRight="@drawable/health_record_green_three_triangle"
+            android:drawablePadding="@dimen/dp_5"
+            android:hint="请选择"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <TextView
+        style="@style/text_black_16_f_w"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:text="血糖值"
+        android:textSize="15sp" />
+
+    <!--血糖值-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_result"
+            style="@style/text_black_14_w_w"
+            android:layout_gravity="center"
+            android:text="6.0"
+            android:textSize="25sp" />
+
+        <com.lsp.RulerView
+            android:id="@+id/ruler_blood_sugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            lsp:bgColor="@color/background"
+            lsp:firstScale="6.0"
+            lsp:isBgRoundRect="true"
+            lsp:largeScaleColor="@color/main_home"
+            lsp:largeScaleStroke="5dp"
+            lsp:maxScale="33"
+            lsp:midScaleColor="@color/gray_text"
+            lsp:midScaleStroke="3dp"
+            lsp:minScale="0"
+            lsp:rulerHeight="60dp"
+            lsp:scaleCount="10"
+            lsp:scaleGap="10dp"
+            lsp:scaleLimit="1"
+            lsp:scaleNumColor="@color/color_666"
+            lsp:scaleNumTextSize="16sp"
+            lsp:showScaleResult="false"
+            lsp:smallScaleColor="@color/color_aaa"
+            lsp:smallScaleStroke="2dp"
+            lsp:unit=""
+            lsp:unitColor="@color/main_home"
+            lsp:unitTextSize="10sp" />
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.wei.android.lib.colorview.view.ColorTextView
+                    android:id="@+id/tv_left"
+                    style="@style/text_black_14_w_w"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    app:backgroundColorNormal="@color/background"
+                    app:cornerRadiusNormal="180dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.wei.android.lib.colorview.view.ColorTextView
+                    android:id="@+id/tv_center"
+                    style="@style/text_black_14_w_w"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    app:backgroundColorNormal="@color/blood_sugar_normal"
+                    app:cornerRadiusNormal="180dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.wei.android.lib.colorview.view.ColorTextView
+                    android:id="@+id/tv_right"
+                    style="@style/text_black_14_w_w"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_centerHorizontal="true"
+                    app:backgroundColorNormal="@color/background"
+                    app:cornerRadiusNormal="180dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="28dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:height="@dimen/dp_15"
+                android:background="@color/blood_sugar_low" />
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:height="@dimen/dp_15"
+                android:background="@color/blood_sugar_normal" />
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:height="@dimen/dp_15"
+                android:background="@color/red_bright" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="28dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_gray_14_w_w"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="正常偏低" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_gray_14_w_w"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="正常" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/hh_fi_wr"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_gray_14_w_w"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="正常偏高" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

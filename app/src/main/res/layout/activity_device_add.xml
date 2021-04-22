@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_20"
+        android:scaleType="centerCrop"
+        android:src="@drawable/device_add" />
+
+
+    <com.wei.android.lib.colorview.view.ColorButton
+        android:id="@+id/bt_add"
+        style="@style/text_white_16_w_w"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="添加设备"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="90dp" />
+
+    <TextView
+        style="@style/text_gray_14_w_w"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="设备好像走丢了,赶紧添加吧" />
+
+
+</LinearLayout>

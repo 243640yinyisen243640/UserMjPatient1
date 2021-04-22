@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_8"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_8">
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        style="@style/text_white_12_w_w"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_6"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_6"
+        android:paddingBottom="@dimen/dp_2"
+        android:text="失效"
+        app:backgroundColorNormal="#999999"
+        app:cornerRadiusNormal="180dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/img_product_pic"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginRight="@dimen/dp_12"
+        android:src="@drawable/shopping_cart_default_product_img"
+        app:qmui_corner_radius="@dimen/dp_4"
+        app:qmui_is_circle="false">
+
+
+    </com.qmuiteam.qmui.widget.QMUIRadiusImageView>
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        style="@style/text_gray_14_w_w"
+        android:layout_marginTop="3dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="商品商品商品" />
+
+</LinearLayout>

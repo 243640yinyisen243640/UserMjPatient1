@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/img_pic"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_popup_bottom_logistics_pic"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/text_black_14_f_w"
+            android:layout_weight="0.8"
+            android:text="选择" />
+
+        <CheckBox
+            android:id="@+id/cb_check"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:button="@drawable/popup_bottom_checkbox_selector"
+            android:checked="true"
+            android:clickable="false" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line_bottom"
+        style="@style/line"
+        android:visibility="gone" />
+
+
+</LinearLayout>

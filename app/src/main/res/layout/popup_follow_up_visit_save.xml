@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="236dp"
+        android:layout_height="178dp"
+        android:background="@drawable/follow_up_visit_popup_bg">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/follow_up_visit_bg" />
+
+        <ImageView
+            android:id="@+id/img_dismiss"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-11dp"
+            android:layout_marginRight="-11dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/follow_up_visit_x" />
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content_top"
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="您还未完成管理问卷填写" />
+
+            <TextView
+                android:id="@+id/tv_content_bottom"
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="是否保存" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+
+            <com.wei.android.lib.colorview.view.ColorTextView
+                android:id="@+id/tv_left"
+                style="@style/text_white_14_w_w"
+                android:layout_width="74dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="保存草稿"
+                app:backgroundColorNormal="@color/color_70"
+                app:cornerRadiusNormal="3dp" />
+
+            <com.wei.android.lib.colorview.view.ColorTextView
+                android:id="@+id/tv_right"
+                style="@style/text_white_14_w_w"
+                android:layout_width="74dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="完成提交"
+                app:backgroundColorNormal="@color/main_home"
+                app:cornerRadiusNormal="3dp" />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

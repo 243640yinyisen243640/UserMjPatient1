@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--上分隔线-->
+
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10">
+
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/et_base_style_no_bg"
+            android:layout_weight="0.8"
+            android:drawableLeft="@drawable/healthy_diet_search"
+            android:drawablePadding="@dimen/dp_10"
+            android:hint="请输入食物名称 如：宫保鸡丁"
+            android:imeOptions="actionSearch"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textColor="@color/black" />
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_search"
+            style="@style/text_white_14_w_w"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="5dp"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="7dp"
+            android:text="搜索"
+            android:visibility="gone"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="@dimen/dp_5" />
+
+    </LinearLayout>
+
+    <!--下分隔线-->
+    <View style="@style/line" />
+
+</LinearLayout>

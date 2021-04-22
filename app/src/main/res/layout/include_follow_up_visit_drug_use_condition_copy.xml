@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_blood_pressure_examine"
+    style="@style/ll_follow_up_visit_include_item">
+    <!--用药情况-->
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_marginLeft="@dimen/dp_12">
+
+
+        <com.wei.android.lib.colorview.view.ColorView
+            android:layout_width="2dp"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="center"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="1dp">
+
+        </com.wei.android.lib.colorview.view.ColorView>
+
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:text="辅助检查"
+            android:textColor="@color/main_home" />
+
+
+    </LinearLayout>
+
+    <!--用药依从性-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="用药依从性" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="*"
+                android:textColor="@color/main_home" />
+
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rg_drug_use_yield_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rb_drug_use_yield_rule"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="规律"
+                android:textSize="@dimen/size_12" />
+
+
+            <RadioButton
+                android:id="@+id/rb_drug_use_yield_gap"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="间断"
+                android:textSize="@dimen/size_12" />
+
+            <RadioButton
+                android:id="@+id/rb_drug_use_yield_not_take_medicine"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="不服药"
+                android:textSize="@dimen/size_12" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <!--药物不良反应-->
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="药物不良反应" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="*"
+                android:textColor="@color/main_home" />
+
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rg_drug_use_adverse_drug_reaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rg_adverse_drug_reaction_have"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="有"
+                android:textSize="@dimen/size_12" />
+
+
+            <RadioButton
+                android:id="@+id/rg_adverse_drug_reaction_not"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="无"
+                android:textSize="@dimen/size_12" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <!--此次随访分类-->
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="此次随访分类" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="*"
+                android:textColor="@color/main_home" />
+
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rg_drug_use_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rb_classify_satisfaction"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="控制满意"
+                android:textSize="@dimen/size_12" />
+
+            <RadioButton
+                android:id="@+id/rb_classify_satisfaction_not"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="控制不满意"
+                android:textSize="@dimen/size_12" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="此次随访分类" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="*"
+                android:textColor="@color/main_home" />
+
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rg_drug_use_classify_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rb_classify_adverse_reaction"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="不良反应"
+                android:textSize="@dimen/size_12" />
+
+            <RadioButton
+                android:id="@+id/rb_classify_complication"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="并发症"
+                android:textSize="@dimen/size_12" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</LinearLayout>

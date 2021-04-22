@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten">
+
+
+        <ImageView
+            android:id="@+id/iv_my_message_item_inside"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/ll_recommend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_my_message_name_inside"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="寂寞的草"
+                    android:textColor="@color/main_home"
+                    android:textSize="@dimen/fifteen" />
+
+                <TextView
+                    android:id="@+id/tv_my_message_time_inside"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/seven"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="2018-8-9"
+                    android:textSize="@dimen/thirteen" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_my_message_shuoshuo_inside"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="17分钟前"
+                android:textSize="@dimen/thirteen" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

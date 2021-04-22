@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_check"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="33dp"
+    android:paddingTop="@dimen/dp_16"
+    android:paddingRight="33dp"
+    android:paddingBottom="@dimen/dp_16">
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        style="@style/text_black_14_f_w"
+        android:layout_weight="0.8"
+        android:text="无"
+        android:textColor="@color/black_text" />
+
+    <ImageView
+        android:id="@+id/img_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/sport_level_uncheck"
+        android:visibility="visible" />
+
+
+</com.wei.android.lib.colorview.view.ColorLinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/et_base_style_no_bg"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="36dp"
+        android:hint="请输入手机号"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColorHint="@color/gray_text" />
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="36dp">
+
+
+    </View>
+
+    <TextView
+        android:id="@+id/tv_change_or_bind"
+        style="@style/text_black_12_w_w"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="36dp"
+        android:drawableLeft="@drawable/user_tv_warning_normal"
+        android:drawablePadding="@dimen/dp_5"
+        android:text="绑定手机号后，下次可以直接使用新手机号登陆"
+        android:textColor="#B2AFAF" />
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_next_step"
+        style="@style/text_gray_14_f_w"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginRight="36dp"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="下一步"
+        app:backgroundColorNormal="@color/color_eb"
+        app:cornerRadiusNormal="@dimen/dp_2">
+
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+</LinearLayout>

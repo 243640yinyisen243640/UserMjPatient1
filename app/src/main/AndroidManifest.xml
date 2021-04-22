@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vice.bloodpressure">
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 网络权限 -->
+    <!-- 8.0安装apk需要请求未知来源权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 8.0安装apk需要请求未知来源权限 -->
+    <!-- Bugly特殊权限 -->
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" /> <!-- Bugly特殊权限 -->
+    <!-- 蓝牙权限开始 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 危险权限开始 -->
+    <!-- https://developer.android.google.cn/guide/topics/permissions/overview#dangerous_permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 蓝牙权限结束 -->
+    <!-- 外部存储(下载apk 访问照片 媒体内容 文件) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 拍照 扫码 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 读取短信的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 计步处理器处理器权限 -->
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE " />
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 获取近期运行任务，用于应用是否活跃的判断 -->
+    <uses-permission android:name="android.permission.REORDER_TASKS" /> <!-- 获取近期运行任务，用于应用是否活跃的判断 -->
+    <!-- 华为角标 -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" /> <!-- vivo角标 -->
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:appComponentFactory="真的是任意字符"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label,allowBackup,appComponentFactory,networkSecurityConfig"
+        tools:targetApi="q"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.vice.bloodpressure"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+
+        </activity>
+        <activity android:name=".ui.test.TestActivity" />
+        <activity android:name=".ui.activity.healthrecordlist.SelectFoodTypeActivity" />
+        <activity android:name=".ui.activity.healthrecordlist.FoodTypeSearchActivity" />
+        <activity android:name=".ui.activity.mydevice.MyBindDeviceListActivity" />
+        <activity android:name=".ui.activity.healthrecordlist.BloodSugarListActivity" />
+        <activity android:name=".ui.activity.sport.SportWeekPagerDetailActivity" />
+        <activity android:name=".ui.activity.user.CompletePersonalInfoActivity" />
+        <activity
+            android:name=".ui.activity.sport.SportTypeVideoPlayingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.sport.SportTypeVideoOverActivity" />
+        <activity android:name=".ui.activity.sport.map.SportTypeMapRunningActivity" />
+        <activity android:name=".ui.activity.sport.SportTypeManualAddActivity" />
+        <activity android:name=".ui.activity.sport.SportTypeVideoActivity" />
+        <activity android:name=".ui.activity.sport.map.SportTypeMapActivity" />
+        <activity android:name=".ui.activity.sport.HomeSportCountDownActivity" />
+        <activity android:name=".ui.activity.sport.HomeSportDetailActivity" />
+        <activity android:name=".ui.activity.sport.HomeSportQuestionActivity" />
+        <activity android:name=".ui.activity.sport.HomeSportListActivity" />
+        <activity android:name=".ui.activity.home.LittleToolsListActivity" />
+        <activity android:name=".ui.activity.smarteducation.SmartEducationHaveLearnClassListActivity" />
+        <activity android:name=".ui.activity.smarteducation.SmartEducationClassDetailAudioActivity" />
+        <activity android:name=".ui.activity.smarteducation.SmartEducationClassDetailTextActivity" />
+        <activity
+            android:name=".ui.activity.smarteducation.SmartEducationClassDetailVideoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.smarteducation.SmartEducationLearnTimeActivity" />
+        <activity android:name=".ui.activity.smarteducation.SmartEducationSearchActivity" /> <!-- <activity android:name=".ui.activity.smarteducation.SmartEducationMainActivity" /> -->
+        <activity android:name=".ui.activity.mydevice.MyDeviceListActivity" />
+        <activity android:name=".ui.activity.patienteducation.PatientEducationAudioActivity" /> <!-- 视频播放 -->
+        <activity
+            android:name=".ui.activity.patienteducation.PatientEducationVideoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.smartanalyse.BloodPressureReportNoDataActivity" />
+        <activity android:name=".ui.activity.smartmakepolicy.HbpDetailActivity" />
+        <activity android:name=".ui.activity.smartmakepolicy.HbpSubmitMainActivity" />
+        <activity android:name=".ui.activity.setting.SugarTimeResetActivity" />
+        <activity android:name=".ui.activity.setting.UserProtocolActivity" />
+        <activity android:name=".ui.activity.setting.SugarControlTargetSettingActivity" />
+        <activity android:name=".ui.activity.hospital.DoctorInfoDetailActivity" />
+        <activity android:name=".ui.activity.setting.FeedBackActivity" />
+        <activity android:name=".ui.activity.setting.ConnectUsActivity" />
+        <activity android:name=".ui.activity.setting.AboutUsActivity" />
+        <activity android:name=".ui.activity.setting.SettingActivity" />
+        <activity android:name=".ui.activity.healthrecordlist.BloodOxygenListActivity" />
+        <activity android:name=".ui.activity.healthrecordadd.BloodOxygenAddActivity" />
+        <activity android:name=".ui.activity.healthrecordlist.WeightListActivity" />
+        <activity android:name=".ui.activity.healthrecordadd.WeightAddActivity" />
+        <activity android:name=".ui.activity.food.FoodHomeActivity" />
+        <activity android:name=".ui.activity.user.MyReportListActivity" />
+        <activity android:name=".ui.activity.user.MyLiverFilesActivity" />
+        <activity android:name=".ui.activity.food.FoodActivity" />
+        <activity android:name=".ui.activity.user.RegisterQuestionActivity" />
+        <activity android:name=".ui.activity.smarteducation.SmartEducationClassifyListActivity" />
+        <activity android:name=".ui.activity.smartdiet.DietPlanFoodsSelectAndSearchActivity" />
+        <activity android:name=".ui.activity.smartdiet.DietPlanFoodsSearchActivity" />
+        <activity android:name=".ui.activity.smartdiet.DietPlanOneStepsActivity" />
+        <activity
+            android:name=".ui.activity.smartdiet.DietPlanFoodsSelectActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.smartdiet.DietPlanTwoStepsActivity" />
+        <activity android:name=".ui.activity.smartdiet.DietPlanDetailActivity" />
+        <activity android:name=".ui.activity.smartdiet.DietPlanBaseInfoActivity" />
+        <activity android:name=".ui.activity.smartdiet.DietPlanMainActivity" />
+        <activity android:name=".ui.activity.homesign.SignPatientInfoActivity" />
+        <activity android:name=".ui.activity.homesign.MyFamilyDetailActivity" />
+        <activity android:name=".ui.activity.homesign.ServicePackDetailActivity" />
+        <activity android:name=".ui.activity.homesign.FamilyListActivity" />
+        <activity
+            android:name=".ui.activity.followupvisit.FollowUpVisitHepatopathySubmitActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.homesign.SignHospitalDepartmentDoctorListActivity" />
+        <activity android:name=".ui.activity.homesign.QuickSignAddActivity" />
+        <activity android:name=".ui.activity.homesign.HomeDoctorDetailActivity" />
+        <activity android:name=".ui.activity.homesign.PrivacySettingActivity" />
+        <activity android:name=".ui.activity.homesign.HospitalizationAppointmentDetailActivity" />
+        <activity android:name=".ui.activity.homesign.HospitalizationAppointmentListActivity" />
+        <activity android:name=".ui.activity.homesign.SignProtocolActivity" />
+        <activity android:name=".ui.activity.homesign.ServicePackRecordActivity" />
+        <activity android:name=".ui.activity.homesign.ServicePackActivity" />
+        <activity android:name=".ui.activity.homesign.DoctorAdviceActivity" />
+        <activity android:name=".ui.activity.homesign.HospitalizationAppointmentAddActivity" />
+        <activity android:name=".ui.activity.homesign.SignHospitalDepartmentListActivity" />
+        <activity android:name=".ui.activity.homesign.SignHospitalsListActivity" />
+        <activity android:name=".ui.activity.homesign.FamilyDoctorNotBindActivity" />
+        <activity android:name=".ui.activity.homesign.MyQRCodeActivity" />
+        <activity android:name=".ui.activity.homesign.FamilyDoctorBindActivity" />
+        <activity android:name=".ui.activity.smartdiet.DietPlanQuestionActivity" />
+        <activity android:name=".ui.activity.smartdiet.RecipeDetailActivity" />
+        <activity
+            android:name=".ui.activity.smartdiet.DietPlanResultActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.activity.registration.report.ImmunoFluorescenceReportAndClottingReportListActivity" />
+        <activity android:name=".ui.activity.registration.report.ImmunoFluorescenceReportListActivity" />
+        <activity android:name=".ui.activity.registration.report.ClottingReportListActivity" />
+        <activity android:name=".ui.activity.registration.ElectrolyteListActivity" />
+        <activity android:name=".ui.activity.registration.report.ReportDataDetailListActivity" />
+        <activity android:name=".ui.activity.registration.CheckNoticeItemActivity" />
+        <activity android:name=".ui.activity.registration.report.ReportDoctorAdviceListActivity" />
+        <activity android:name=".ui.activity.registration.report.ReportListMainActivity" />
+        <activity android:name=".ui.activity.registration.MyAppointListMainActivity" />
+        <activity android:name=".ui.activity.registration.PhysicalExaminationDoctorInfoActivity" />
+        <activity android:name=".ui.activity.registration.PatientOfTreatListActivity" />
+        <activity android:name=".ui.activity.registration.PatientOfTreatAddOrEditActivity" />
+        <activity android:name=".ui.activity.registration.AppointmentDetailActivity" />
+        <activity android:name=".ui.activity.registration.AppointmentCheckActivity" />
+        <activity android:name=".ui.activity.registration.PhysicalExaminationDoctorMainActivity" />
+        <activity android:name=".ui.activity.registration.PhysicalExaminationListOfDepartmentsActivity" />
+        <activity android:name=".ui.activity.registration.PhysicalExaminationListOfHospitalActivity" />
+        <activity android:name=".ui.activity.registration.RegistrationMainTreatActivity" />
+        <activity android:name=".ui.activity.registration.RegistrationMainAppointmentActivity" />
+        <activity android:name=".ui.activity.user.UserPhoneInputRegisterCodeActivity" />
+        <activity android:name=".ui.activity.user.UserPhoneInputPhoneNumberActivity" />
+        <activity android:name=".ui.activity.user.UserPhoneBindOrNoActivity" /> <!-- 登录最新 -->
+        <activity
+            android:name=".ui.activity.user.LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" /> <!-- 修改或者绑定手机号 -->
+        <activity
+            android:name=".ui.activity.user.ChangeOrBindPhoneNumberActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" /> <!-- 绑定身份证号 -->
+        <activity
+            android:name=".ui.activity.user.BindIdNumberActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" /> <!-- 修改密码 -->
+        <activity android:name=".ui.activity.user.ChangePwdActivity" /> <!-- 账户安全 -->
+        <activity android:name=".ui.activity.user.AccountAndSafetyActivity" /> <!-- 检验数据详情 -->
+        <activity android:name=".ui.activity.hospital.checkdata.CheckDataDetailListActivity" /> <!-- 检验数据列表 -->
+        <activity android:name=".ui.activity.hospital.checkdata.CheckDataListActivity" /> <!-- 肝病营养详情 -->
+        <activity android:name=".ui.activity.healthrecordlist.HepatopathyPabulumDetailActivity" /> <!-- 肝病营养指标添加 -->
+        <activity android:name=".ui.activity.healthrecordlist.HepatopathyPabulumListActivity" /> <!-- 肝病营养指标添加 -->
+        <activity android:name=".ui.activity.healthrecordadd.HepatopathyPabulumAddActivity" />
+        <activity android:name=".ui.activity.tcm.TcmListActivity" /> <!-- 运动类型 -->
+        <activity android:name=".ui.activity.healthrecordlist.SportTypeActivity" /> <!-- 血糖提交 -->
+        <activity android:name=".ui.activity.followupvisit.FollowUpVisitBloodSugarSubmitActivity" /> <!-- 血压提交 -->
+        <activity android:name=".ui.activity.followupvisit.FollowUpVisitBloodPressureSubmitActivity" />
+        <activity android:name=".ui.activity.followupvisit.FollowUpVisitListActivity" /> <!-- 介绍bmi -->
+        <activity android:name=".ui.activity.healthrecordlist.BmiDetailActivity" /> <!-- 添加血压 -->
+        <activity android:name=".ui.activity.healthrecordadd.BloodPressureAddActivity" /> <!-- 食物相关 -->
+        <activity
+            android:name=".ui.activity.food.FoodWarehouseActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.activity.food.FoodItemActivity" />
+        <activity android:name=".ui.activity.food.FoodAdvActivity" />
+        <activity android:name=".ui.activity.healthrecordlist.HealthRecordBloodSugarMainActivity" />
+        <activity android:name=".ui.activity.healthrecordlist.HealthRecordBloodSugarListActivity" />
+        <activity android:name=".ui.activity.food.FoodDetailActivity" />
+        <activity android:name=".ui.activity.food.FoodSearchActivity" /> <!-- 处方列表 -->
+        <!-- 监测处方 -->
+        <activity android:name=".ui.activity.nondrug.NonDrug_03_CheckPrescriptionActivity" /> <!-- 教育处方和并发症处方 -->
+        <activity android:name=".ui.activity.nondrug.NonDrug_04_05_EducationAndComplicationPrescriptionActivity" /> <!-- 运动处方 -->
+        <activity android:name=".ui.activity.nondrug.NonDrug_02_SportPrescriptionActivity" /> <!-- 饮食处方 第二步 -->
+        <activity
+            android:name=".ui.activity.nondrug.FoodPrescriptionSecondActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" /> <!-- 饮食处方第一步 -->
+        <activity android:name=".ui.activity.nondrug.FoodPrescriptionFirstActivity" /> <!-- 选择处方 -->
+        <activity android:name=".ui.activity.nondrug.SelectPrescriptionActivity" />
+        <activity android:name=".ui.activity.smartanalyse.BloodSugarReportActivity" />
+        <activity android:name=".ui.activity.smartanalyse.AnalyseMonthListActivity" />
+        <activity android:name=".ui.activity.mydevice.MyBindDeviceActivity" />
+        <activity
+            android:name=".ui.activity.mydevice.InputImeiActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" /> <!-- &lt;!&ndash; 设备添加 &ndash;&gt; -->
+        <!-- <activity android:name=".ui.activity.mydevice.DeviceAddActivity" /> -->
+        <!-- 医生大讲堂 -->
+        <activity android:name=".ui.activity.patienteducation.PatientEducationListActivity" /> <!-- 登录 -->
+        <activity android:name=".ui.activity.smarteducation.SmartEducationMainActivity" />
+        <activity
+            android:name=".ui.activity.user.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- OpenInstall -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tbe6q4" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.activity.sysmsg.SystemMsgListActivity" />
+        <activity android:name=".ui.activity.healthrecordlist.HealthActivity" />
+        <activity
+            android:name=".ui.activity.healthrecordlist.BloodPressureListActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.healthrecordadd.BloodSugarAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.im.DoctorAdviceActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.healthrecordlist.BmiListActivity" />
+        <activity
+            android:name=".ui.activity.healthrecordadd.BmiAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.healthrecordlist.MedicineUseListActivity" />
+        <activity
+            android:name=".ui.activity.healthrecordadd.PharmacyAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.healthrecordlist.SportListActivity" />
+        <activity
+            android:name=".ui.activity.healthrecordadd.SportAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.healthrecordlist.FoodListActivity" />
+        <activity
+            android:name=".ui.activity.healthrecordadd.FoodAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.healthrecordadd.CheckAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.healthrecordlist.CheckListActivity" />
+        <activity android:name=".ui.activity.healthrecordlist.HemoglobinListActivity" />
+        <activity
+            android:name=".ui.activity.healthrecordadd.HemoglobinAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.user.WarningRemindActivity" />
+        <activity android:name=".ui.activity.hospital.HospitalDetailsActivity" />
+        <activity android:name=".ui.activity.hospital.HospitalContentsActivity" />
+        <activity android:name=".ui.activity.hospital.DoctorDetailsActivity" />
+        <activity
+            android:name=".ui.activity.news.NewsCategoryListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.news.NewsListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.homesign.SignatureEditActivity" />
+        <activity android:name=".ui.activity.smartsearch.SmartSearchHomeActivity" />
+        <activity android:name=".ui.activity.hospital.DepartmentListActivity" />
+        <activity android:name=".ui.activity.hospital.AdviceActivity" />
+        <activity android:name=".ui.activity.hospital.DepartmentDetailsActivity" />
+        <activity
+            android:name=".ui.activity.hospital.MakeActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.smartanalyse.AnalyseListActivity" />
+        <activity android:name=".ui.activity.smartanalyse.BloodPressureReportActivity" />
+        <activity android:name=".ui.activity.smartsearch.SmartSearchListActivity" />
+        <activity android:name=".ui.activity.user.MySugarFilesActivity" />
+        <activity android:name=".ui.activity.user.MeActivity" />
+        <activity
+            android:name=".ui.activity.smartmakepolicy.TestOfHbpActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.knowledgebase.KnowLedgeListActivity" />
+        <activity android:name=".base.activity.BaseWebViewActivity" />
+        <activity android:name=".ui.activity.sysmsg.SystemMsgDetailsActivity" />
+        <activity android:name=".ui.activity.healthrecordlist.CheckDetailsActivity" />
+        <activity android:name=".ui.activity.hospital.MakeListActivity" />
+        <activity android:name=".ui.activity.hospital.MakeDetailsActivity" /> <!-- 智能决策 -->
+        <activity android:name=".ui.activity.smartmakepolicy.MakePolicyActivity" />
+        <activity android:name=".ui.activity.circle.WriteCommentsActivity" />
+        <activity
+            android:name=".ui.activity.circle.WriteCommentsTwoActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.circle.WriteRecommendActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.medicinestore.MedicineStoreMainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.healthrecordlist.FoodTypeActivity" /> <!-- 随访管理详情 -->
+        <!-- 扫描 -->
+        <activity
+            android:name=".ui.activity.mydevice.ScanActivity"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- 我的治疗方案 -->
+        <activity android:name=".ui.activity.smartmakepolicy.MyTreatPlanListActivity" /> <!-- 治疗方案详情 -->
+        <activity android:name=".ui.activity.smartmakepolicy.MyTreatPlanDetailActivity" /> <!-- 药物选择列表 -->
+        <activity android:name=".ui.activity.smartmakepolicy.MedicineSelectListActivity" /> <!-- 药品选择列表 详情 -->
+        <activity android:name=".ui.activity.smartmakepolicy.MedicineSelectDetailListActivity" /> <!-- 药品详情 -->
+        <activity android:name=".ui.activity.smartmakepolicy.MedicineDetailActivity" /> <!-- 药品更换 -->
+        <activity android:name=".ui.activity.smartmakepolicy.MedicineChangeListActivity" /> <!-- 提交申请 -->
+        <activity android:name=".ui.activity.smartmakepolicy.SubmitApplyActivity" />
+        <activity android:name=".ui.activity.medicinestore.MedicineSearchActivity" />
+        <activity android:name=".ui.activity.medicinestore.MedicineClassListActivity" />
+        <activity android:name=".ui.activity.smartmakepolicy.MyTreatPlanDetailFollowUpActivity" /> <!-- 药品库 药品详情 -->
+        <!-- 药品库 搜素结果 -->
+        <activity android:name=".ui.activity.medicinestore.MedicineSearchResultListActivity" /> <!-- 融云开始 -->
+        <!-- 7.0适配开始 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider> <!-- 7.0适配结束 -->
+        <!-- 融云Activity配置开始 -->
+        <!-- 融云会话页面 -->
+        <activity
+            android:name=".ui.activity.ConversationActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.wotongsoft.health"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity> <!-- 融云会话页面 -->
+        <!-- 屏幕适配开始 -->
+        <!-- 适配全面屏 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" /> <!-- 适配华为刘海屏 -->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" /> <!-- 适配小米刘海屏 -->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" /> <!-- 屏幕适配结束 -->
+        <!-- open install start -->
+        <meta-data
+            android:name="com.openinstall.APP_KEY"
+            android:value="tbe6q4" /> <!-- 阿里推送 Start -->
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="333411670" /> <!-- 请填写你自己的- appKey -->
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="8924399390f7468e84cd287618ad4db1" /> <!-- 请填写你自己的appSecret -->
+        <receiver
+            android:name=".utils.alipush.MyMessageReceiver"
+            android:exported="false"> <!-- 为保证receiver安全，建议设置不可导出，如需对其他应用开放可通过android：permission进行限制 -->
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+        </receiver> <!-- 阿里推送 End -->
+        <!-- 阿里推送 厂商开始 -->
+        <!-- 华为 -->
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=100386725" /> <!-- vivo -->
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="47e0646d-0223-435e-96cd-060d4f46ed2d" />
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="14749" /> <!-- 辅助弹窗 -->
+        <activity
+            android:name=".ui.push.PopupPushActivity"
+            android:exported="true" /> <!-- Baidu地图 Start -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="0TNU2gINttTz3uHKHuP4nNVHDgGhwT4z" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" /> <!-- 计步Service -->
+        <service
+            android:name="com.lyd.libsteps.StepService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service> <!-- 开机广播 -->
+        <receiver
+            android:name="com.lyd.libsteps.StepBootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver> <!-- 关机广播 -->
+        <receiver android:name="com.lyd.libsteps.StepShutdownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver> <!-- 零点定时广播 -->
+        <receiver android:name="com.lyd.libsteps.StepZeroAlarmReceiver">
+            <intent-filter>
+                <action android:name="alarm_0_separate" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

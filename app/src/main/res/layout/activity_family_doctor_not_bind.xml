@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.homesign.FamilyDoctorNotBindActivity">
+
+    <View
+        android:id="@+id/line"
+        style="@style/line"
+        android:layout_height="@dimen/dp_2" />
+
+    <TextView
+        android:id="@+id/tv_bind_doctor"
+        style="@style/family_doctor_main"
+        android:layout_below="@id/line"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/line_v"
+        android:drawableStart="@drawable/ic_bind_doctor"
+        android:text="添加我的家庭医生" />
+
+    <View
+        android:id="@+id/line_v"
+        android:layout_width="1dp"
+        android:layout_height="142dp"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/background" />
+
+    <TextView
+        android:id="@+id/tv_my_qr_code"
+        style="@style/family_doctor_main"
+        android:layout_below="@id/line"
+        android:layout_toEndOf="@id/line_v"
+        android:drawableStart="@drawable/ic_my_qr_code"
+        android:text="我的二维码" />
+
+    <View
+        android:id="@+id/line_h"
+        style="@style/line"
+        android:layout_below="@id/tv_bind_doctor"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="78dp" />
+
+    <TextView
+        android:id="@+id/tv_scan"
+        style="@style/family_doctor_main"
+        android:layout_below="@id/line_h"
+        android:drawableStart="@drawable/ic_scan"
+        android:text="扫一扫" />
+
+</RelativeLayout>

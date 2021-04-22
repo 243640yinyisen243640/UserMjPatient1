@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--药品名称 123 -->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+        <!--药品名称-->
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_drug_name"
+                style="@style/text_black_14_w_w"
+                android:text="药品名称" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="*"
+                android:textColor="@color/main_home" />
+
+
+        </LinearLayout>
+
+        <!--输入药品名称-->
+        <com.wei.android.lib.colorview.view.ColorEditText
+            android:id="@+id/et_name"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:hint=""
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="2dp"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="2dp"
+            android:textColor="@color/black_text"
+            android:textColorHint="@color/gray_text"
+            android:textSize="@dimen/sp_14"
+            app:borderColorNormal="@color/gray_text"
+            app:borderWidthNormal="1dp" />
+
+        <!--添加-->
+        <ImageView
+            android:id="@+id/img_follow_up_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_follow_up_visit_medicine_add"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--每日每次 -->
+    <LinearLayout style="@style/hh_fi_wr">
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <LinearLayout
+                style="@style/hh_wr_wr"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="每日" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="*"
+                    android:textColor="@color/main_home" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/hh_wr_wr">
+
+                <com.wei.android.lib.colorview.view.ColorEditText
+                    android:id="@+id/et_count"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:hint=""
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="2dp"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/black_text"
+                    android:textColorHint="@color/gray_text"
+                    android:textSize="@dimen/sp_14"
+                    app:borderColorNormal="@color/gray_text"
+                    app:borderWidthNormal="1dp" />
+
+                <TextView
+                    style="@style/text_gray_14_w_w"
+                    android:text="次" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12">
+
+            <LinearLayout
+                style="@style/hh_wr_wr"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="每次" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="*"
+                    android:textColor="@color/main_home" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/hh_wr_wr">
+
+                <com.wei.android.lib.colorview.view.ColorEditText
+                    android:id="@+id/et_dosage"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:hint=""
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="2dp"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/black_text"
+                    android:textColorHint="@color/gray_text"
+                    android:textSize="@dimen/sp_14"
+                    app:borderColorNormal="@color/gray_text"
+                    app:borderWidthNormal="1dp" />
+
+                <TextView
+                    style="@style/text_gray_14_w_w"
+                    android:text="mg" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

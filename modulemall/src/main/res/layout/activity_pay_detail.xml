@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_success"
+        style="@style/hh_fi_wr"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pay_detail_success" />
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center_horizontal"
+                android:text="恭喜您！订单支付成功"
+                android:textSize="17sp" />
+
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal">
+
+                <com.wei.android.lib.colorview.view.ColorTextView
+                    android:id="@+id/tv_success_back"
+                    style="@style/text_white_14_f_w"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="返回首页"
+                    android:textColor="#999999"
+                    android:textSize="15sp"
+                    app:backgroundColorNormal="@color/white"
+                    app:borderColorNormal="#999999"
+                    app:borderWidthNormal="1dp"
+                    app:cornerRadiusNormal="@dimen/dp_12">
+
+
+                </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+                <com.wei.android.lib.colorview.view.ColorTextView
+                    android:id="@+id/tv_success_to_order_list"
+                    style="@style/text_white_14_f_w"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="查看订单"
+                    android:textSize="15sp"
+                    app:backgroundColorNormal="@color/main_green"
+                    app:cornerRadiusNormal="@dimen/dp_12">
+
+
+                </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pay_detail_failed" />
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:orientation="horizontal">
+
+            <com.wei.android.lib.colorview.view.ColorTextView
+                android:id="@+id/tv_failed_back"
+                style="@style/text_white_14_f_w"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="返回首页"
+                android:textColor="#999999"
+                android:textSize="15sp"
+                app:backgroundColorNormal="@color/white"
+                app:borderColorNormal="#999999"
+                app:borderWidthNormal="1dp"
+                app:cornerRadiusNormal="@dimen/dp_12">
+
+
+            </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+            <com.wei.android.lib.colorview.view.ColorTextView
+                android:id="@+id/tv_failed_pay"
+                style="@style/text_white_14_f_w"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="重新支付"
+                android:textSize="15sp"
+                app:backgroundColorNormal="@color/main_green"
+                app:cornerRadiusNormal="@dimen/dp_12">
+
+
+            </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

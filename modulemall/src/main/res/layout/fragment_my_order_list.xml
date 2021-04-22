@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_my_order_list"
+        style="@style/hh_fi_fi"
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_my_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_my_order_list">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <!--中间内容 没有数据-->
+    <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/img_empty_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shopping_cart_no_data_bg" />
+
+        <TextView
+            style="@style/text_black_12_w_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="您还没有相关的订单"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/text_gray_12_w_w"
+            android:layout_marginTop="5dp"
+            android:text="可以去看看有哪些想买的"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>

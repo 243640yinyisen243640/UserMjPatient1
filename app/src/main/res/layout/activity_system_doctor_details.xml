@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:background="@drawable/me_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_head"
+            app:qmui_border_width="0dp"
+            app:qmui_is_circle="true" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/text_white_16_w_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/tv_hospital_name"
+            style="@style/text_white_14_w_w"
+            android:layout_marginTop="5dp"
+            android:text="医院" />
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_hospital_department"
+                style="@style/text_white_14_w_w"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:text="科室" />
+
+            <TextView
+                android:id="@+id/tv_job"
+                style="@style/text_white_14_w_w"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:text="职位" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/text_black_16_f_w"
+        android:padding="@dimen/dp_10"
+        android:text="擅长治疗:" />
+
+    <TextView
+        android:id="@+id/tv_treat"
+        style="@style/text_black_14_f_w"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="治疗内容" />
+
+
+    <com.wei.android.lib.colorview.view.ColorButton
+        android:id="@+id/bt_agree"
+        style="@style/text_white_16_w_w"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="同意"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="90dp" />
+
+    <com.wei.android.lib.colorview.view.ColorButton
+        android:id="@+id/bt_refuse"
+        style="@style/text_white_16_w_w"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="拒绝"
+        app:backgroundColorNormal="@color/gray_text"
+        app:cornerRadiusNormal="90dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <!--背景图-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/update_app_top_bg" />
+
+    <!--版本名称 apk大小 更新内容 进度条 升级按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_update_bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_update_name"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black_text"
+                android:textSize="14sp"
+                tools:text="版本号" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_update_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666"
+                android:textSize="13sp"
+                tools:text="大小" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_update_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:lineSpacingExtra="5dp"
+            android:minLines="4"
+            android:textColor="@color/color_666"
+            android:textSize="13sp"
+            tools:text="更新内容" />
+
+        <com.vice.bloodpressure.view.NumberProgressBar
+            android:id="@+id/pb_update_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            app:pb_reachedColor="@color/main_home"
+            app:pb_reachedHeight="4dp"
+            app:pb_textColor="@color/main_home"
+            app:pb_textSize="12sp"
+            app:pb_unreachedColor="@color/color_ccc"
+            app:pb_unreachedHeight="3dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_update_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_update_button"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/update_app"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!--取消下载-->
+    <LinearLayout
+        android:id="@+id/ll_update_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:background="@color/color_d8" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_update_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/update_app_close" />
+
+    </LinearLayout>
+
+</LinearLayout>

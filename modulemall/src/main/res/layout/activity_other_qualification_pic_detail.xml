@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_other_pic_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_desc"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_other_qualification_pic_list">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <TextView
+        style="@style/text_gray_12_w_w"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_15"
+        android:lineSpacingMultiplier="1.2"
+        android:text="注：以上资质信息，根据法律法规对入驻商家资质进行展示，具体以相关部门登记为准。如需进一步核实，请联系相关部门。"
+        android:textSize="10sp" />
+
+</RelativeLayout>

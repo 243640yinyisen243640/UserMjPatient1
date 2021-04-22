@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:orientation="vertical">
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_second_level_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:singleLine="true"
+        android:text="基础知识"
+        app:backgroundColorNormal="@color/white"
+        app:borderColorNormal="@color/main_home"
+        app:borderWidthNormal="1dp"
+        app:cornerRadiusNormal="@dimen/dp_5">
+
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+</LinearLayout>

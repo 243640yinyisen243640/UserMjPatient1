@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.activity.homesign.ServicePackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_service_pack"
+            style="@style/listView"
+            android:layout_marginStart="9.5dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginEnd="10.5dp"
+            android:layout_marginBottom="11.5dp"
+            tools:listitem="@layout/item_service_pack" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

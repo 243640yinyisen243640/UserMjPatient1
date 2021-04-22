@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lyd.modulemall">
+
+    <application>
+        <activity android:name=".ui.activity.shoppingcart.ShoppingCartActivity" />
+        <activity
+            android:name=".ui.activity.pay.ConfirmOrderActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.pay.PayDetailActivity" />
+        <activity android:name=".ui.activity.pay.OrderPayActivity" />
+        <activity android:name=".ui.activity.refund.WriteRefundLogisticsActivity" />
+        <activity android:name=".ui.activity.refund.RefundDetailActivity" />
+        <activity android:name=".ui.activity.refund.ApplyRefundActivity" />
+        <activity android:name=".ui.activity.refund.SelectServiceTypeActivity" />
+        <activity android:name=".ui.activity.supplier.OtherQualificationPicDetailActivity" />
+        <activity android:name=".ui.activity.order.MyOrderDetailActivity" />
+        <activity
+            android:name=".ui.activity.order.MyOrderListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".ui.activity.order.LogisticsInfoActivity" />
+        <activity android:name=".ui.activity.address.ChangeAddressActivity" />
+        <activity android:name=".ui.activity.address.AddressAddOrEditActivity" />
+        <activity android:name=".ui.activity.address.ShoppingAddressListActivity" />
+        <activity android:name=".ui.activity.supplier.BusinessQualificationPicDetailActivity" />
+        <activity android:name=".ui.activity.supplier.SupplierQualificationActivity" />
+        <activity android:name=".ui.activity.ProductDetailActivity" />
+        <activity android:name=".ui.activity.user.MyProductCollectListActivity" />
+        <activity android:name=".ui.activity.user.MyCouponListActivity" />
+        <activity android:name=".ui.activity.productlist.ActivityProductListActivity" />
+        <activity
+            android:name=".ui.activity.productlist.MallSearchActivity"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name=".ui.activity.productlist.MallProductListActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.BaseWebViewActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+    </application>
+
+</manifest>

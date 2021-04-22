@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_text"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_text"
+        style="@style/text_black_14_w_w"
+        android:drawableLeft="@drawable/notice_list_left"
+        android:drawablePadding="@dimen/dp_5"
+        android:text="重要通知，测试一次！" />
+
+</LinearLayout>

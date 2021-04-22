@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_create_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:scaleType="centerCrop"
+        android:src="@drawable/diet_plan_create_error" />
+
+
+    <TextView
+        style="@style/text_black_14_w_w"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_50"
+        android:text="可能存在原因：" />
+
+    <TextView
+        style="@style/text_gray_14_w_w"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_50"
+        android:lineSpacingMultiplier="1.2"
+        android:text="您的饮食喜好需求超出计算范围，请重新调整喜好." />
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_40"
+        android:orientation="horizontal">
+
+        <com.wei.android.lib.colorview.view.ColorButton
+            android:id="@+id/bt_back_adjust"
+            style="@style/text_white_16_f_w"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_weight="1"
+            android:text="返回调整"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="3dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

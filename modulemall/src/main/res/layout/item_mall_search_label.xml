@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_label"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingBottom="@dimen/dp_18">
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_label"
+        style="@style/text_white_14_f_w"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_4"
+        android:singleLine="true"
+        android:text="标签"
+        android:textColor="@color/green_text_666"
+        app:backgroundColorNormal="@color/color_f3"
+        app:cornerRadiusNormal="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_10">
+
+
+    <!--早餐 午餐 晚餐-->
+    <LinearLayout style="@style/hh_fi_wr">
+
+        <LinearLayout
+            android:id="@+id/ll_breakfast"
+            style="@style/hh_fi_wr"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/diet_plan_result_breakfast" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="5dp"
+                android:text="早餐" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_lunch"
+            style="@style/hh_fi_wr"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/diet_plan_result_lunch" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="5dp"
+                android:text="午餐" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dinner"
+            style="@style/hh_fi_wr"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/diet_plan_result_dinner" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="5dp"
+                android:text="晚餐" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--三餐-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <com.wei.android.lib.colorview.view.ColorLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_10"
+            app:backgroundColorNormal="@color/white"
+            app:cornerRadiusNormal="3dp">
+
+            <TextView
+                android:id="@+id/tv_breakfast"
+                style="@style/text_black_14_f_w"
+                android:text="窝头\n\n纯牛奶\n\n凉拌白菜心" />
+
+        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+        <com.wei.android.lib.colorview.view.ColorLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_10"
+            app:backgroundColorNormal="@color/color_ed"
+            app:cornerRadiusNormal="3dp">
+
+            <TextView
+                android:id="@+id/tv_lunch"
+                style="@style/text_black_14_f_w"
+                android:text="窝头\n\n纯牛奶\n\n凉拌白菜心" />
+
+        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+        <com.wei.android.lib.colorview.view.ColorLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_10"
+            app:backgroundColorNormal="@color/color_ed"
+            app:cornerRadiusNormal="3dp">
+
+            <TextView
+                android:id="@+id/tv_dinner"
+                style="@style/text_black_14_f_w"
+                android:text="窝头\n\n纯牛奶\n\n凉拌白菜心" />
+
+        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+    </LinearLayout>
+
+
+    <!--查看详情-->
+
+
+    <RelativeLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_10">
+
+
+        <TextView
+            android:id="@+id/tv_look_more"
+            style="@style/text_black_14_w_w"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/diet_plan_result_more"
+            android:drawableRight="@drawable/diet_plan_result_right_arrow"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="查看详情" />
+
+    </RelativeLayout>
+
+</LinearLayout>

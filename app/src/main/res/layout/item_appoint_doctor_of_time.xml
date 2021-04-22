@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:backgroundColorNormal="@color/white"
+    app:cornerRadiusNormal="3dp">
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        style="@style/hh_fi_wr"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/iv_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:scaleType="centerCrop"
+            android:src="@drawable/doctor_appoint_head_img"
+            app:qmui_border_width="0dp"
+            app:qmui_is_circle="true" />
+
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            style="@style/text_black_16_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="医生名称" />
+
+        <TextView
+            android:id="@+id/tv_doctor_profession"
+            style="@style/text_black_14_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="主任医师" />
+
+        <TextView
+            android:id="@+id/tv_doctor_skill"
+            style="@style/text_black_12_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_25"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="擅长主治擅长主治擅长主治擅长主治擅长主治擅长主治擅长主治擅长主治" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_40"
+        android:orientation="vertical">
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_am"
+            style="@style/text_black_14_w_w"
+            android:background="@color/background"
+            android:paddingLeft="7.5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="7.5dp"
+            android:paddingBottom="5dp"
+            android:text="上午"
+            app:backgroundColorNormal="@color/background"
+            app:cornerRadiusBottomLeftNormal="3dp"
+            app:cornerRadiusTopLeftNormal="3dp" />
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_pm"
+            style="@style/text_black_14_w_w"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/background"
+            android:paddingLeft="7.5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="7.5dp"
+            android:paddingBottom="5dp"
+            android:text="下午"
+            app:backgroundColorNormal="@color/background"
+            app:cornerRadiusBottomLeftNormal="3dp"
+            app:cornerRadiusTopLeftNormal="3dp" />
+
+
+    </LinearLayout>
+
+
+</com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+

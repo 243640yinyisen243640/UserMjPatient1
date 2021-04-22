@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/check_data_one" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/text_black_14_w_w"
+                android:text="血压" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/text_gray_14_w_w"
+                android:layout_marginTop="6dp"
+                android:text="最新更新时间：2019-08-29" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_look"
+            style="@style/text_black_14_w_w"
+            android:text="查看数据>>"
+            android:textColor="@color/main_home" />
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10">
+
+
+    </View>
+
+
+</LinearLayout>

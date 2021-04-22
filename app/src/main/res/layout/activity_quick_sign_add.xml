@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        style="@style/scrollView"
+        android:layout_above="@+id/tv_submit">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="vertical">
+
+            <!--第一部分-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_margin="@dimen/dp_16"
+                android:background="@drawable/bg_home_sign"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15">
+
+                <!--姓名-->
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        style="@style/sign_add_tv_80"
+                        android:text="姓名" />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        style="@style/et_base_style_no_bg"
+                        android:hint="请输入姓名">
+
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15" />
+                <!--关系-->
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        style="@style/sign_add_tv_80"
+                        android:text="关系" />
+
+                    <TextView
+                        android:id="@+id/tv_relation"
+                        style="@style/text_black_14_f_w"
+                        android:drawableRight="@drawable/sign_add_down_green"
+                        android:hint="请选择"
+                        android:textColorHint="@color/gray_text" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15" />
+                <!--身份证号-->
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        style="@style/sign_add_tv_80"
+                        android:text="身份证号" />
+
+                    <EditText
+                        android:id="@+id/et_id_number"
+                        style="@style/et_base_style_no_bg"
+                        android:hint="请输入身份证号">
+
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15" />
+                <!--手机号码-->
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        style="@style/sign_add_tv_80"
+                        android:text="手机号码" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        style="@style/et_base_style_no_bg"
+                        android:hint="请输入手机号码">
+
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15" />
+                <!--所在地区-->
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        style="@style/sign_add_tv_80"
+                        android:text="所在地区" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        style="@style/text_black_14_f_w"
+                        android:drawableRight="@drawable/sign_add_down_green"
+                        android:hint="请选择"
+                        android:textColorHint="@color/gray_text" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15" />
+                <!--详细地址-->
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        style="@style/sign_add_tv_80"
+                        android:text="详细地址" />
+
+                    <EditText
+                        android:id="@+id/et_address_detail"
+                        style="@style/et_base_style_no_bg"
+                        android:hint="请输入详细地址">
+
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginTop="@dimen/dp_15" />
+
+            </LinearLayout>
+            <!--第二部分-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:background="@drawable/bg_home_sign"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15">
+
+                <!--建档机构-->
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        style="@style/sign_add_tv_80"
+                        android:text="建档机构" />
+
+                    <EditText
+                        android:id="@+id/et_build_organ"
+                        style="@style/et_base_style_no_bg"
+                        android:enabled="false"
+                        android:hint="请输入建档机构名称">
+
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15" />
+                <!--责任人-->
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        style="@style/sign_add_tv_80"
+                        android:text="责任人" />
+
+                    <EditText
+                        android:id="@+id/et_person_in_charge_name"
+                        style="@style/et_base_style_no_bg"
+                        android:enabled="false"
+                        android:hint="请输入责任人姓名">
+
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    style="@style/line"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15" />
+
+                <!--签约率-->
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        style="@style/sign_add_tv_80"
+                        android:text="签约率" />
+
+                    <LinearLayout style="@style/hh_fi_wr">
+
+                        <TextView
+                            android:id="@+id/tv_sign_rate"
+                            style="@style/text_white_14_f_w"
+                            android:layout_weight="1"
+                            android:text="98%"
+                            android:textColor="@color/main_home">
+
+                        </TextView>
+
+                        <com.wei.android.lib.colorview.view.ColorTextView
+                            android:id="@+id/tv_good_count"
+                            style="@style/tv_quick_sign_add_comment"
+                            android:text="好评 99"
+                            app:backgroundColorNormal="@color/white"
+                            app:borderColorNormal="#FFB400"
+                            app:borderWidthNormal="1dp"
+                            app:cornerRadiusNormal="@dimen/dp_5">
+
+                        </com.wei.android.lib.colorview.view.ColorTextView>
+
+                        <com.wei.android.lib.colorview.view.ColorTextView
+                            android:id="@+id/tv_middle_count"
+                            style="@style/tv_quick_sign_add_comment"
+                            android:text="好评 99"
+                            app:backgroundColorNormal="@color/white"
+                            app:borderColorNormal="#FFB400"
+                            app:borderWidthNormal="1dp"
+                            app:cornerRadiusNormal="@dimen/dp_5">
+
+                        </com.wei.android.lib.colorview.view.ColorTextView>
+
+                        <com.wei.android.lib.colorview.view.ColorTextView
+                            android:id="@+id/tv_bad_count"
+                            style="@style/tv_quick_sign_add_comment"
+                            android:text="好评 99"
+                            app:backgroundColorNormal="@color/white"
+                            app:borderColorNormal="#FFB400"
+                            app:borderWidthNormal="1dp"
+                            app:cornerRadiusNormal="@dimen/dp_5">
+
+                        </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--第三部分 患者电子签名  医生电子签名-->
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@drawable/bg_home_sign"
+                android:orientation="vertical">
+                <!--患者-->
+                <LinearLayout
+                    android:id="@+id/ll_patient"
+                    style="@style/hh_fi_wr"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_margin="@dimen/dp_15"
+                        android:text="患者电子签名" />
+
+                    <ImageView
+                        android:id="@+id/img_sign_add_patient"
+                        android:layout_width="226dp"
+                        android:layout_height="138dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:src="@drawable/img_sign_add_patient" />
+
+                    <TextView
+                        android:id="@+id/tv_sign_add_patient"
+                        style="@style/text_gray_14_w_w"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:text="点击再次编辑" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_submit"
+        style="@style/tv_home_sign_bottom"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="提交"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="5dp">
+
+    </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/background" />
+
+        <ImageView
+            android:id="@+id/iv_medicine_pic"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/medicine_detail_top"
+            android:visibility="visible" />
+
+        <!--药品名称-->
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_left_one"
+                style="@style/text_black_16_w_w"
+                android:layout_centerVertical="true"
+                android:text="[药品名称]" />
+
+            <TextView
+                android:id="@+id/tv_medicine_name"
+                style="@style/text_gray_14_w_w"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_left_one"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="依那普利" />
+
+        </RelativeLayout>
+        <!--用法-->
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:padding="@dimen/dp_10">
+
+            <com.vice.bloodpressure.view.JustifyTextView
+                android:id="@+id/tv_left_two"
+                style="@style/text_black_16_w_w"
+                android:layout_centerVertical="true"
+                android:text="@string/medicine_use" />
+
+            <TextView
+                android:id="@+id/tv_medicine_use"
+                style="@style/text_gray_14_w_w"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_left_two"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="口服" />
+
+        </RelativeLayout>
+        <!--适应症-->
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:padding="@dimen/dp_10">
+
+            <com.vice.bloodpressure.view.JustifyTextView
+                android:id="@+id/tv_left_three"
+                style="@style/text_black_16_w_w"
+                android:text="@string/medicine_indication" />
+
+            <TextView
+                android:id="@+id/tv_medicine_indication"
+                style="@style/text_gray_14_w_w"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_left_three"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="心里衰竭;;;;;;;;;;;;;;;;;;;;;;;;;;;;心里衰竭;;;;;;;;;;;;;;;;;;;;;;;;;;;;心里衰竭;;;;;;;;;;;;;;;;;;;;;;;;;;;;心里衰竭;;;;;;;;;;;;;;;;;;;;;;;;;;;;心里衰竭;;;;;;;;;;;;;;;;;;;;;;;;;;;;" />
+
+        </RelativeLayout>
+        <!--禁忌症-->
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:padding="@dimen/dp_10">
+
+            <com.vice.bloodpressure.view.JustifyTextView
+                android:id="@+id/tv_left_four"
+                style="@style/text_black_16_w_w"
+                android:text="@string/medicine_contraindication" />
+
+            <TextView
+                android:id="@+id/tv_medicine_contraindication"
+                style="@style/text_gray_14_w_w"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_left_four"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="禁忌说明" />
+
+        </RelativeLayout>
+        <!--不良反应-->
+        <RelativeLayout
+            style="@style/hh_fi_wr"
+            android:padding="@dimen/dp_10">
+
+            <com.vice.bloodpressure.view.JustifyTextView
+                android:id="@+id/tv_left_five"
+                style="@style/text_black_16_w_w"
+                android:text="[不良反应]" />
+
+            <TextView
+                android:id="@+id/tv_medicine_untoward_effect"
+                style="@style/text_gray_14_w_w"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_left_five"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="咳嗽" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

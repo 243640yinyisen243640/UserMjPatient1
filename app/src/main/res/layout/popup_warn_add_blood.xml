@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_warn_add_blood"
+        android:layout_width="328dp"
+        android:layout_height="280dp"
+        android:background="@drawable/warn_add_blood_img_bg">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_black_18_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="125dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:text="您最近3天还没有记录医疗数据,赶紧去记录吧!"
+            android:textSize="18sp" />
+
+
+        <TextView
+            style="@style/text_gray_16_w_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="180dp"
+            android:gravity="center"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="记录医疗数据可以给您留下宝贵的医学资料"
+            android:textSize="@dimen/sp_16" />
+
+
+        <TextView
+            android:id="@+id/tv_add"
+            style="@style/text_gray_16_f_w"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="240dp"
+            android:gravity="center"
+            android:text="去记录"
+            android:textColor="@color/management_text"
+            android:textSize="18sp" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

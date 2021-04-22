@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lsp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_wr_wr"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp_10">
+
+
+        <TextView
+            android:id="@+id/tv_bmi_control_target_tips"
+            style="@style/text_black_14_w_w"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:text="您的血氧应该控制在:"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_target"
+            style="@style/text_black_14_w_w"
+            android:text="95%-99%"
+            android:textColor="@color/main_home"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="血氧饱和度"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/tv_high"
+                style="@style/text_black_14_w_w"
+                android:layout_centerInParent="true"
+                android:text="95"
+                android:textColor="@color/main_home"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_alignParentRight="true"
+                android:text="%"
+                android:textSize="@dimen/sp_16" />
+
+        </RelativeLayout>
+
+
+        <com.lsp.RulerView
+            android:id="@+id/ruler_view_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            lsp:bgColor="@color/background"
+            lsp:firstScale="90"
+            lsp:isBgRoundRect="true"
+            lsp:largeScaleColor="@color/main_home"
+            lsp:largeScaleStroke="5dp"
+            lsp:maxScale="100"
+            lsp:midScaleColor="@color/gray_text"
+            lsp:midScaleStroke="3dp"
+            lsp:minScale="50"
+            lsp:resultNumColor="@color/main_home"
+            lsp:resultNumTextSize="20sp"
+            lsp:rulerHeight="60dp"
+            lsp:rulerToResultgap="8dp"
+            lsp:scaleCount="10"
+            lsp:scaleGap="10dp"
+            lsp:scaleLimit="10"
+            lsp:scaleNumColor="@color/color_666"
+            lsp:scaleNumTextSize="16sp"
+            lsp:showScaleResult="false"
+            lsp:smallScaleColor="@color/color_aaa"
+            lsp:smallScaleStroke="2dp"
+            lsp:unit="cm"
+            lsp:unitColor="@color/main_home"
+            lsp:unitTextSize="10sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_6">
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="心率"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/tv_low"
+                style="@style/text_black_14_w_w"
+                android:layout_centerInParent="true"
+                android:text="80"
+                android:textColor="@color/main_home"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_alignParentRight="true"
+                android:text="bmp"
+                android:textSize="@dimen/sp_16" />
+
+        </RelativeLayout>
+
+
+        <com.lsp.RulerView
+            android:id="@+id/ruler_view_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            lsp:bgColor="@color/background"
+            lsp:firstScale="80"
+            lsp:isBgRoundRect="true"
+            lsp:largeScaleColor="@color/main_home"
+            lsp:largeScaleStroke="5dp"
+            lsp:maxScale="300"
+            lsp:midScaleColor="@color/gray_text"
+            lsp:midScaleStroke="3dp"
+            lsp:minScale="1"
+            lsp:resultNumColor="@color/main_home"
+            lsp:resultNumTextSize="20sp"
+            lsp:rulerHeight="60dp"
+            lsp:rulerToResultgap="8dp"
+            lsp:scaleCount="10"
+            lsp:scaleGap="10dp"
+            lsp:scaleLimit="10"
+            lsp:scaleNumColor="@color/color_666"
+            lsp:scaleNumTextSize="16sp"
+            lsp:showScaleResult="false"
+            lsp:smallScaleColor="@color/color_aaa"
+            lsp:smallScaleStroke="2dp"
+            lsp:unit="cm"
+            lsp:unitColor="@color/main_home"
+            lsp:unitTextSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_time"
+        style="@style/hh_fi_wr"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_gray_14_f_w"
+            android:layout_weight="0.8"
+            android:text="检测时间"
+            android:textSize="@dimen/sp_16" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/text_black_14_w_w"
+            android:drawableRight="@drawable/greensanjiao"
+            android:drawablePadding="@dimen/dp_5"
+            android:hint="请选择检测时间"
+            android:textColorHint="@color/gray_text"
+            android:textSize="@dimen/sp_16" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_next_question">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_top_indicator_of_hbp_one" />
+
+            <TextView
+                android:id="@+id/tv_top_desc"
+                style="@style/text_black_14_f_w"
+                android:text="1.是否用药：" />
+
+            <View
+                style="@style/line"
+                android:layout_marginTop="@dimen/dp_18"
+                android:layout_marginBottom="@dimen/dp_18" />
+
+            <com.wei.android.lib.colorview.view.ColorLinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10"
+                app:backgroundColorNormal="@color/color_f2"
+                app:borderColorNormal="@color/main_home"
+                app:borderWidthNormal="0dp"
+                app:cornerRadiusNormal="@dimen/dp_5">
+
+                <com.wei.android.lib.colorview.view.ColorTextView
+                    android:id="@+id/tv_top_number"
+                    style="@style/text_black_14_w_w"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:gravity="center"
+                    android:text="A"
+                    app:backgroundColorNormal="@color/color_f2"
+                    app:borderColorNormal="@color/color_cb"
+                    app:borderWidthNormal="1dp"
+                    app:cornerRadiusNormal="180dp">
+
+                </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+                <TextView
+                    android:id="@+id/tv_top_question_desc"
+                    style="@style/text_black_14_w_w"
+                    android:layout_gravity="center_vertical"
+                    android:text="已用药"
+                    android:textColor="@color/color_69" />
+
+            </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+            <com.wei.android.lib.colorview.view.ColorLinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10"
+                app:backgroundColorNormal="@color/color_f2"
+                app:borderColorNormal="@color/main_home"
+                app:borderWidthNormal="0dp"
+                app:cornerRadiusNormal="@dimen/dp_5">
+
+                <com.wei.android.lib.colorview.view.ColorTextView
+                    android:id="@+id/tv_bottom_number"
+                    style="@style/text_black_14_w_w"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:gravity="center"
+                    android:text="B"
+                    app:backgroundColorNormal="@color/color_f2"
+                    app:borderColorNormal="@color/color_cb"
+                    app:borderWidthNormal="1dp"
+                    app:cornerRadiusNormal="180dp">
+
+                </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+                <TextView
+                    android:id="@+id/tv_bottom_question__desc"
+                    style="@style/text_black_14_w_w"
+                    android:layout_gravity="center_vertical"
+                    android:text="未用药"
+                    android:textColor="@color/color_69" />
+
+            </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.wei.android.lib.colorview.view.ColorButton
+        android:id="@+id/bt_next_question"
+        style="@style/text_white_16_f_w"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:text="下一题"
+        android:textColor="@color/gray_text"
+        app:backgroundColorNormal="@color/color_e5"
+        app:cornerRadiusNormal="4dp" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/hh_fi_fi">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/line">
+
+
+        </View>
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_25"
+            android:paddingRight="@dimen/dp_25">
+
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_marginTop="@dimen/dp_40"
+                android:lineSpacingMultiplier="1.2"
+                android:text="设置密码后可以通过身份证号/手机号＋登录密码直接进行登录"
+                android:textColor="@color/color_404b69" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_old_pwd"
+                style="@style/et_change_pwd"
+                android:layout_marginTop="34dp"
+                android:hint="原密码" />
+
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_new_pwd"
+                style="@style/et_change_pwd"
+                android:layout_marginTop="@dimen/dp_16"
+                android:hint="新密码" />
+
+            <com.wei.android.lib.colorview.view.ColorEditText
+                android:id="@+id/et_new_pwd_repeat"
+                style="@style/et_change_pwd"
+                android:layout_marginTop="@dimen/dp_16"
+                android:hint="确认密码" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_12"
+                android:drawableLeft="@drawable/user_tv_warning_normal"
+                android:drawablePadding="5dp"
+                android:text="密码为6-20位，可使用字母和数字组合"
+                android:textColor="#95A0B6" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

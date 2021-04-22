@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/five">
+
+
+        <EditText
+            android:id="@+id/et_recommend_share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/recommend_et_bg"
+            android:gravity="start"
+            android:hint="分享您要的描述的内容..."
+            android:maxLength="200"
+            android:padding="@dimen/thirteen"
+            android:textSize="@dimen/fifteen" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:padding="@dimen/ten">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcy_write_recommend_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginBottom="@dimen/five" />
+
+        <!--<ImageView-->
+        <!--android:src="@drawable/add_img"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

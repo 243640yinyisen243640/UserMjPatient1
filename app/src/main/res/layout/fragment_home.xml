@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+        <!--标题栏-->
+        <include layout="@layout/include_home_title_bar" />
+
+        <!--内容-->
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/srl_home"
+            style="@style/hh_fi_fi">
+
+            <com.scwang.smartrefresh.header.MaterialHeader
+                android:id="@+id/srl_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.vice.bloodpressure.view.ObservableScrollView
+                android:id="@+id/sc_home"
+                style="@style/scrollView"
+                android:background="@color/gray_light"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+                    <!--血压 血糖 BMI-->
+                    <include layout="@layout/include_home_three_fragment" />
+                    <!-- 八大模块 -->
+                    <include layout="@layout/include_home_eight_module" />
+                    <!--轮播图-->
+                    <include layout="@layout/include_banner" />
+                    <!--两个固定商品-->
+                    <include layout="@layout/include_home_two_goods" />
+                    <!--知识库-->
+                    <include layout="@layout/include_home_knowledge" />
+                    <!--血糖记录-->
+                    <include layout="@layout/include_home_blood_sugar_list" />
+                    <!--专属课堂-->
+                    <include layout="@layout/include_home_smart_education" />
+                    <!--饮食方案-->
+                    <include layout="@layout/include_home_diet" />
+                    <!--每日运动-->
+                    <include layout="@layout/include_home_sport" />
+                </LinearLayout>
+            </com.vice.bloodpressure.view.ObservableScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+
+    <!--健康记录-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginTop="80dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_health_record" />
+
+        <TextView
+            android:id="@+id/tv_health_record"
+            style="@style/text_white_14_f_w"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:drawableLeft="@drawable/pencil"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="健康记录"
+            android:textSize="22sp" />
+    </FrameLayout>
+</FrameLayout>
+
+

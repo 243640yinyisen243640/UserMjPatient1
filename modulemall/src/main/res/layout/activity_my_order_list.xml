@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_green" />
+
+
+        <com.wei.android.lib.colorview.view.ColorLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            app:borderColorNormal="@color/color_dc"
+            app:borderWidthNormal="1dp"
+            app:cornerRadiusNormal="180dp">
+
+
+            <EditText
+                android:id="@+id/et_search"
+                style="@style/et_base_style_no_bg"
+                android:layout_weight="0.8"
+                android:hint="输入你要“搜索”的内容"
+                android:paddingLeft="@dimen/dp_10" />
+
+
+            <ImageView
+                android:id="@+id/img_search_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mall_search_del"
+                android:visibility="gone" />
+
+
+        </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tbl_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        app:tabIndicatorColor="#FF4903"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/dp_2"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/MyOrderListTabTextSize"
+        app:tabSelectedTextColor="#FF4903"
+        app:tabTextColor="@color/gray_text"
+        app:tabUnboundedRipple="false">
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

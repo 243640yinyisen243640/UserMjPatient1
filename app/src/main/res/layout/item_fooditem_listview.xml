@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_food_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="大米"
+            android:textAlignment="gravity"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/sp_18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重量：100克(热量: "
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_food_item_energy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="347"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大卡，碳水化合物:"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_food_item_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="77.6"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="克)"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/arrow_food" />
+
+</LinearLayout>

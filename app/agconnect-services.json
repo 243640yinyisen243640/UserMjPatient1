@@ -1,0 +1,12 @@
+{
+  "client": {
+    "cp_id": "260086000063543785",
+    "product_id": "9105163812218587381",
+    "client_id": "331691646540317888",
+    "client_secret": "A82419D22C553F6E130BD07E9AD180646A4A0D24B66D11BBF29A4079B467A202",
+    "app_id": "100386725",
+    "package_name": "com.vice.bloodpressure",
+    "api_key": "CV6tIfWEaI5JBaNviwLBgQ64aMZW+emSqYkDbZMlgh6Oug71LbCiFCw66r6ranfeP0WNRcUq8LuJUkOfWY2VcYMrbB4+"
+  },
+  "configuration_version": "1.0"
+}

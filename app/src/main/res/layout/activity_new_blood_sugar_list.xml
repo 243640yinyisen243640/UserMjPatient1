@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sugar_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_add"
+        tools:itemCount="50"
+        tools:listitem="@layout/item_home_blood_sugar">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_add"
+        style="@style/text_white_16_w_w"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_50"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_50"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="添加血糖记录"
+        android:textSize="20sp"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="90dp" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/bt_back_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_btn_back"
+            android:drawableLeft="@drawable/back_green"
+            android:drawablePadding="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20" />
+
+        <TextView
+            android:id="@+id/tv_title_weight"
+            style="@style/text_black_18_w_w"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/main_home" />
+
+        <com.wei.android.lib.colorview.view.ColorRelativeLayout
+            android:id="@+id/ll_more"
+            style="@style/hh_wr_wr"
+            android:layout_width="103dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="horizontal"
+            app:backgroundColorNormal="@color/color_e5"
+            app:cornerRadiusNormal="@dimen/dp_14">
+
+
+            <ImageView
+                android:id="@+id/img_weight_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/line"
+                android:padding="@dimen/dp_10"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weight_list_check" />
+
+
+            <View
+                android:id="@+id/line"
+                style="@style/line"
+                android:layout_width="1dp"
+                android:layout_height="21dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray_text" />
+
+
+            <ImageView
+                android:id="@+id/img_weight_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/line"
+                android:padding="@dimen/dp_10"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weight_chart_uncheck" />
+
+
+        </com.wei.android.lib.colorview.view.ColorRelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--内容-->
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

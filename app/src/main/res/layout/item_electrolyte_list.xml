@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10">
+
+    <com.wei.android.lib.colorview.view.ColorLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_10"
+        app:backgroundColorNormal="@color/white"
+        app:cornerRadiusNormal="@dimen/dp_5">
+
+
+        <LinearLayout style="@style/hh_fi_wr">
+
+            <TextView
+                android:id="@+id/tv_top_left"
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:text="钾：5.06" />
+
+            <TextView
+                android:id="@+id/tv_top_right"
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:text="钾：5.06" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/tv_center_left"
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:text="钾：5.06" />
+
+            <TextView
+                android:id="@+id/tv_center_right"
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:text="钾：5.06" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/tv_bottom_left"
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:text="钾：5.06" />
+
+            <TextView
+                android:id="@+id/tv_bottom_right"
+                style="@style/text_black_14_f_w"
+                android:layout_weight="1"
+                android:text="钾：5.06" />
+
+        </LinearLayout>
+
+    </com.wei.android.lib.colorview.view.ColorLinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="36dp"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/register_question_question_left" />
+
+
+    <TextView
+        android:id="@+id/tv_question_desc"
+        style="@style/text_black_16_w_w"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="是否患有糖尿病？" />
+
+
+</LinearLayout>

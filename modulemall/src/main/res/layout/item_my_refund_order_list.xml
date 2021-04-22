@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wei.android.lib.colorview.view.ColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_5"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_5"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_15"
+    app:backgroundColorNormal="@color/white"
+    app:cornerRadiusNormal="@dimen/dp_4">
+
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/text_black_12_w_w"
+        android:layout_gravity="right"
+        android:text="退款成功"
+        android:textColor="#FF4700" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/img_pic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_my_order_list_product_pic"
+            app:qmui_corner_radius="@dimen/dp_4"
+            app:qmui_is_circle="false" />
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/text_black_14_f_w"
+                    android:layout_weight="0.8"
+                    android:text="适糖米"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/text_black_14_w_w"
+                    android:text="99"
+                    android:textColor="#FF4700"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_count"
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="right"
+                android:text="×1"
+                android:textColor="#FF4700"
+                android:textSize="11sp" />
+
+
+            <TextView
+                android:id="@+id/tv_specification"
+                style="@style/text_black_12_w_w"
+                android:text="125g*10袋" />
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:layout_marginTop="@dimen/dp_12"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_black_12_w_w"
+                    android:text="运费：" />
+
+                <TextView
+                    android:id="@+id/tv_fees"
+                    style="@style/text_gray_12_w_w"
+                    android:text="免邮" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_total_price"
+        style="@style/text_black_14_w_w"
+        android:layout_gravity="left"
+        android:text="退款成功 退款成功99.00"
+        android:textSize="11sp" />
+
+
+    <RelativeLayout
+        style="@style/hh_fi_wr"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <com.wei.android.lib.colorview.view.ColorTextView
+                android:id="@+id/tv_left"
+                style="@style/text_gray_14_w_w"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="删除订单"
+                android:textColor="@color/green_text_666"
+                android:visibility="visible"
+                app:borderColorNormal="#DADADA"
+                app:borderWidthNormal="1dp"
+                app:cornerRadiusNormal="90dp">
+
+            </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+            <com.wei.android.lib.colorview.view.ColorTextView
+                android:id="@+id/tv_right"
+                style="@style/text_gray_14_w_w"
+                android:layout_width="88dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="查看详情"
+                android:textColor="@color/green_text_666"
+                app:borderColorNormal="#DADADA"
+                app:borderWidthNormal="1dp"
+                app:cornerRadiusNormal="90dp">
+
+            </com.wei.android.lib.colorview.view.ColorTextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</com.wei.android.lib.colorview.view.ColorLinearLayout>

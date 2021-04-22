@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingTop="@dimen/dp_18"
+    android:paddingRight="@dimen/dp_18"
+    android:paddingBottom="@dimen/dp_18">
+
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_green" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="60dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/text_black_14_w_w"
+            android:text="设置密码"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+
+        <EditText
+            android:id="@+id/et_input_pwd"
+            style="@style/et_base_style_no_bg"
+            android:layout_marginTop="@dimen/dp_20"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+
+        <View
+            style="@style/line"
+            android:layout_marginTop="@dimen/dp_10" />
+
+        <EditText
+            android:id="@+id/et_input_pwd_repeat"
+            style="@style/et_base_style_no_bg"
+            android:layout_marginTop="@dimen/dp_20"
+            android:hint="请确认密码"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+
+        <View
+            style="@style/line"
+            android:layout_marginTop="@dimen/dp_10" />
+
+        <TextView
+            style="@style/text_gray_14_w_w"
+            android:hint="密码为6-20位，可使用字母和数字组合" />
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_sure"
+            style="@style/text_gray_14_f_w"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="完成"
+            app:backgroundColorNormal="@color/color_eb"
+            app:cornerRadiusNormal="@dimen/dp_2">
+
+
+        </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:paddingStart="11.5dp"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingEnd="11.5dp"
+        android:paddingBottom="@dimen/dp_4"
+        android:text="2019年11月15日 13:47"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_12"
+        app:backgroundColorNormal="@color/color_ccc"
+        app:cornerRadiusNormal="@dimen/dp_4" />
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        android:text="祝大家进入新的页面！"
+        android:textAlignment="gravity"
+        android:textSize="@dimen/size_16"
+        app:backgroundColorNormal="@color/white"
+        app:borderColorNormal="@color/color_e5"
+        app:borderWidthNormal="0.5dp"
+        app:cornerRadiusNormal="@dimen/dp_4" />
+
+</LinearLayout>

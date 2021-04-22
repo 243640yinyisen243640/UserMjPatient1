@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:background="@color/sugar_bp_low">
+
+        <View style="@style/line_02_right"></View>
+
+        <TextView
+            style="@style/text_black_14_f_w"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="日期" />
+
+        <View style="@style/line_02_right"></View>
+
+        <TextView
+            style="@style/text_black_14_f_w"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="检测结果" />
+
+        <View style="@style/line_02_right"></View>
+
+        <TextView
+            style="@style/text_black_14_f_w"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="达标情况" />
+
+        <View style="@style/line_02_right"></View>
+
+    </LinearLayout>
+
+    <View style="@style/line_02_bottom"></View>
+
+
+</LinearLayout>

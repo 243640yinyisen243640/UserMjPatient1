@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.wei.android.lib.colorview.view.ColorTextView
+        style="@style/text_white_16_w_w"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:paddingLeft="100dp"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingRight="100dp"
+        android:paddingBottom="@dimen/dp_12"
+        android:text="添加用药"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="90dp" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_6">
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/text_black_light_12_w_w"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="红细胞分布宽度CV" />
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+
+            <com.wei.android.lib.colorview.view.ColorTextView
+                android:id="@+id/tv_center"
+                style="@style/text_black_12_w_w"
+                android:layout_width="60dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:text="4.8"
+                android:textColor="@color/main_home"
+                app:borderColorNormal="@color/main_home"
+                app:borderWidthNormal="1dp"
+                app:cornerRadiusNormal="2dp">
+
+
+            </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+            <TextView
+                android:id="@+id/tv_right"
+                style="@style/text_black_light_12_w_w"
+                android:text="x10^9/L" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

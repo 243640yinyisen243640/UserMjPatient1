@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.kproduce.roundcorners.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:rRadius="13dp">
+
+        <!--图表头-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_chart_desc"
+                style="@style/text_black_14_f_w"
+                android:layout_weight="0.8"
+                android:drawableLeft="@drawable/weight_chart_pic"
+                android:drawablePadding="5dp"
+                android:text="近7次体重记录" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="(单位:千克)"
+                android:textColor="#A8A8A8" />
+
+        </LinearLayout>
+
+        <!--图表-->
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/no_data" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="160dp"
+                android:text="暂无数据"
+                android:textColor="@color/main_home" />
+
+        </RelativeLayout>
+
+
+    </com.kproduce.roundcorners.RoundLinearLayout>
+
+
+</LinearLayout>

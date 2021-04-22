@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:orientation="horizontal">
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:id="@+id/img_pic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_my_order_list_product_pic"
+        app:qmui_corner_radius="@dimen/dp_4"
+        app:qmui_is_circle="false" />
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_black_14_f_w"
+                android:layout_weight="0.8"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="适糖米适糖米适糖米适糖米适糖米适糖米适糖米适糖米适糖米适糖米适糖米"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/text_black_14_w_w"
+                android:text="99"
+                android:textColor="#FF4700"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_count"
+            style="@style/text_black_14_w_w"
+            android:layout_gravity="right"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:text="×1"
+            android:textColor="#FF4700"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_specification"
+                style="@style/text_black_12_f_w"
+                android:layout_weight="0.8"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="125g*10袋125g*10袋125g*10袋125g*10袋125g*10袋125g*10袋125g*10袋125g*10袋125g*10袋" />
+
+            <TextView
+                android:id="@+id/tv_refund_status"
+                style="@style/text_black_12_w_w"
+                android:layout_gravity="right"
+                android:text="退款中"
+                android:textColor="#FF4700"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_black_12_w_w"
+                android:text="运费：" />
+
+            <TextView
+                android:id="@+id/tv_fees"
+                style="@style/text_gray_12_w_w"
+                android:text="免邮" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

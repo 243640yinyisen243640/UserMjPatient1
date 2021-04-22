@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/scrollView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15">
+
+        <!--第二步-->
+        <com.lihang.ShadowLayout style="@style/recipe_detail_card">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+                <LinearLayout style="@style/hh_fi_wr">
+
+                    <TextView
+                        style="@style/text_black_16_w_w"
+                        android:text="选择我想吃的食物" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/line_stroke"
+                    android:layerType="software" />
+
+                <!--早餐-->
+                <LinearLayout
+                    android:id="@+id/ll_breakfast"
+                    style="@style/hh_fi_wr"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <LinearLayout
+                        style="@style/hh_fi_wr"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/diet_plan_detail_breakfast" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:text="早餐" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_gravity="center_vertical"
+                        android:text=">>"
+                        android:textColor="@color/diet_plan_result_seven_days_checked_bg" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_breakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <!--午餐-->
+                <LinearLayout
+                    android:id="@+id/ll_lunch"
+                    style="@style/hh_fi_wr"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <LinearLayout
+                        style="@style/hh_fi_wr"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/diet_plan_detail_lunch" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:text="午餐" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_gravity="center_vertical"
+                        android:text=">>"
+                        android:textColor="@color/diet_plan_result_seven_days_checked_bg" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_lunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <!--晚餐-->
+
+                <LinearLayout
+                    android:id="@+id/ll_dinner"
+                    style="@style/hh_fi_wr"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <LinearLayout
+                        style="@style/hh_fi_wr"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/diet_plan_detail_dinner" />
+
+                        <TextView
+                            style="@style/text_black_14_w_w"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:text="晚餐" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/text_black_14_w_w"
+                        android:layout_gravity="center_vertical"
+                        android:text=">>"
+                        android:textColor="@color/diet_plan_result_seven_days_checked_bg" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_dinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+        </com.lihang.ShadowLayout>
+
+        <com.wei.android.lib.colorview.view.ColorButton
+            android:id="@+id/bt_create"
+            style="@style/text_white_16_f_w"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="一键生成"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="3dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+
+

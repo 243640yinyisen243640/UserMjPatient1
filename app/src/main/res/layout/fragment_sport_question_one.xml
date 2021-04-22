@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_diet_plan_question_title_and_desc" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_question_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        tools:listitem="@layout/item_top_question_of_hbp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_15" />
+
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:orientation="horizontal">
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_not_conform"
+            style="@style/text_gray_16_f_w"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8"
+            android:text="不符合"
+            android:textColor="@color/color_69"
+            app:backgroundColorNormal="#F2F2F2"
+            app:cornerRadiusNormal="@dimen/dp_4">
+
+        </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+        <com.wei.android.lib.colorview.view.ColorTextView
+            android:id="@+id/tv_conform"
+            style="@style/text_gray_16_f_w"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8"
+            android:text="符合"
+            android:textColor="@color/main_home"
+            app:backgroundColorNormal="@color/white"
+            app:borderColorNormal="@color/main_home"
+            app:borderWidthNormal="1dp"
+            app:cornerRadiusNormal="@dimen/dp_4">
+
+        </com.wei.android.lib.colorview.view.ColorTextView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_follow_up_visit_include_item"
+    android:layout_marginTop="172dp">
+
+    <!--随访问卷-->
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:gravity="center">
+
+
+        <TextView
+            style="@style/text_black_16_w_w"
+            android:drawableLeft="@drawable/follow_up_visit_double_line"
+            android:drawableRight="@drawable/follow_up_visit_double_line"
+            android:drawablePadding="@dimen/dp_30"
+            android:text="随访问卷"
+            android:textColor="@color/main_home" />
+
+    </LinearLayout>
+
+</LinearLayout>

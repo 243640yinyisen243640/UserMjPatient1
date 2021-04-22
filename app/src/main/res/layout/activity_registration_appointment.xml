@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View style="@style/line" />
+    <!--体检预约-->
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        style="@style/hh_fi_wr"
+        android:layout_height="90dp"
+        android:layout_toLeftOf="@+id/img_vertical_line">
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/registration_appointment_one" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center"
+                android:text="体检预约" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--报告查询-->
+    <RelativeLayout
+        android:id="@+id/rl_two"
+        style="@style/hh_fi_wr"
+        android:layout_height="90dp"
+        android:layout_toRightOf="@+id/img_vertical_line">
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/registration_appointment_two" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center"
+                android:text="报告查询" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <!--我的全部预约-->
+    <RelativeLayout
+        android:id="@+id/rl_three"
+        style="@style/hh_fi_wr"
+        android:layout_height="90dp"
+        android:layout_marginTop="90dp"
+        android:layout_toLeftOf="@+id/img_vertical_line">
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/registration_appointment_three" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center"
+                android:text="我的全部预约" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--就诊人-->
+    <RelativeLayout
+        android:id="@+id/rl_four"
+        style="@style/hh_fi_wr"
+        android:layout_height="90dp"
+        android:layout_marginTop="90dp"
+        android:layout_toRightOf="@+id/img_vertical_line">
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/registration_appointment_four" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center"
+                android:text="就诊人" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <!--体检注意事项-->
+    <RelativeLayout
+        android:id="@+id/rl_five"
+        style="@style/hh_fi_wr"
+        android:layout_height="90dp"
+        android:layout_marginTop="180dp"
+        android:layout_toLeftOf="@+id/img_vertical_line">
+
+
+        <LinearLayout
+            style="@style/hh_wr_wr"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/registration_appointment_five" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center"
+                android:text="体检注意事项" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--垂直分割线-->
+    <ImageView
+        android:id="@+id/img_vertical_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:scaleType="centerCrop"
+        android:src="@drawable/registration_appointment_vertical_line" />
+
+
+    <!--水平分割线-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/registration_appointment_horizontal_line" />
+
+
+    <!--水平分割线-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/registration_appointment_horizontal_line" />
+
+
+</RelativeLayout>

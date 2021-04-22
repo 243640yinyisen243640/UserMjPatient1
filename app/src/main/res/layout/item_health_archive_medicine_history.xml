@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        style="@style/hh_fi_wr"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/text_black_14_w_w"
+            android:text="名字" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                style="@style/hh_wr_wr"
+                android:layout_marginRight="@dimen/dp_40">
+
+                <TextView
+                    android:id="@+id/tv_center"
+                    style="@style/text_black_14_w_w"
+                    android:layout_toLeftOf="@+id/tv_dosage"
+                    android:text="36"
+                    android:textColor="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="次(日)" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/hh_wr_wr">
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    style="@style/text_black_14_w_w"
+                    android:text="44g"
+                    android:textColor="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="(次)" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginStart="@dimen/dp_10" />
+
+</LinearLayout>

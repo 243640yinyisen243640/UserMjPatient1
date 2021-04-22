@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/backLin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/background_four_yuanjiao"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:padding="10dp"
+                android:text="添加血糖"
+                android:textColor="@color/black_text"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_background_bloodsuger"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/bloodEdit"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="输入血糖值"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="mmol/L"
+                    android:textColor="#13B0B8"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/timeLin"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background_bloodsuger"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/timeTextView"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="测量时间"
+                    android:paddingLeft="10dp"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/blue_sanjiao" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dialog_saveButton"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/black_button"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sugerblood" />
+
+
+</RelativeLayout>

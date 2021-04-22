@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_health_record"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/img_health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:padding="@dimen/six"
+                android:src="@drawable/blood_icon" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_health">
+
+
+                <TextView
+                    android:id="@+id/tv_health_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="血压记录"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/thirteen" />
+
+                <TextView
+                    android:id="@+id/tv_health_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_health_name"
+                    android:layout_alignStart="@+id/tv_health_name"
+                    android:layout_marginTop="@dimen/three"
+                    android:layout_marginRight="@dimen/nineteen"
+                    android:text="点击查看历史纪录"
+                    android:textColor="@color/health_item"
+                    android:textSize="@dimen/eleven" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/one"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginBottom="@dimen/ten"
+            android:background="@color/main_home" />
+
+        <RelativeLayout
+            android:id="@+id/rl_health_add"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.7"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/health_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/jiahao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/health_default"
+                android:layout_centerHorizontal="true"
+                android:text="@string/health_add"
+                android:textColor="#3B4552"
+                android:textSize="@dimen/twelve" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

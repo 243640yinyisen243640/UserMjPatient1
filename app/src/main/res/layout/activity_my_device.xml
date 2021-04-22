@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/hh_fi_wr"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_scan_bg" />
+
+        <TextView
+            android:id="@+id/tv_imei"
+            style="@style/text_black_16_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="设备号:6212"
+            android:textSize="@dimen/size_18" />
+
+
+    </LinearLayout>
+
+
+    <com.wei.android.lib.colorview.view.ColorButton
+        android:id="@+id/bt_unbind"
+        style="@style/text_white_16_f_w"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="解除绑定"
+        app:backgroundColorNormal="@color/main_home"
+        app:cornerRadiusNormal="4dp" />
+
+
+</RelativeLayout>

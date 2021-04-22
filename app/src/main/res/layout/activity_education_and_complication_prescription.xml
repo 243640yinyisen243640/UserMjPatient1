@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/scrollView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+        <!--教育处方-->
+        <LinearLayout
+            android:id="@+id/ll_education"
+            style="@style/hh_fi_wr"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                style="@style/hh_fi_wr"
+                android:background="@color/background"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_8">
+
+                <View
+                    style="@style/line"
+                    android:layout_width="@dimen/dp_8"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/main_home" />
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@drawable/prescription_checked"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="教育处方" />
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/line"
+                android:layout_height="60dp"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+        <!--并发症处方-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/background"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8">
+
+            <View
+                style="@style/line"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:background="@color/main_home" />
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:layout_gravity="center_vertical"
+                android:drawableRight="@drawable/prescription_checked"
+                android:drawablePadding="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="并发症处方" />
+
+
+        </LinearLayout>
+        <!--糖尿病肾病-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="糖尿病肾病"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_sugar_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="确诊情况" />
+
+
+                <TextView
+                    android:id="@+id/tv_sugar_condition"
+                    style="@style/et_non_drug_select"
+                    android:hint="请选择" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_sugar_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="确诊时间" />
+
+
+                <TextView
+                    android:id="@+id/tv_sugar_time"
+                    style="@style/et_non_drug_select"
+                    android:hint="请选择" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+
+            <LinearLayout
+                android:id="@+id/rl_sugar_symptom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12"
+                android:visibility="gone">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="症状" />
+
+
+                <TextView
+                    android:id="@+id/tv_sugar_symptom"
+                    style="@style/text_black_14_w_w"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:ellipsize="end"
+                    android:hint="请选择"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--糖尿病视网膜病变-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="糖尿病视网膜病变"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_retina_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="确诊情况" />
+
+
+                <TextView
+                    android:id="@+id/tv_retina_condition"
+                    style="@style/et_non_drug_select"
+                    android:hint="请选择" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_retina_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="确诊时间" />
+
+
+                <TextView
+                    android:id="@+id/tv_retina_time"
+                    style="@style/et_non_drug_select"
+                    android:hint="请选择" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+
+            <LinearLayout
+                android:id="@+id/rl_retina_symptom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12"
+                android:visibility="gone">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="症状" />
+
+
+                <TextView
+                    android:id="@+id/tv_retina_symptom"
+                    style="@style/text_black_14_w_w"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:ellipsize="end"
+                    android:hint="请选择"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--糖尿病神经病变-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="糖尿病神经病变"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_nerve_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="确诊情况" />
+
+
+                <TextView
+                    android:id="@+id/tv_nerve_condition"
+                    style="@style/et_non_drug_select"
+                    android:hint="请选择" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginStart="@dimen/dp_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_nerve_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="确诊时间" />
+
+
+                <TextView
+                    android:id="@+id/tv_nerve_time"
+                    style="@style/et_non_drug_select"
+                    android:hint="请选择" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_nerve_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <!--糖尿病下肢血管病变-->
+
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="糖尿病下肢血管病变"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_legs_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="确诊情况" />
+
+
+                <TextView
+                    android:id="@+id/tv_legs_condition"
+                    style="@style/et_non_drug_select"
+                    android:hint="请选择" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_legs_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="确诊时间" />
+
+
+                <TextView
+                    android:id="@+id/tv_legs_time"
+                    style="@style/et_non_drug_select"
+                    android:hint="请选择" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_legs_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <!--高血压-->
+        <!--高血脂-->
+        <!--冠心病-->
+        <!--脑血管病-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <!--吸烟-->
+        <RelativeLayout
+            android:id="@+id/rl_smoke_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@color/white"
+            android:padding="@dimen/dp_12">
+
+
+            <TextView
+                style="@style/text_black_14_w_w"
+                android:text="吸烟史" />
+
+
+            <TextView
+                android:id="@+id/tv_smoke_history"
+                style="@style/et_non_drug_select"
+                android:hint="请选择" />
+
+
+        </RelativeLayout>
+
+
+        <!--糖尿病类型-->
+        <LinearLayout
+            style="@style/hh_fi_wr"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_black_14_f_w"
+                android:padding="@dimen/dp_12"
+                android:text="糖尿病类型"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_blood_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="确诊情况" />
+
+
+                <TextView
+                    android:id="@+id/tv_blood_type"
+                    style="@style/et_non_drug_select"
+                    android:hint="请选择" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+            <RelativeLayout
+                android:id="@+id/rl_blood_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12">
+
+
+                <TextView
+                    style="@style/text_black_14_w_w"
+                    android:text="确诊时间" />
+
+
+                <TextView
+                    android:id="@+id/tv_blood_time"
+                    style="@style/et_non_drug_select"
+                    android:hint="请选择" />
+
+
+            </RelativeLayout>
+
+            <View
+                style="@style/line"
+                android:layout_marginLeft="@dimen/dp_10" />
+
+        </LinearLayout>
+
+        <com.wei.android.lib.colorview.view.ColorButton
+            android:id="@+id/bt_done"
+            style="@style/text_white_16_w_w"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="完成填写"
+            app:backgroundColorNormal="@color/main_home"
+            app:cornerRadiusNormal="90dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

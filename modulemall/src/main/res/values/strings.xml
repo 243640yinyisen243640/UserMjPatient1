@@ -1,0 +1,48 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="goods_buy_count">购买数量</string>
+    <string name="goods_specification">规格</string>
+    <string name="goods_minus_sign">—</string>
+    <string name="goods_plus">+</string>
+    <string name="sure">确定</string>
+    <string name="add_shop_cart">加入购物车</string>
+    <string name="buy_at_once">立即购买</string>
+    <string name="please_choose">请选择&#160;%1$s/%2$s</string>
+    <string name="already_choose">已选择&#160;%1$s/%2$s</string>
+    <string name="goods_sku_stock">库存&#160;%1$d&#160;件</string>
+    <string name="please_choose_one_sp">请选择&#160;%1$s</string>
+    <string name="already_choose_one_sp">已选择&#160;%1$s</string>
+    <string name="quantity_out_of_range">数量超出范围</string>
+    <string name="sure_please_choose">请选择%1$s</string>
+
+
+    <!--订单状态底部按钮文本 开始-->
+    <string name="order_change_address">修改地址</string>
+    <string name="order_cancel">取消订单</string>
+    <string name="order_pay">立即付款</string>
+    <string name="order_add_cart">加入购物车</string>
+    <string name="order_check_the_logistics">查看物流</string>
+    <string name="order_confirm">确认收货</string>
+    <string name="order_del">删除订单</string>
+    <!--退款-->
+    <string name="order_look_detail">查看详情</string>
+    <!--订单状态底部按钮文本 结束-->
+
+    <string name="refund_count_down">如果%1$s内卖家未处理，退款申请将自动达 成并退款到您的账户余额中</string>
+    <string name="refund_logistics">您已退货 物流公司：%1$s 运单号：%2$s</string>
+
+    <string name="order_total_money">总价：%1$s   优惠：%2$s   实付款：%3$s</string>
+
+
+
+    <string name="comm_price_format">¥ %s</string>
+
+    <string name="product_detail">商品详情</string>
+    <string name="product_detail_sku_quantity">购买数量</string>
+    <string name="product_detail_sku_confirm">确定</string>
+    <string name="product_detail_sku_recommend_price">价格：¥%1$s/%2$s</string>
+    <string name="product_detail_sku_stock">(库存:%1$s)</string>
+    <string name="product_detail_sku_quantity_over">购买数量超出最大库存，请修改购买数量</string>
+    <string name="product_detail_sku_quantity_empty">购买数量不能为空</string>
+    <string name="product_detail_sku_add_succeed">商品添加成功，请前往进货单查看</string>
+</resources>
